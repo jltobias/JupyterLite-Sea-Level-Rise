@@ -21,7 +21,7 @@ An interactive **Jupyter Book + JupyterLite** learning environment based on our 
 | Fictional 3D terrain scene | [Move the water plane through time](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/dashboard/?view=terrain&dataset=synthetic) |
 | Reference desk | [Glossary](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/book/glossary.html) · [Data dictionary](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/book/data-dictionary.html) · [Source audit](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/book/source-audit.html) |
 
-No account, API key or local Python installation is required for learners. In JupyterLite select **Run → Run All Cells**. If a kernel chooser appears, select **Python (Pyodide)** and press **Select**. The first launch downloads Pyodide and packages; allow a minute on a good connection. Notebook edits stay in browser storage until downloaded. The dashboard runs without Python. WebGL enables 3D views; 2D plots and tables provide alternatives. This deployment is not a fully offline Python distribution.
+No account, API key or local Python installation is required for learners. In JupyterLite wait for **Python (Pyodide) | Idle** in the status bar, then select **Run → Run All Cells**. If a kernel chooser appears, select **Python (Pyodide)** and press **Select**. The first launch downloads Pyodide and packages; allow a minute on a good connection. Notebook edits stay in browser storage until downloaded. The dashboard runs without Python. WebGL enables 3D views; 2D plots and tables provide alternatives. This deployment is not a fully offline Python distribution.
 
 ## Thirteen executable chapters
 
