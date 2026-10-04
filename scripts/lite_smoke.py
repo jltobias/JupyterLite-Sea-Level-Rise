@@ -17,12 +17,13 @@ def main():
             page.goto(args.url+f'/lite/lab/index.html?path=notebooks/{slug}.ipynb',wait_until='networkidle')
             page.get_by_role('tab',name=slug+'.ipynb',exact=True).click(timeout=60000)
             page.wait_for_selector('.jp-Notebook:visible',timeout=60000)
-            page.get_by_role('menuitem',name='Run',exact=True).click();page.get_by_role('menuitem',name='Run All Cells',exact=True).click()
-            # A fresh profile may reach Run before the preferred kernel has started.
-            # Resolve the same explicit kernel chooser a learner sees on first use.
-            page.wait_for_function("() => document.querySelector('[role=dialog]') || [...document.querySelectorAll('.jp-Notebook')].filter(n=>n.offsetParent!==null).some(n=>[...n.querySelectorAll('.jp-OutputArea-output')].some(e=>e.textContent.includes('Ready: public poster')))",timeout=180000)
+            # Wait for Pyodide before sending execution requests. Clicking Run during
+            # session creation can race the kernel chooser and discard that request.
+            page.wait_for_function("() => document.querySelector('[role=dialog]') || [...document.querySelectorAll('.jp-KernelStatus-success')].some(e=>e.offsetParent!==null)",timeout=180000)
             if page.get_by_role('dialog').count():
                 page.get_by_role('button',name='Select',exact=True).click()
+            page.wait_for_selector('.jp-KernelStatus-success:visible',timeout=180000)
+            page.get_by_role('menuitem',name='Run',exact=True).click();page.get_by_role('menuitem',name='Run All Cells',exact=True).click()
             page.wait_for_function("() => [...[...document.querySelectorAll('.jp-Notebook')].find(n=>n.offsetParent!==null).querySelectorAll('.jp-OutputArea-output')].some(e=>e.textContent.includes('Ready: public poster'))",timeout=180000)
             # Notebook virtualization is disabled in overrides.json; reveal the final cell.
             last=page.locator('.jp-Notebook:visible .jp-Cell').last
