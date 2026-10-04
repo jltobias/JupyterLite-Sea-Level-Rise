@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "00_start_here",
+    "title": "Start here: a coastline, a clinic, a question",
+    "minutes": 20
+  },
+  {
+    "slug": "01_read_the_poster",
+    "title": "Read and audit the entire poster",
+    "minutes": 35
+  },
+  {
+    "slug": "02_three_rcp_pathways",
+    "title": "Three RCP pathways, many possible futures",
+    "minutes": 35
+  },
+  {
+    "slug": "03_probability_and_thresholds",
+    "title": "Flood probabilities, frequencies and thresholds",
+    "minutes": 40
+  },
+  {
+    "slug": "04_data_and_geography",
+    "title": "From spreadsheets to defensible maps",
+    "minutes": 45
+  },
+  {
+    "slug": "05_dashboard_lab",
+    "title": "Power BI ideas in a browser: slicers, cards and listings",
+    "minutes": 45
+  },
+  {
+    "slug": "06_time_series_maps",
+    "title": "Watch the decades: animated maps and temporal comparisons",
+    "minutes": 40
+  },
+  {
+    "slug": "07_three_dimensions",
+    "title": "3D coasts: useful depth, dangerous certainty",
+    "minutes": 40
+  },
+  {
+    "slug": "08_space_time_cube",
+    "title": "Space\u2013time cubes and cohort histories",
+    "minutes": 35
+  },
+  {
+    "slug": "09_hotspots",
+    "title": "Hotspots: exposure rates and a spatial scan experiment",
+    "minutes": 50
+  },
+  {
+    "slug": "10_continuity_and_equity",
+    "title": "From exposed facilities to continuity of care",
+    "minutes": 45
+  },
+  {
+    "slug": "11_capstone",
+    "title": "Capstone: a coastal continuity briefing",
+    "minutes": 60
+  },
+  {
+    "slug": "12_reproduce_and_extend",
+    "title": "Reproduce, audit and extend the study responsibly",
+    "minutes": 40
+  }
+]

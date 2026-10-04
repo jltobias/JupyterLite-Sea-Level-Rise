@@ -1,0 +1,55 @@
+# References, data sources and rights
+
+Access/inspection date: **2026-10-04**. A public URL is not, by itself, a redistribution license. Software, newly authored lessons, public source facts and third-party images have separate rights.
+
+## Primary study
+
+Tobias, J. L.; Jolly, M.; Van Baalen, K.; Hadj-Chikh, L.; Vallejo, E. P.; Heard, N.; Haimovich, Z.; Kalman, C.; Kagniniwa, B.; Blanton, J.; and Tolentino, H. (2024). **PEPFAR Adapts to Sea Level Rise and Storm-Surge: Potential Impacts to Coastal Cities and Facilities (2030).** AIDS 2024, the 25th International AIDS Conference, Munich, 22–26 July 2024. Poster THPEF698. [Official IAS poster PDF](https://plus.iasociety.org/sites/default/files/2024-09/e-poster_755.pdf).
+
+The poster supplies the public count tables and historical study narrative. The README/book preview is rendered from that PDF at the presenting author's request. Poster artwork, logos, photographs and embedded third-party figures retain their owners' rights. No open license was verified for the composite poster, so it is **excluded** from the repository's MIT/CC BY licenses. Cite the authors, conference and official link when discussing the findings; seek appropriate rights for reuse beyond this presentation context.
+
+The supplied PBIX, PBIP report definitions, semantic model, PPTX and workbooks were used locally to understand schema, dashboard design and provenance. They are not redistributed. The PEPFAR facility coordinates and indicator fields are not treated as open data. The original data-use agreement and provider permissions govern them.
+
+## Sources used by the study and teaching context
+
+| Source | Citation / link | Use here | Rights and attribution |
+|---|---|---|---|
+| Sea-level projections | Kopp, R. E. et al. (2014). *Probabilistic 21st and 22nd century sea-level projections at a global network of tide-gauge sites.* Earth's Future 2, 383–406. [doi:10.1002/2014EF000239](https://doi.org/10.1002/2014EF000239) | Explains the poster's projection lineage; no projection grid redistributed | Cite paper and DOI. Publisher/source terms apply; article access is not a license for every associated data product. |
+| Coastal surge/tide modeling | Muis, S., Verlaan, M., Winsemius, H. C., Aerts, J. C. J. H., & Ward, P. J. (2016). *A global reanalysis of storm surges and extreme sea levels.* Nature Communications 7, 11969. [doi:10.1038/ncomms11969](https://doi.org/10.1038/ncomms11969) | Study lineage and distinction between water levels and exposure | Cite authors, year and DOI; no article figures or raw data redistributed. |
+| GTSR data record | Muis (2016), Global Tide and Surge Reanalysis. [4TU record cited in the poster](https://data.4tu.nl/articles/_/12712469/1) | Reference link only | Repository record/license must be checked before download or redistribution; record access could not be independently verified during this build. |
+| CoastalDEM v2.1 | Kulp, S. A., & Strauss, B. H. (2021), Climate Central scientific report. [Product/version page](https://www.climatecentral.org/coastaldem-v2.1) | Explains elevation uncertainty and original inputs | Climate Central product terms apply; no DEM raster bundled. Cite product/version and authors. |
+| Climate Central PAT and coastal layers | [Data products](https://www.climatecentral.org/data-products), [Coastal Risk Screening Tool](https://coastal.climatecentral.org/) | Historical model workflow; links for further investigation | Licensed/provider-controlled products. Obtain appropriate permission and required attribution; a free viewer does not grant raw-data redistribution rights. No PAT outputs beyond already-published poster facts bundled. |
+| AR5 reference ranges | IPCC (2013), *Climate Change 2013: The Physical Science Basis*, WGI Summary for Policymakers, Table SPM.2, p. 23. [PDF](https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf) | Six numerical global sea-level rows, re-plotted with explicit baseline/period | Source credited in CSV and captions. IPCC report copyright remains; follow [IPCC copyright policy](https://www.ipcc.ch/copyright/) for report/figure reuse. This is not an open-license grant over IPCC materials. |
+| AR6 context | IPCC (2021), *Climate Change 2021: The Physical Science Basis*, WGI Summary for Policymakers. [Official chapter](https://www.ipcc.ch/report/ar6/wg1/chapter/summary-for-policymakers/) | RCP/SSP distinction; no AR6 projection dataset bundled | Cite report and section; IPCC copyright policy applies. |
+| Spatial scan statistics | Kulldorff, M. (1997). *A spatial scan statistic.* Communications in Statistics—Theory and Methods 26, 1481–1496. [doi:10.1080/03610929708831995](https://doi.org/10.1080/03610929708831995); [SaTScan technical documentation](https://www.satscan.org/techdoc.html) | Methodological context; independently written small teaching scan | SaTScan software is not bundled, and its license is not replaced by this repository's MIT license. Cite methods and software if used. |
+| HIV targets | UNAIDS (2024). *Understanding measures of progress towards the 95–95–95 HIV testing, treatment and viral suppression targets.* [Official explanation](https://www.unaids.org/en/resources/documents/2024/progress-towards-95-95-95) | Correct historical target date and conditional denominators | Link/citation only; UNAIDS publications retain their source terms. |
+| PEPFAR strategy | PEPFAR (2022). *Reimagining PEPFAR's Strategic Direction: Fulfilling America's Promise to End the HIV/AIDS Pandemic by 2030.* [Poster-cited strategy PDF](https://www.state.gov/wp-content/uploads/2022/09/PEPFAR-Strategic-Direction_FINAL.pdf) | Historical program context, not a current policy claim | Link only. Do not assume agency logos or third-party portions are public domain. Historical links may move. |
+| Global map context | Natural Earth contributors, v5.1.2, **1:110m land**. [Pinned GeoJSON](https://github.com/nvkelso/natural-earth-vector/blob/v5.1.2/geojson/ne_110m_land.geojson) | Bundled land outlines, not local hazard analysis | [Public domain](https://www.naturalearthdata.com/about/terms-of-use/). Attribution not required by provider; voluntarily credited as “Made with Natural Earth.” |
+| Fictional lab fixtures | This repository, seed 20240722; [generator](https://github.com/jltobias/JupyterLite-Sea-Level-Rise/blob/main/scripts/generate_data.py) | 192 fictional sites, 5,184 exposure rows; analytic terrain and hypothetical workloads | CC0-1.0 dedication for fictional data to the extent rights exist. Cite the repo/version for reproducibility and retain fictional-data labels in communication. |
+
+## Additional references preserved from the poster
+
+These provide historical context and are linked rather than republished. Their owners' terms apply; no external video or article is downloaded into this book.
+
+- Africa Center for Strategic Studies (2023). [Rising Sea Levels Besieging Africa's Booming Coastal Cities](https://africacenter.org/wp-content/uploads/2023/02/Rising-Sea-Levels-ENG.pdf).
+- CDC (2019). [Preparedness Pays Off in Mozambique's Cyclone Responses](https://www.cdc.gov/globalhealth/healthprotection/fieldupdates/fall-2019/mozambique-cyclone-response.html). Historical URL as printed in the poster; it may redirect or be retired.
+- CGTN Africa (2023). [Rising sea waters threaten Nigeria's coastal communities — video](https://www.youtube.com/watch?v=RDP7KD7Dgd4). External copyrighted video, optional viewing. Suggested question: which impacts concern access rather than building inundation?
+- Climate Central (2021). [Climate Change Impacts Seniors Living Near the Coast](https://www.climatecentral.org/climate-matters/climate-change-impacts-seniors-living-near-the-coast).
+- Climate Central (April 2021). [Future Flood Risk: Harriet Tubman Underground Railroad Byway](https://assets.ctfassets.net/cxgxgstp8r5d/2ivlC6tAu3GeqctYz9nNxX/d8fff8e7027fec61cc3d5a0a5e2dfd1c/Climate_Central_Future_Flood_Risk_Report_Harriet_Tubman_Byway.pdf).
+- United Nations (14 February 2023). [Sea-level rise discussion, UN News](https://news.un.org/en/story/2023/02/1133492).
+- Kulp, S. (2022). *Metadata for Coastal Flood Layers (v2.0)*, Climate Central. Cited by poster; exact metadata file not supplied publicly here. Obtain it from the provider for replication.
+- Oxfam (2019). [Forced from Home: Climate-fuelled displacement](https://oxfamilibrary.openrepository.com/bitstream/handle/10546/620914/mb-climate-displacement-cop25-021219-en.pdf).
+- Salako, P. (January 2024). [Why a Nigerian coastal town is on the brink of extinction](https://www.devex.com/news/why-a-nigerian-coastal-town-is-on-the-brink-of-extinction-106880); [associated video](https://www.youtube.com/watch?v=jVEZsyrcQAs). External copyrighted reporting, not embedded raw media.
+- The poster's “IPCC 2018” reference points to [FAR WGI Chapter 9](https://www.ipcc.ch/site/assets/uploads/2018/03/ipcc_far_wg_I_chapter_09.pdf). Its upload-path year should not be mistaken for the assessment date; the book uses explicit AR5/AR6 citations instead.
+
+## Repository and software licenses
+
+- **Original code:** MIT, including Python, JavaScript, HTML/CSS and independent chart generation. Preserve the copyright and license notice in copies/substantial portions.
+- **Original lesson prose and original explanatory diagrams:** CC BY 4.0. Credit James L. Tobias and repository contributors, link the license, and indicate changes. Third-party sources and poster media are excluded.
+- **Fictional CSV/JSON data and analytic terrain values:** CC0 1.0 to the extent applicable rights exist. Do not misrepresent them as observed data.
+- **AI-generated comic:** Created with the built-in image-generation tool; prompt and provenance in `content/assets/visual-provenance.json`. Offered under CC0 to the extent the repository contributors have applicable rights; no claim that all jurisdictions recognize copyright in AI output. Do not imply real people, events, facilities or institutional endorsement.
+- **Generated MP4/caption track and chart still:** Original teaching charts, CC BY 4.0; no third-party footage, music or narration.
+- **Plotly.js:** MIT; bundled with license in `licenses/plotly-js-MIT.txt`. The full bundle contains additional notices retained in the file. Python Plotly is also MIT.
+- **JupyterLite, Pyodide, Jupyter Book, NumPy, pandas, Matplotlib, ipywidgets and dependencies:** Their upstream licenses remain applicable. The build preserves distributed package notices. JupyterLite/Pyodide/Jupyter Book use BSD-family licenses; Matplotlib has its own license terms. See the installed distribution metadata and upstream repositories for exact versions and transitive notices. The local build inventory is recorded in `build-environment.txt`.
+
+JupyterLite deployment details: [official GitHub Pages guide](https://jupyterlite.readthedocs.io/en/stable/quickstart/deploy.html). Jupyter Book build details: [official v1 guide](https://jupyterbook.org/v1/start/build.html). This project intentionally pins Jupyter Book v1's Sphinx workflow; it does not claim to use the newer MyST engine.

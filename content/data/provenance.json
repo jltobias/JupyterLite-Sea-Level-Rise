@@ -1,0 +1,112 @@
+{
+  "version": "1.0.0",
+  "inspected_date": "2026-10-04",
+  "sources": [
+    {
+      "id": "poster",
+      "url": "https://plus.iasociety.org/sites/default/files/2024-09/e-poster_755.pdf",
+      "citation": "Tobias et al. (2024), AIDS 2024, poster THPEF698, Tables 1–3",
+      "transformation": "Manual count transcription; percentages recomputed; city anchors manually specified; narrative ratios kept separately.",
+      "rights": "Composite poster rights retained; no open license verified. Public facts cited, not a license grant over poster artwork."
+    },
+    {
+      "id": "ipcc-ar5",
+      "url": "https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf",
+      "citation": "IPCC (2013), AR5 WGI Summary for Policymakers, Table SPM.2, p.23",
+      "transformation": "Six sea-level reference rows transcribed; global mean; 1986–2005 baseline; period averages.",
+      "rights": "IPCC copyright retained; numerical facts cited; report/figure reuse governed by IPCC policy."
+    },
+    {
+      "id": "natural-earth",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_110m_land.geojson",
+      "citation": "Natural Earth contributors, v5.1.2, 1:110m land",
+      "transformation": "Unmodified GeoJSON; geometry only used in charts; not used for exposure classification.",
+      "rights": "Public domain; voluntary attribution: Made with Natural Earth."
+    },
+    {
+      "id": "synthetic",
+      "url": "https://github.com/jltobias/JupyterLite-Sea-Level-Rise/blob/main/scripts/generate_data.py",
+      "citation": "Coastal Futures teaching fixtures, seed 20240722, version 1.0.0",
+      "transformation": "Independent deterministic generation; no original facility rows or coordinates read.",
+      "rights": "CC0-1.0 to extent applicable rights held."
+    }
+  ],
+  "files": {
+    "content/data/dashboard-data.json": {
+      "sha256": "1c7be75481e32f1ed9d6e3837e69d81b83301dd8d5b92090980f324d4e53fbc1",
+      "bytes": 726212
+    },
+    "content/data/ipcc_ar5_reference.csv": {
+      "sha256": "f498fda2ae0bec02469311f23349b9add655c6ae14256218ad04fe88853aa5be",
+      "bytes": 472
+    },
+    "content/data/natural-earth-land.geojson": {
+      "sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9",
+      "bytes": 138160
+    },
+    "content/data/poster-aggregates.json": {
+      "sha256": "ea47555b210153c1991f3cdb222d211f91149c358002422eb661958db0bf2c72",
+      "bytes": 53988
+    },
+    "content/data/poster_aggregates.csv": {
+      "sha256": "aad9c951060b5ff2e5051873f63ab12884d21c8887d819bf203b8fb026cd9c20",
+      "bytes": 16776
+    },
+    "content/data/poster_findings.csv": {
+      "sha256": "2f67b02a56b319057741492290ec326e4aad272ce7c2dc990f58dba86bedbf4e",
+      "bytes": 324
+    },
+    "content/data/synthetic_exposure.csv": {
+      "sha256": "45ddab80b6cdc15aa78186e9b0b78518a64358fe3e4f6eb45d92865dd8abaaa3",
+      "bytes": 232568
+    },
+    "content/data/synthetic_facilities.csv": {
+      "sha256": "275a1b7b70c2c22d026123ba7356161f8e868c9727f1f503dbcf276876fae5fb",
+      "bytes": 19939
+    },
+    "content/assets/aids-2024-poster.png": {
+      "sha256": "9ca318c254587ef64168ffce4fdedb75ba928262245e78e9276c8333ad8cc783",
+      "bytes": 4949334
+    },
+    "content/assets/book-mark.svg": {
+      "sha256": "ddc485b434e4f6ead98d896ea687896568f135d79bf0b669adca1af7608ac995",
+      "bytes": 562
+    },
+    "content/assets/book.css": {
+      "sha256": "de7234a07a36f2e9fc9e34294149b75993ea7df0ab967af4c11608a7f1a113b1",
+      "bytes": 364
+    },
+    "content/assets/continuity-comic.png": {
+      "sha256": "dcbd2c20bf9efa305b8f52473e9ed218c2e276611a9b3dbb5c9bd2228e92f55e",
+      "bytes": 2457425
+    },
+    "content/assets/plotly.min.js": {
+      "sha256": "3b6e15d45dbb7fca5bd2094291e961ddc5472cd887009e6009a56dab668d721f",
+      "bytes": 4815814
+    },
+    "content/assets/scenario-walkthrough.mp4": {
+      "sha256": "f80a6ec57f4094501893703968723e560f35bdcea5234c6bf28d8797958d0df8",
+      "bytes": 184662
+    },
+    "content/assets/scenario-walkthrough.vtt": {
+      "sha256": "9852f990475bf96473f297821fadc09a889681bb90840220d71d263844d7ca61",
+      "bytes": 373
+    },
+    "content/assets/teaching-video-poster.png": {
+      "sha256": "3e4d090e424d341e3b21819f1a975fa2cf892c3db02c0a53f87e1a8b107d5261",
+      "bytes": 65035
+    },
+    "content/assets/visual-provenance.json": {
+      "sha256": "e872f051c4c583c6195b39cb46e22311020f19f8c82b291c61f45e591630df94",
+      "bytes": 1338
+    }
+  },
+  "evidence_boundary": "Published poster aggregates, explicit reference facts, and separate fictional labs. No private facility data or proprietary hazard grids distributed.",
+  "known_discrepancies": [
+    "RCP 2.6 narrative 2.8× versus table 321/108=2.9722…",
+    "Percentages recalculated from source counts",
+    "Original source field-name/typing anomalies documented without silent correction"
+  ],
+  "runtime_note": "Desktop build dependencies recorded in build-environment.txt; browser Pyodide packages may differ and require network access on first launch.",
+  "official_poster_sha256": "4cb90aac55736afdd16e47f1b42c53d1ffa142de8c48ca8617f7b4b511f9dbeb"
+}

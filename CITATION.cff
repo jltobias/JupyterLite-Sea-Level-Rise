@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite the learning repository and the original AIDS 2024 poster."
+title: "Coastal Futures: JupyterLite Sea-Level Rise, Health Facilities and PEPFAR"
+type: software
+version: 1.0.0
+date-released: 2026-10-04
+authors:
+  - family-names: Tobias
+    given-names: James L.
+repository-code: https://github.com/jltobias/JupyterLite-Sea-Level-Rise
+url: https://jltobias.github.io/JupyterLite-Sea-Level-Rise/
+license: MIT
+abstract: "An educational Jupyter Book and JupyterLite lab using published AIDS 2024 aggregate results and separately labeled fictional facility data. See LICENSES.md for non-software materials."

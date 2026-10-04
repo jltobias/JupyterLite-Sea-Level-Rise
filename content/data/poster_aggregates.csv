@@ -1,0 +1,265 @@
+scenario,year,country,city,scope,facilities_2023,potentially_flooded,percent,longitude,latitude,source_table
+RCP 2.6,2030,Cote d'Ivoire,Abidjan,city,34,1,2.9412,-4.03,5.33,1
+RCP 2.6,2040,Cote d'Ivoire,Abidjan,city,34,1,2.9412,-4.03,5.33,1
+RCP 2.6,2050,Cote d'Ivoire,Abidjan,city,34,1,2.9412,-4.03,5.33,1
+RCP 2.6,2060,Cote d'Ivoire,Abidjan,city,34,1,2.9412,-4.03,5.33,1
+RCP 2.6,2070,Cote d'Ivoire,Abidjan,city,34,28,82.3529,-4.03,5.33,1
+RCP 2.6,2080,Cote d'Ivoire,Abidjan,city,34,28,82.3529,-4.03,5.33,1
+RCP 2.6,2090,Cote d'Ivoire,Abidjan,city,34,28,82.3529,-4.03,5.33,1
+RCP 2.6,2100,Cote d'Ivoire,Abidjan,city,34,28,82.3529,-4.03,5.33,1
+RCP 2.6,2030,Cote d'Ivoire,Abidjan,district,137,11,8.0292,-4.03,5.33,1
+RCP 2.6,2040,Cote d'Ivoire,Abidjan,district,137,11,8.0292,-4.03,5.33,1
+RCP 2.6,2050,Cote d'Ivoire,Abidjan,district,137,12,8.7591,-4.03,5.33,1
+RCP 2.6,2060,Cote d'Ivoire,Abidjan,district,137,12,8.7591,-4.03,5.33,1
+RCP 2.6,2070,Cote d'Ivoire,Abidjan,district,137,39,28.4672,-4.03,5.33,1
+RCP 2.6,2080,Cote d'Ivoire,Abidjan,district,137,41,29.927,-4.03,5.33,1
+RCP 2.6,2090,Cote d'Ivoire,Abidjan,district,137,42,30.6569,-4.03,5.33,1
+RCP 2.6,2100,Cote d'Ivoire,Abidjan,district,137,43,31.3869,-4.03,5.33,1
+RCP 2.6,2030,Thailand,Bangkok,city,19,13,68.4211,100.5,13.75,1
+RCP 2.6,2040,Thailand,Bangkok,city,19,13,68.4211,100.5,13.75,1
+RCP 2.6,2050,Thailand,Bangkok,city,19,13,68.4211,100.5,13.75,1
+RCP 2.6,2060,Thailand,Bangkok,city,19,14,73.6842,100.5,13.75,1
+RCP 2.6,2070,Thailand,Bangkok,city,19,14,73.6842,100.5,13.75,1
+RCP 2.6,2080,Thailand,Bangkok,city,19,14,73.6842,100.5,13.75,1
+RCP 2.6,2090,Thailand,Bangkok,city,19,14,73.6842,100.5,13.75,1
+RCP 2.6,2100,Thailand,Bangkok,city,19,15,78.9474,100.5,13.75,1
+RCP 2.6,2030,Thailand,Bangkok,district,24,18,75.0,100.5,13.75,1
+RCP 2.6,2040,Thailand,Bangkok,district,24,18,75.0,100.5,13.75,1
+RCP 2.6,2050,Thailand,Bangkok,district,24,18,75.0,100.5,13.75,1
+RCP 2.6,2060,Thailand,Bangkok,district,24,19,79.1667,100.5,13.75,1
+RCP 2.6,2070,Thailand,Bangkok,district,24,19,79.1667,100.5,13.75,1
+RCP 2.6,2080,Thailand,Bangkok,district,24,19,79.1667,100.5,13.75,1
+RCP 2.6,2090,Thailand,Bangkok,district,24,19,79.1667,100.5,13.75,1
+RCP 2.6,2100,Thailand,Bangkok,district,24,20,83.3333,100.5,13.75,1
+RCP 2.6,2030,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,1
+RCP 2.6,2040,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,1
+RCP 2.6,2050,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,1
+RCP 2.6,2060,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,1
+RCP 2.6,2070,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,1
+RCP 2.6,2080,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,1
+RCP 2.6,2090,Vietnam,Ho Chi Minh City,city,44,11,25.0,106.7,10.78,1
+RCP 2.6,2100,Vietnam,Ho Chi Minh City,city,44,18,40.9091,106.7,10.78,1
+RCP 2.6,2030,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,1
+RCP 2.6,2040,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,1
+RCP 2.6,2050,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,1
+RCP 2.6,2060,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,1
+RCP 2.6,2070,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,1
+RCP 2.6,2080,Vietnam,Ho Chi Minh City,district,54,3,5.5556,106.7,10.78,1
+RCP 2.6,2090,Vietnam,Ho Chi Minh City,district,54,15,27.7778,106.7,10.78,1
+RCP 2.6,2100,Vietnam,Ho Chi Minh City,district,54,23,42.5926,106.7,10.78,1
+RCP 2.6,2030,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,1
+RCP 2.6,2040,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,1
+RCP 2.6,2050,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,1
+RCP 2.6,2060,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,1
+RCP 2.6,2070,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,1
+RCP 2.6,2080,Nigeria,Lagos,city,73,1,1.3699,3.39,6.45,1
+RCP 2.6,2090,Nigeria,Lagos,city,73,5,6.8493,3.39,6.45,1
+RCP 2.6,2100,Nigeria,Lagos,city,73,7,9.589,3.39,6.45,1
+RCP 2.6,2030,Nigeria,Lagos,district,94,1,1.0638,3.39,6.45,1
+RCP 2.6,2040,Nigeria,Lagos,district,94,1,1.0638,3.39,6.45,1
+RCP 2.6,2050,Nigeria,Lagos,district,94,2,2.1277,3.39,6.45,1
+RCP 2.6,2060,Nigeria,Lagos,district,94,2,2.1277,3.39,6.45,1
+RCP 2.6,2070,Nigeria,Lagos,district,94,2,2.1277,3.39,6.45,1
+RCP 2.6,2080,Nigeria,Lagos,district,94,6,6.383,3.39,6.45,1
+RCP 2.6,2090,Nigeria,Lagos,district,94,11,11.7021,3.39,6.45,1
+RCP 2.6,2100,Nigeria,Lagos,district,94,16,17.0213,3.39,6.45,1
+RCP 2.6,2030,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,1
+RCP 2.6,2040,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,1
+RCP 2.6,2050,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,1
+RCP 2.6,2060,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,1
+RCP 2.6,2070,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,1
+RCP 2.6,2080,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,1
+RCP 2.6,2090,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,1
+RCP 2.6,2100,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,1
+RCP 2.6,2030,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,1
+RCP 2.6,2040,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,1
+RCP 2.6,2050,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,1
+RCP 2.6,2060,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,1
+RCP 2.6,2070,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,1
+RCP 2.6,2080,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,1
+RCP 2.6,2090,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,1
+RCP 2.6,2100,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,1
+RCP 2.6,2030,All,All PEPFAR,portfolio,25873,108,0.4174,,,1
+RCP 2.6,2040,All,All PEPFAR,portfolio,25873,116,0.4483,,,1
+RCP 2.6,2050,All,All PEPFAR,portfolio,25873,130,0.5025,,,1
+RCP 2.6,2060,All,All PEPFAR,portfolio,25873,139,0.5372,,,1
+RCP 2.6,2070,All,All PEPFAR,portfolio,25873,182,0.7034,,,1
+RCP 2.6,2080,All,All PEPFAR,portfolio,25873,206,0.7962,,,1
+RCP 2.6,2090,All,All PEPFAR,portfolio,25873,253,0.9779,,,1
+RCP 2.6,2100,All,All PEPFAR,portfolio,25873,321,1.2407,,,1
+RCP 4.5,2030,Cote d'Ivoire,Abidjan,city,34,1,2.9412,-4.03,5.33,2
+RCP 4.5,2040,Cote d'Ivoire,Abidjan,city,34,1,2.9412,-4.03,5.33,2
+RCP 4.5,2050,Cote d'Ivoire,Abidjan,city,34,1,2.9412,-4.03,5.33,2
+RCP 4.5,2060,Cote d'Ivoire,Abidjan,city,34,1,2.9412,-4.03,5.33,2
+RCP 4.5,2070,Cote d'Ivoire,Abidjan,city,34,28,82.3529,-4.03,5.33,2
+RCP 4.5,2080,Cote d'Ivoire,Abidjan,city,34,28,82.3529,-4.03,5.33,2
+RCP 4.5,2090,Cote d'Ivoire,Abidjan,city,34,28,82.3529,-4.03,5.33,2
+RCP 4.5,2100,Cote d'Ivoire,Abidjan,city,34,28,82.3529,-4.03,5.33,2
+RCP 4.5,2030,Cote d'Ivoire,Abidjan,district,137,11,8.0292,-4.03,5.33,2
+RCP 4.5,2040,Cote d'Ivoire,Abidjan,district,137,11,8.0292,-4.03,5.33,2
+RCP 4.5,2050,Cote d'Ivoire,Abidjan,district,137,12,8.7591,-4.03,5.33,2
+RCP 4.5,2060,Cote d'Ivoire,Abidjan,district,137,12,8.7591,-4.03,5.33,2
+RCP 4.5,2070,Cote d'Ivoire,Abidjan,district,137,39,28.4672,-4.03,5.33,2
+RCP 4.5,2080,Cote d'Ivoire,Abidjan,district,137,41,29.927,-4.03,5.33,2
+RCP 4.5,2090,Cote d'Ivoire,Abidjan,district,137,43,31.3869,-4.03,5.33,2
+RCP 4.5,2100,Cote d'Ivoire,Abidjan,district,137,43,31.3869,-4.03,5.33,2
+RCP 4.5,2030,Thailand,Bangkok,city,19,13,68.4211,100.5,13.75,2
+RCP 4.5,2040,Thailand,Bangkok,city,19,13,68.4211,100.5,13.75,2
+RCP 4.5,2050,Thailand,Bangkok,city,19,13,68.4211,100.5,13.75,2
+RCP 4.5,2060,Thailand,Bangkok,city,19,14,73.6842,100.5,13.75,2
+RCP 4.5,2070,Thailand,Bangkok,city,19,14,73.6842,100.5,13.75,2
+RCP 4.5,2080,Thailand,Bangkok,city,19,14,73.6842,100.5,13.75,2
+RCP 4.5,2090,Thailand,Bangkok,city,19,14,73.6842,100.5,13.75,2
+RCP 4.5,2100,Thailand,Bangkok,city,19,15,78.9474,100.5,13.75,2
+RCP 4.5,2030,Thailand,Bangkok,district,24,18,75.0,100.5,13.75,2
+RCP 4.5,2040,Thailand,Bangkok,district,24,18,75.0,100.5,13.75,2
+RCP 4.5,2050,Thailand,Bangkok,district,24,18,75.0,100.5,13.75,2
+RCP 4.5,2060,Thailand,Bangkok,district,24,19,79.1667,100.5,13.75,2
+RCP 4.5,2070,Thailand,Bangkok,district,24,19,79.1667,100.5,13.75,2
+RCP 4.5,2080,Thailand,Bangkok,district,24,19,79.1667,100.5,13.75,2
+RCP 4.5,2090,Thailand,Bangkok,district,24,19,79.1667,100.5,13.75,2
+RCP 4.5,2100,Thailand,Bangkok,district,24,20,83.3333,100.5,13.75,2
+RCP 4.5,2030,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,2
+RCP 4.5,2040,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,2
+RCP 4.5,2050,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,2
+RCP 4.5,2060,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,2
+RCP 4.5,2070,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,2
+RCP 4.5,2080,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,2
+RCP 4.5,2090,Vietnam,Ho Chi Minh City,city,44,12,27.2727,106.7,10.78,2
+RCP 4.5,2100,Vietnam,Ho Chi Minh City,city,44,19,43.1818,106.7,10.78,2
+RCP 4.5,2030,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,2
+RCP 4.5,2040,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,2
+RCP 4.5,2050,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,2
+RCP 4.5,2060,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,2
+RCP 4.5,2070,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,2
+RCP 4.5,2080,Vietnam,Ho Chi Minh City,district,54,3,5.5556,106.7,10.78,2
+RCP 4.5,2090,Vietnam,Ho Chi Minh City,district,54,16,29.6296,106.7,10.78,2
+RCP 4.5,2100,Vietnam,Ho Chi Minh City,district,54,24,44.4444,106.7,10.78,2
+RCP 4.5,2030,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,2
+RCP 4.5,2040,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,2
+RCP 4.5,2050,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,2
+RCP 4.5,2060,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,2
+RCP 4.5,2070,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,2
+RCP 4.5,2080,Nigeria,Lagos,city,73,1,1.3699,3.39,6.45,2
+RCP 4.5,2090,Nigeria,Lagos,city,73,5,6.8493,3.39,6.45,2
+RCP 4.5,2100,Nigeria,Lagos,city,73,7,9.589,3.39,6.45,2
+RCP 4.5,2030,Nigeria,Lagos,district,94,1,1.0638,3.39,6.45,2
+RCP 4.5,2040,Nigeria,Lagos,district,94,1,1.0638,3.39,6.45,2
+RCP 4.5,2050,Nigeria,Lagos,district,94,2,2.1277,3.39,6.45,2
+RCP 4.5,2060,Nigeria,Lagos,district,94,2,2.1277,3.39,6.45,2
+RCP 4.5,2070,Nigeria,Lagos,district,94,3,3.1915,3.39,6.45,2
+RCP 4.5,2080,Nigeria,Lagos,district,94,6,6.383,3.39,6.45,2
+RCP 4.5,2090,Nigeria,Lagos,district,94,12,12.766,3.39,6.45,2
+RCP 4.5,2100,Nigeria,Lagos,district,94,17,18.0851,3.39,6.45,2
+RCP 4.5,2030,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,2
+RCP 4.5,2040,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,2
+RCP 4.5,2050,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,2
+RCP 4.5,2060,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,2
+RCP 4.5,2070,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,2
+RCP 4.5,2080,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,2
+RCP 4.5,2090,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,2
+RCP 4.5,2100,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,2
+RCP 4.5,2030,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,2
+RCP 4.5,2040,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,2
+RCP 4.5,2050,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,2
+RCP 4.5,2060,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,2
+RCP 4.5,2070,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,2
+RCP 4.5,2080,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,2
+RCP 4.5,2090,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,2
+RCP 4.5,2100,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,2
+RCP 4.5,2030,All,All PEPFAR,portfolio,25873,107,0.4136,,,2
+RCP 4.5,2040,All,All PEPFAR,portfolio,25873,116,0.4483,,,2
+RCP 4.5,2050,All,All PEPFAR,portfolio,25873,130,0.5025,,,2
+RCP 4.5,2060,All,All PEPFAR,portfolio,25873,140,0.5411,,,2
+RCP 4.5,2070,All,All PEPFAR,portfolio,25873,183,0.7073,,,2
+RCP 4.5,2080,All,All PEPFAR,portfolio,25873,211,0.8155,,,2
+RCP 4.5,2090,All,All PEPFAR,portfolio,25873,258,0.9972,,,2
+RCP 4.5,2100,All,All PEPFAR,portfolio,25873,331,1.2793,,,2
+RCP 8.5,2030,Cote d'Ivoire,Abidjan,city,34,1,2.9412,-4.03,5.33,3
+RCP 8.5,2040,Cote d'Ivoire,Abidjan,city,34,1,2.9412,-4.03,5.33,3
+RCP 8.5,2050,Cote d'Ivoire,Abidjan,city,34,1,2.9412,-4.03,5.33,3
+RCP 8.5,2060,Cote d'Ivoire,Abidjan,city,34,1,2.9412,-4.03,5.33,3
+RCP 8.5,2070,Cote d'Ivoire,Abidjan,city,34,28,82.3529,-4.03,5.33,3
+RCP 8.5,2080,Cote d'Ivoire,Abidjan,city,34,28,82.3529,-4.03,5.33,3
+RCP 8.5,2090,Cote d'Ivoire,Abidjan,city,34,28,82.3529,-4.03,5.33,3
+RCP 8.5,2100,Cote d'Ivoire,Abidjan,city,34,28,82.3529,-4.03,5.33,3
+RCP 8.5,2030,Cote d'Ivoire,Abidjan,district,137,11,8.0292,-4.03,5.33,3
+RCP 8.5,2040,Cote d'Ivoire,Abidjan,district,137,12,8.7591,-4.03,5.33,3
+RCP 8.5,2050,Cote d'Ivoire,Abidjan,district,137,12,8.7591,-4.03,5.33,3
+RCP 8.5,2060,Cote d'Ivoire,Abidjan,district,137,12,8.7591,-4.03,5.33,3
+RCP 8.5,2070,Cote d'Ivoire,Abidjan,district,137,39,28.4672,-4.03,5.33,3
+RCP 8.5,2080,Cote d'Ivoire,Abidjan,district,137,42,30.6569,-4.03,5.33,3
+RCP 8.5,2090,Cote d'Ivoire,Abidjan,district,137,43,31.3869,-4.03,5.33,3
+RCP 8.5,2100,Cote d'Ivoire,Abidjan,district,137,44,32.1168,-4.03,5.33,3
+RCP 8.5,2030,Thailand,Bangkok,city,19,13,68.4211,100.5,13.75,3
+RCP 8.5,2040,Thailand,Bangkok,city,19,13,68.4211,100.5,13.75,3
+RCP 8.5,2050,Thailand,Bangkok,city,19,13,68.4211,100.5,13.75,3
+RCP 8.5,2060,Thailand,Bangkok,city,19,14,73.6842,100.5,13.75,3
+RCP 8.5,2070,Thailand,Bangkok,city,19,14,73.6842,100.5,13.75,3
+RCP 8.5,2080,Thailand,Bangkok,city,19,14,73.6842,100.5,13.75,3
+RCP 8.5,2090,Thailand,Bangkok,city,19,15,78.9474,100.5,13.75,3
+RCP 8.5,2100,Thailand,Bangkok,city,19,16,84.2105,100.5,13.75,3
+RCP 8.5,2030,Thailand,Bangkok,district,24,18,75.0,100.5,13.75,3
+RCP 8.5,2040,Thailand,Bangkok,district,24,18,75.0,100.5,13.75,3
+RCP 8.5,2050,Thailand,Bangkok,district,24,18,75.0,100.5,13.75,3
+RCP 8.5,2060,Thailand,Bangkok,district,24,19,79.1667,100.5,13.75,3
+RCP 8.5,2070,Thailand,Bangkok,district,24,19,79.1667,100.5,13.75,3
+RCP 8.5,2080,Thailand,Bangkok,district,24,19,79.1667,100.5,13.75,3
+RCP 8.5,2090,Thailand,Bangkok,district,24,20,83.3333,100.5,13.75,3
+RCP 8.5,2100,Thailand,Bangkok,district,24,21,87.5,100.5,13.75,3
+RCP 8.5,2030,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,3
+RCP 8.5,2040,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,3
+RCP 8.5,2050,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,3
+RCP 8.5,2060,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,3
+RCP 8.5,2070,Vietnam,Ho Chi Minh City,city,44,0,0.0,106.7,10.78,3
+RCP 8.5,2080,Vietnam,Ho Chi Minh City,city,44,6,13.6364,106.7,10.78,3
+RCP 8.5,2090,Vietnam,Ho Chi Minh City,city,44,15,34.0909,106.7,10.78,3
+RCP 8.5,2100,Vietnam,Ho Chi Minh City,city,44,28,63.6364,106.7,10.78,3
+RCP 8.5,2030,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,3
+RCP 8.5,2040,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,3
+RCP 8.5,2050,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,3
+RCP 8.5,2060,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,3
+RCP 8.5,2070,Vietnam,Ho Chi Minh City,district,54,2,3.7037,106.7,10.78,3
+RCP 8.5,2080,Vietnam,Ho Chi Minh City,district,54,10,18.5185,106.7,10.78,3
+RCP 8.5,2090,Vietnam,Ho Chi Minh City,district,54,20,37.037,106.7,10.78,3
+RCP 8.5,2100,Vietnam,Ho Chi Minh City,district,54,33,61.1111,106.7,10.78,3
+RCP 8.5,2030,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,3
+RCP 8.5,2040,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,3
+RCP 8.5,2050,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,3
+RCP 8.5,2060,Nigeria,Lagos,city,73,0,0.0,3.39,6.45,3
+RCP 8.5,2070,Nigeria,Lagos,city,73,1,1.3699,3.39,6.45,3
+RCP 8.5,2080,Nigeria,Lagos,city,73,3,4.1096,3.39,6.45,3
+RCP 8.5,2090,Nigeria,Lagos,city,73,7,9.589,3.39,6.45,3
+RCP 8.5,2100,Nigeria,Lagos,city,73,16,21.9178,3.39,6.45,3
+RCP 8.5,2030,Nigeria,Lagos,district,94,1,1.0638,3.39,6.45,3
+RCP 8.5,2040,Nigeria,Lagos,district,94,1,1.0638,3.39,6.45,3
+RCP 8.5,2050,Nigeria,Lagos,district,94,2,2.1277,3.39,6.45,3
+RCP 8.5,2060,Nigeria,Lagos,district,94,2,2.1277,3.39,6.45,3
+RCP 8.5,2070,Nigeria,Lagos,district,94,6,6.383,3.39,6.45,3
+RCP 8.5,2080,Nigeria,Lagos,district,94,9,9.5745,3.39,6.45,3
+RCP 8.5,2090,Nigeria,Lagos,district,94,15,15.9574,3.39,6.45,3
+RCP 8.5,2100,Nigeria,Lagos,district,94,27,28.7234,3.39,6.45,3
+RCP 8.5,2030,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,3
+RCP 8.5,2040,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,3
+RCP 8.5,2050,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,3
+RCP 8.5,2060,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,3
+RCP 8.5,2070,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,3
+RCP 8.5,2080,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,3
+RCP 8.5,2090,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,3
+RCP 8.5,2100,Kenya,Mombasa,city,28,0,0.0,39.67,-4.05,3
+RCP 8.5,2030,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,3
+RCP 8.5,2040,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,3
+RCP 8.5,2050,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,3
+RCP 8.5,2060,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,3
+RCP 8.5,2070,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,3
+RCP 8.5,2080,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,3
+RCP 8.5,2090,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,3
+RCP 8.5,2100,Kenya,Mombasa,district,90,0,0.0,39.67,-4.05,3
+RCP 8.5,2030,All,All PEPFAR,portfolio,25873,108,0.4174,,,3
+RCP 8.5,2040,All,All PEPFAR,portfolio,25873,118,0.4561,,,3
+RCP 8.5,2050,All,All PEPFAR,portfolio,25873,132,0.5102,,,3
+RCP 8.5,2060,All,All PEPFAR,portfolio,25873,148,0.572,,,3
+RCP 8.5,2070,All,All PEPFAR,portfolio,25873,198,0.7653,,,3
+RCP 8.5,2080,All,All PEPFAR,portfolio,25873,237,0.916,,,3
+RCP 8.5,2090,All,All PEPFAR,portfolio,25873,309,1.1943,,,3
+RCP 8.5,2100,All,All PEPFAR,portfolio,25873,412,1.5924,,,3

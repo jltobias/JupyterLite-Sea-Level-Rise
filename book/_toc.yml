@@ -1,0 +1,29 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Read the evidence
+    chapters:
+      - file: notebooks/00_start_here
+      - file: notebooks/01_read_the_poster
+      - file: notebooks/02_three_rcp_pathways
+      - file: notebooks/03_probability_and_thresholds
+  - caption: Build and interrogate the visuals
+    chapters:
+      - file: notebooks/04_data_and_geography
+      - file: notebooks/05_dashboard_lab
+      - file: notebooks/06_time_series_maps
+      - file: notebooks/07_three_dimensions
+      - file: notebooks/08_space_time_cube
+      - file: notebooks/09_hotspots
+  - caption: Plan, communicate and reproduce
+    chapters:
+      - file: notebooks/10_continuity_and_equity
+      - file: notebooks/11_capstone
+      - file: notebooks/12_reproduce_and_extend
+  - caption: Reference desk
+    chapters:
+      - file: glossary
+      - file: data-dictionary
+      - file: source-audit
+      - file: references
+      - file: teaching-guide

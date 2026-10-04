@@ -1,0 +1,193 @@
+facility_id,name,country,city,longitude,latitude,elevation_m,service_load,service_type,pepfar_demo,is_synthetic
+DEMO-01-001,Fictional clinic DEMO-01-001,Nigeria,Lagos,3.52817,6.39433,1.292,150,Primary care,0,1
+DEMO-01-002,Fictional clinic DEMO-01-002,Nigeria,Lagos,3.50257,6.50399,4.18,225,HIV services,1,1
+DEMO-01-003,Fictional clinic DEMO-01-003,Nigeria,Lagos,3.36722,6.36281,1.103,1200,Referral,1,1
+DEMO-01-004,Fictional clinic DEMO-01-004,Nigeria,Lagos,3.46692,6.44254,3.732,1775,Primary care,1,1
+DEMO-01-005,Fictional clinic DEMO-01-005,Nigeria,Lagos,3.49054,6.39749,1.316,2025,HIV services,0,1
+DEMO-01-006,Fictional clinic DEMO-01-006,Nigeria,Lagos,3.3969,6.51373,3.029,1575,Referral,1,1
+DEMO-01-007,Fictional clinic DEMO-01-007,Nigeria,Lagos,3.41449,6.49177,1.334,2575,Primary care,1,1
+DEMO-01-008,Fictional clinic DEMO-01-008,Nigeria,Lagos,3.46515,6.37043,3.224,2225,HIV services,1,1
+DEMO-01-009,Fictional clinic DEMO-01-009,Nigeria,Lagos,3.27436,6.38617,0.648,750,Referral,0,1
+DEMO-01-010,Fictional clinic DEMO-01-010,Nigeria,Lagos,3.44394,6.41595,2.896,2400,Primary care,1,1
+DEMO-01-011,Fictional clinic DEMO-01-011,Nigeria,Lagos,3.51727,6.37471,2.478,2125,HIV services,1,1
+DEMO-01-012,Fictional clinic DEMO-01-012,Nigeria,Lagos,3.50077,6.36975,1.368,1000,Referral,1,1
+DEMO-01-013,Fictional clinic DEMO-01-013,Nigeria,Lagos,3.51747,6.38149,0.481,1350,Primary care,0,1
+DEMO-01-014,Fictional clinic DEMO-01-014,Nigeria,Lagos,3.38693,6.52132,3.279,800,HIV services,1,1
+DEMO-01-015,Fictional clinic DEMO-01-015,Nigeria,Lagos,3.40171,6.36692,1.258,1475,Referral,1,1
+DEMO-01-016,Fictional clinic DEMO-01-016,Nigeria,Lagos,3.37227,6.52018,3.943,1600,Primary care,1,1
+DEMO-01-017,Fictional clinic DEMO-01-017,Nigeria,Lagos,3.42915,6.54775,3.494,1550,HIV services,0,1
+DEMO-01-018,Fictional clinic DEMO-01-018,Nigeria,Lagos,3.41879,6.35763,4.181,1925,Referral,1,1
+DEMO-01-019,Fictional clinic DEMO-01-019,Nigeria,Lagos,3.3133,6.351,0.609,425,Primary care,1,1
+DEMO-01-020,Fictional clinic DEMO-01-020,Nigeria,Lagos,3.40121,6.47634,2.355,100,HIV services,1,1
+DEMO-01-021,Fictional clinic DEMO-01-021,Nigeria,Lagos,3.32571,6.52176,0.523,425,Referral,0,1
+DEMO-01-022,Fictional clinic DEMO-01-022,Nigeria,Lagos,3.33742,6.44141,4.374,1075,Primary care,1,1
+DEMO-01-023,Fictional clinic DEMO-01-023,Nigeria,Lagos,3.26288,6.4635,3.278,2675,HIV services,1,1
+DEMO-01-024,Fictional clinic DEMO-01-024,Nigeria,Lagos,3.50896,6.46436,3.777,650,Referral,1,1
+DEMO-02-001,Fictional clinic DEMO-02-001,Nigeria,Port Harcourt,7.0821,4.74702,2.136,2750,Primary care,0,1
+DEMO-02-002,Fictional clinic DEMO-02-002,Nigeria,Port Harcourt,7.126,4.72167,3.214,2775,HIV services,1,1
+DEMO-02-003,Fictional clinic DEMO-02-003,Nigeria,Port Harcourt,7.09061,4.77152,3.285,2275,Referral,1,1
+DEMO-02-004,Fictional clinic DEMO-02-004,Nigeria,Port Harcourt,6.97569,4.89425,1.574,400,Primary care,1,1
+DEMO-02-005,Fictional clinic DEMO-02-005,Nigeria,Port Harcourt,6.9644,4.77064,4.511,1350,HIV services,0,1
+DEMO-02-006,Fictional clinic DEMO-02-006,Nigeria,Port Harcourt,6.96721,4.75413,0.865,2075,Referral,1,1
+DEMO-02-007,Fictional clinic DEMO-02-007,Nigeria,Port Harcourt,7.13933,4.73073,1.578,550,Primary care,1,1
+DEMO-02-008,Fictional clinic DEMO-02-008,Nigeria,Port Harcourt,7.01299,4.86539,2.426,900,HIV services,1,1
+DEMO-02-009,Fictional clinic DEMO-02-009,Nigeria,Port Harcourt,6.94771,4.88188,4.348,2225,Referral,0,1
+DEMO-02-010,Fictional clinic DEMO-02-010,Nigeria,Port Harcourt,6.99872,4.88123,1.008,900,Primary care,1,1
+DEMO-02-011,Fictional clinic DEMO-02-011,Nigeria,Port Harcourt,7.03634,4.91958,3.212,350,HIV services,1,1
+DEMO-02-012,Fictional clinic DEMO-02-012,Nigeria,Port Harcourt,7.13042,4.79176,0.482,1825,Referral,1,1
+DEMO-02-013,Fictional clinic DEMO-02-013,Nigeria,Port Harcourt,6.98761,4.91274,2.734,1525,Primary care,0,1
+DEMO-02-014,Fictional clinic DEMO-02-014,Nigeria,Port Harcourt,7.0982,4.80603,2.004,650,HIV services,1,1
+DEMO-02-015,Fictional clinic DEMO-02-015,Nigeria,Port Harcourt,7.09217,4.77997,3.623,1950,Referral,1,1
+DEMO-02-016,Fictional clinic DEMO-02-016,Nigeria,Port Harcourt,7.12772,4.77253,3.707,200,Primary care,1,1
+DEMO-02-017,Fictional clinic DEMO-02-017,Nigeria,Port Harcourt,7.02479,4.83795,2.448,1875,HIV services,0,1
+DEMO-02-018,Fictional clinic DEMO-02-018,Nigeria,Port Harcourt,7.05429,4.85535,3.258,175,Referral,1,1
+DEMO-02-019,Fictional clinic DEMO-02-019,Nigeria,Port Harcourt,7.10577,4.76929,4.423,2025,Primary care,1,1
+DEMO-02-020,Fictional clinic DEMO-02-020,Nigeria,Port Harcourt,7.08476,4.72604,1.219,1800,HIV services,1,1
+DEMO-02-021,Fictional clinic DEMO-02-021,Nigeria,Port Harcourt,7.00635,4.82527,3.171,2000,Referral,0,1
+DEMO-02-022,Fictional clinic DEMO-02-022,Nigeria,Port Harcourt,7.05122,4.74886,0.998,2950,Primary care,1,1
+DEMO-02-023,Fictional clinic DEMO-02-023,Nigeria,Port Harcourt,6.98882,4.73657,4.138,2675,HIV services,1,1
+DEMO-02-024,Fictional clinic DEMO-02-024,Nigeria,Port Harcourt,6.9306,4.77719,3.603,1700,Referral,1,1
+DEMO-03-001,Fictional clinic DEMO-03-001,Mozambique,Maputo,32.4667,-26.05008,1.546,1350,Primary care,0,1
+DEMO-03-002,Fictional clinic DEMO-03-002,Mozambique,Maputo,32.68111,-25.99648,1.055,1150,HIV services,1,1
+DEMO-03-003,Fictional clinic DEMO-03-003,Mozambique,Maputo,32.57405,-26.06763,2.426,1000,Referral,1,1
+DEMO-03-004,Fictional clinic DEMO-03-004,Mozambique,Maputo,32.50669,-25.89935,3.957,2300,Primary care,1,1
+DEMO-03-005,Fictional clinic DEMO-03-005,Mozambique,Maputo,32.64493,-26.03687,0.462,2275,HIV services,0,1
+DEMO-03-006,Fictional clinic DEMO-03-006,Mozambique,Maputo,32.44711,-25.87172,3.612,1450,Referral,1,1
+DEMO-03-007,Fictional clinic DEMO-03-007,Mozambique,Maputo,32.56651,-26.04216,3.41,2350,Primary care,1,1
+DEMO-03-008,Fictional clinic DEMO-03-008,Mozambique,Maputo,32.49545,-25.9327,1.684,2550,HIV services,1,1
+DEMO-03-009,Fictional clinic DEMO-03-009,Mozambique,Maputo,32.60839,-25.92463,1.675,1375,Referral,0,1
+DEMO-03-010,Fictional clinic DEMO-03-010,Mozambique,Maputo,32.52557,-26.04476,1.792,2975,Primary care,1,1
+DEMO-03-011,Fictional clinic DEMO-03-011,Mozambique,Maputo,32.65973,-26.05759,1.034,1675,HIV services,1,1
+DEMO-03-012,Fictional clinic DEMO-03-012,Mozambique,Maputo,32.71392,-25.98324,3.852,300,Referral,1,1
+DEMO-03-013,Fictional clinic DEMO-03-013,Mozambique,Maputo,32.44056,-25.92404,4.291,1975,Primary care,0,1
+DEMO-03-014,Fictional clinic DEMO-03-014,Mozambique,Maputo,32.68083,-26.01682,0.657,2750,HIV services,1,1
+DEMO-03-015,Fictional clinic DEMO-03-015,Mozambique,Maputo,32.62215,-26.03535,4.41,1675,Referral,1,1
+DEMO-03-016,Fictional clinic DEMO-03-016,Mozambique,Maputo,32.49029,-25.87547,3.926,1275,Primary care,1,1
+DEMO-03-017,Fictional clinic DEMO-03-017,Mozambique,Maputo,32.61316,-26.0591,2.499,1925,HIV services,0,1
+DEMO-03-018,Fictional clinic DEMO-03-018,Mozambique,Maputo,32.58319,-26.00671,0.812,1050,Referral,1,1
+DEMO-03-019,Fictional clinic DEMO-03-019,Mozambique,Maputo,32.6865,-25.97418,1.946,2175,Primary care,1,1
+DEMO-03-020,Fictional clinic DEMO-03-020,Mozambique,Maputo,32.68315,-25.94582,2.569,375,HIV services,1,1
+DEMO-03-021,Fictional clinic DEMO-03-021,Mozambique,Maputo,32.56999,-25.93142,3.933,2500,Referral,0,1
+DEMO-03-022,Fictional clinic DEMO-03-022,Mozambique,Maputo,32.62283,-26.02885,3.382,2900,Primary care,1,1
+DEMO-03-023,Fictional clinic DEMO-03-023,Mozambique,Maputo,32.57926,-25.97557,0.581,525,HIV services,1,1
+DEMO-03-024,Fictional clinic DEMO-03-024,Mozambique,Maputo,32.6593,-26.00275,0.408,1625,Referral,1,1
+DEMO-04-001,Fictional clinic DEMO-04-001,Mozambique,Beira,34.74021,-19.76158,4.241,875,Primary care,0,1
+DEMO-04-002,Fictional clinic DEMO-04-002,Mozambique,Beira,34.83414,-19.84788,4.457,1900,HIV services,1,1
+DEMO-04-003,Fictional clinic DEMO-04-003,Mozambique,Beira,34.94827,-19.84968,1.392,1900,Referral,1,1
+DEMO-04-004,Fictional clinic DEMO-04-004,Mozambique,Beira,34.87508,-19.83128,2.397,1075,Primary care,1,1
+DEMO-04-005,Fictional clinic DEMO-04-005,Mozambique,Beira,34.94447,-19.83031,3.361,1450,HIV services,0,1
+DEMO-04-006,Fictional clinic DEMO-04-006,Mozambique,Beira,34.89446,-19.85441,2.097,675,Referral,1,1
+DEMO-04-007,Fictional clinic DEMO-04-007,Mozambique,Beira,34.82486,-19.74644,2.183,2350,Primary care,1,1
+DEMO-04-008,Fictional clinic DEMO-04-008,Mozambique,Beira,34.9954,-19.89344,3.286,425,HIV services,1,1
+DEMO-04-009,Fictional clinic DEMO-04-009,Mozambique,Beira,34.77688,-19.80395,3.957,1625,Referral,0,1
+DEMO-04-010,Fictional clinic DEMO-04-010,Mozambique,Beira,34.89655,-19.88177,2.578,125,Primary care,1,1
+DEMO-04-011,Fictional clinic DEMO-04-011,Mozambique,Beira,34.8605,-19.83957,3.135,2000,HIV services,1,1
+DEMO-04-012,Fictional clinic DEMO-04-012,Mozambique,Beira,34.72981,-19.87778,4.43,1225,Referral,1,1
+DEMO-04-013,Fictional clinic DEMO-04-013,Mozambique,Beira,34.74992,-19.93795,4.336,1450,Primary care,0,1
+DEMO-04-014,Fictional clinic DEMO-04-014,Mozambique,Beira,34.78648,-19.87601,2.481,225,HIV services,1,1
+DEMO-04-015,Fictional clinic DEMO-04-015,Mozambique,Beira,34.99093,-19.83366,2.195,750,Referral,1,1
+DEMO-04-016,Fictional clinic DEMO-04-016,Mozambique,Beira,34.84585,-19.75647,0.778,850,Primary care,1,1
+DEMO-04-017,Fictional clinic DEMO-04-017,Mozambique,Beira,34.98107,-19.84553,4.222,2725,HIV services,0,1
+DEMO-04-018,Fictional clinic DEMO-04-018,Mozambique,Beira,34.79055,-19.87449,1.813,2875,Referral,1,1
+DEMO-04-019,Fictional clinic DEMO-04-019,Mozambique,Beira,34.92631,-19.91994,2.692,2650,Primary care,1,1
+DEMO-04-020,Fictional clinic DEMO-04-020,Mozambique,Beira,34.80429,-19.83754,1.703,1475,HIV services,1,1
+DEMO-04-021,Fictional clinic DEMO-04-021,Mozambique,Beira,34.74409,-19.76556,4.652,600,Referral,0,1
+DEMO-04-022,Fictional clinic DEMO-04-022,Mozambique,Beira,34.82337,-19.85966,3.634,2775,Primary care,1,1
+DEMO-04-023,Fictional clinic DEMO-04-023,Mozambique,Beira,34.90458,-19.81507,3.782,1850,HIV services,1,1
+DEMO-04-024,Fictional clinic DEMO-04-024,Mozambique,Beira,34.88564,-19.77383,4.62,2350,Referral,1,1
+DEMO-05-001,Fictional clinic DEMO-05-001,Thailand,Bangkok,100.45921,13.80896,3.049,2475,Primary care,0,1
+DEMO-05-002,Fictional clinic DEMO-05-002,Thailand,Bangkok,100.46928,13.67326,3.661,1100,HIV services,1,1
+DEMO-05-003,Fictional clinic DEMO-05-003,Thailand,Bangkok,100.6319,13.8054,3.548,1825,Referral,1,1
+DEMO-05-004,Fictional clinic DEMO-05-004,Thailand,Bangkok,100.50294,13.65452,2.463,2150,Primary care,1,1
+DEMO-05-005,Fictional clinic DEMO-05-005,Thailand,Bangkok,100.46818,13.67309,1.177,2800,HIV services,0,1
+DEMO-05-006,Fictional clinic DEMO-05-006,Thailand,Bangkok,100.38825,13.69823,2.709,1700,Referral,1,1
+DEMO-05-007,Fictional clinic DEMO-05-007,Thailand,Bangkok,100.53971,13.80962,4.227,2100,Primary care,1,1
+DEMO-05-008,Fictional clinic DEMO-05-008,Thailand,Bangkok,100.63133,13.66119,3.811,2600,HIV services,1,1
+DEMO-05-009,Fictional clinic DEMO-05-009,Thailand,Bangkok,100.53108,13.76549,1.472,2875,Referral,0,1
+DEMO-05-010,Fictional clinic DEMO-05-010,Thailand,Bangkok,100.37958,13.72518,3.294,825,Primary care,1,1
+DEMO-05-011,Fictional clinic DEMO-05-011,Thailand,Bangkok,100.45961,13.76241,3.559,1325,HIV services,1,1
+DEMO-05-012,Fictional clinic DEMO-05-012,Thailand,Bangkok,100.36239,13.74192,1.625,1625,Referral,1,1
+DEMO-05-013,Fictional clinic DEMO-05-013,Thailand,Bangkok,100.42457,13.72508,0.813,1450,Primary care,0,1
+DEMO-05-014,Fictional clinic DEMO-05-014,Thailand,Bangkok,100.49916,13.71905,2.728,1175,HIV services,1,1
+DEMO-05-015,Fictional clinic DEMO-05-015,Thailand,Bangkok,100.54326,13.7062,1.656,1025,Referral,1,1
+DEMO-05-016,Fictional clinic DEMO-05-016,Thailand,Bangkok,100.42771,13.7909,3.885,1925,Primary care,1,1
+DEMO-05-017,Fictional clinic DEMO-05-017,Thailand,Bangkok,100.46664,13.68095,2.785,2600,HIV services,0,1
+DEMO-05-018,Fictional clinic DEMO-05-018,Thailand,Bangkok,100.60824,13.65971,1.524,2375,Referral,1,1
+DEMO-05-019,Fictional clinic DEMO-05-019,Thailand,Bangkok,100.39263,13.65306,4.109,1200,Primary care,1,1
+DEMO-05-020,Fictional clinic DEMO-05-020,Thailand,Bangkok,100.43087,13.7817,2.466,2050,HIV services,1,1
+DEMO-05-021,Fictional clinic DEMO-05-021,Thailand,Bangkok,100.39393,13.77915,2.577,400,Referral,0,1
+DEMO-05-022,Fictional clinic DEMO-05-022,Thailand,Bangkok,100.41868,13.81526,4.609,2425,Primary care,1,1
+DEMO-05-023,Fictional clinic DEMO-05-023,Thailand,Bangkok,100.5016,13.65433,2.472,150,HIV services,1,1
+DEMO-05-024,Fictional clinic DEMO-05-024,Thailand,Bangkok,100.58862,13.70312,3.802,1300,Referral,1,1
+DEMO-06-001,Fictional clinic DEMO-06-001,Thailand,Samut Prakan,100.61447,13.59015,4.116,1450,Primary care,0,1
+DEMO-06-002,Fictional clinic DEMO-06-002,Thailand,Samut Prakan,100.47607,13.65222,3.412,575,HIV services,1,1
+DEMO-06-003,Fictional clinic DEMO-06-003,Thailand,Samut Prakan,100.56835,13.53435,2.364,2600,Referral,1,1
+DEMO-06-004,Fictional clinic DEMO-06-004,Thailand,Samut Prakan,100.64874,13.53517,1.696,1475,Primary care,1,1
+DEMO-06-005,Fictional clinic DEMO-06-005,Thailand,Samut Prakan,100.67213,13.62628,2.035,825,HIV services,0,1
+DEMO-06-006,Fictional clinic DEMO-06-006,Thailand,Samut Prakan,100.59382,13.58051,2.173,950,Referral,1,1
+DEMO-06-007,Fictional clinic DEMO-06-007,Thailand,Samut Prakan,100.62716,13.68005,4.318,2950,Primary care,1,1
+DEMO-06-008,Fictional clinic DEMO-06-008,Thailand,Samut Prakan,100.55412,13.57084,3.398,1625,HIV services,1,1
+DEMO-06-009,Fictional clinic DEMO-06-009,Thailand,Samut Prakan,100.57939,13.53955,1.734,1675,Referral,0,1
+DEMO-06-010,Fictional clinic DEMO-06-010,Thailand,Samut Prakan,100.5502,13.59197,1.478,1650,Primary care,1,1
+DEMO-06-011,Fictional clinic DEMO-06-011,Thailand,Samut Prakan,100.72925,13.69114,1.898,1700,HIV services,1,1
+DEMO-06-012,Fictional clinic DEMO-06-012,Thailand,Samut Prakan,100.65983,13.5456,1.192,2525,Referral,1,1
+DEMO-06-013,Fictional clinic DEMO-06-013,Thailand,Samut Prakan,100.68213,13.61454,1.308,1475,Primary care,0,1
+DEMO-06-014,Fictional clinic DEMO-06-014,Thailand,Samut Prakan,100.51541,13.57106,0.823,2475,HIV services,1,1
+DEMO-06-015,Fictional clinic DEMO-06-015,Thailand,Samut Prakan,100.62015,13.61497,3.331,1900,Referral,1,1
+DEMO-06-016,Fictional clinic DEMO-06-016,Thailand,Samut Prakan,100.68415,13.65235,0.558,500,Primary care,1,1
+DEMO-06-017,Fictional clinic DEMO-06-017,Thailand,Samut Prakan,100.56789,13.65198,3.056,2775,HIV services,0,1
+DEMO-06-018,Fictional clinic DEMO-06-018,Thailand,Samut Prakan,100.46932,13.61094,2.92,2600,Referral,1,1
+DEMO-06-019,Fictional clinic DEMO-06-019,Thailand,Samut Prakan,100.61092,13.55239,2.311,2000,Primary care,1,1
+DEMO-06-020,Fictional clinic DEMO-06-020,Thailand,Samut Prakan,100.58361,13.68683,1.9,1950,HIV services,1,1
+DEMO-06-021,Fictional clinic DEMO-06-021,Thailand,Samut Prakan,100.73497,13.66499,2.382,2000,Referral,0,1
+DEMO-06-022,Fictional clinic DEMO-06-022,Thailand,Samut Prakan,100.48924,13.69228,2.939,2050,Primary care,1,1
+DEMO-06-023,Fictional clinic DEMO-06-023,Thailand,Samut Prakan,100.69867,13.58651,2.033,350,HIV services,1,1
+DEMO-06-024,Fictional clinic DEMO-06-024,Thailand,Samut Prakan,100.73748,13.54222,1.777,1500,Referral,1,1
+DEMO-07-001,Fictional clinic DEMO-07-001,Kenya,Mombasa,39.76496,-3.98357,0.837,2150,Primary care,0,1
+DEMO-07-002,Fictional clinic DEMO-07-002,Kenya,Mombasa,39.53303,-4.13602,1.022,300,HIV services,1,1
+DEMO-07-003,Fictional clinic DEMO-07-003,Kenya,Mombasa,39.53358,-4.0388,2.827,2075,Referral,1,1
+DEMO-07-004,Fictional clinic DEMO-07-004,Kenya,Mombasa,39.69544,-4.05591,1.44,625,Primary care,1,1
+DEMO-07-005,Fictional clinic DEMO-07-005,Kenya,Mombasa,39.75643,-4.04342,4.487,2275,HIV services,0,1
+DEMO-07-006,Fictional clinic DEMO-07-006,Kenya,Mombasa,39.63531,-4.09104,1.924,1300,Referral,1,1
+DEMO-07-007,Fictional clinic DEMO-07-007,Kenya,Mombasa,39.68285,-3.95258,2.046,125,Primary care,1,1
+DEMO-07-008,Fictional clinic DEMO-07-008,Kenya,Mombasa,39.6235,-4.09313,1.6,350,HIV services,1,1
+DEMO-07-009,Fictional clinic DEMO-07-009,Kenya,Mombasa,39.6537,-4.09455,1.378,875,Referral,0,1
+DEMO-07-010,Fictional clinic DEMO-07-010,Kenya,Mombasa,39.61764,-4.12893,0.755,1625,Primary care,1,1
+DEMO-07-011,Fictional clinic DEMO-07-011,Kenya,Mombasa,39.70246,-3.95104,2.374,1425,HIV services,1,1
+DEMO-07-012,Fictional clinic DEMO-07-012,Kenya,Mombasa,39.63511,-3.95637,2.993,625,Referral,1,1
+DEMO-07-013,Fictional clinic DEMO-07-013,Kenya,Mombasa,39.5713,-4.1497,2.348,200,Primary care,0,1
+DEMO-07-014,Fictional clinic DEMO-07-014,Kenya,Mombasa,39.60828,-4.02969,2.336,1250,HIV services,1,1
+DEMO-07-015,Fictional clinic DEMO-07-015,Kenya,Mombasa,39.78993,-3.99386,0.935,150,Referral,1,1
+DEMO-07-016,Fictional clinic DEMO-07-016,Kenya,Mombasa,39.76227,-4.10215,3.848,350,Primary care,1,1
+DEMO-07-017,Fictional clinic DEMO-07-017,Kenya,Mombasa,39.56815,-3.96087,4.391,2350,HIV services,0,1
+DEMO-07-018,Fictional clinic DEMO-07-018,Kenya,Mombasa,39.65883,-4.14678,2.227,2100,Referral,1,1
+DEMO-07-019,Fictional clinic DEMO-07-019,Kenya,Mombasa,39.66725,-4.14968,2.593,2750,Primary care,1,1
+DEMO-07-020,Fictional clinic DEMO-07-020,Kenya,Mombasa,39.72635,-4.09491,1.75,2000,HIV services,1,1
+DEMO-07-021,Fictional clinic DEMO-07-021,Kenya,Mombasa,39.59816,-3.99984,4.009,1650,Referral,0,1
+DEMO-07-022,Fictional clinic DEMO-07-022,Kenya,Mombasa,39.77282,-3.95739,4.592,675,Primary care,1,1
+DEMO-07-023,Fictional clinic DEMO-07-023,Kenya,Mombasa,39.74254,-3.95987,1.17,275,HIV services,1,1
+DEMO-07-024,Fictional clinic DEMO-07-024,Kenya,Mombasa,39.56775,-4.1285,2.416,1300,Referral,1,1
+DEMO-08-001,Fictional clinic DEMO-08-001,Cote d'Ivoire,Abidjan,-4.0142,5.35968,0.884,1875,Primary care,0,1
+DEMO-08-002,Fictional clinic DEMO-08-002,Cote d'Ivoire,Abidjan,-4.04868,5.39196,1.708,900,HIV services,1,1
+DEMO-08-003,Fictional clinic DEMO-08-003,Cote d'Ivoire,Abidjan,-4.15854,5.40434,3.377,425,Referral,1,1
+DEMO-08-004,Fictional clinic DEMO-08-004,Cote d'Ivoire,Abidjan,-4.12189,5.40989,2.427,1800,Primary care,1,1
+DEMO-08-005,Fictional clinic DEMO-08-005,Cote d'Ivoire,Abidjan,-3.95222,5.37056,1.629,475,HIV services,0,1
+DEMO-08-006,Fictional clinic DEMO-08-006,Cote d'Ivoire,Abidjan,-4.05541,5.32664,0.496,275,Referral,1,1
+DEMO-08-007,Fictional clinic DEMO-08-007,Cote d'Ivoire,Abidjan,-4.00631,5.30489,2.202,2450,Primary care,1,1
+DEMO-08-008,Fictional clinic DEMO-08-008,Cote d'Ivoire,Abidjan,-4.13943,5.27573,2.499,900,HIV services,1,1
+DEMO-08-009,Fictional clinic DEMO-08-009,Cote d'Ivoire,Abidjan,-4.00345,5.26303,1.503,2000,Referral,0,1
+DEMO-08-010,Fictional clinic DEMO-08-010,Cote d'Ivoire,Abidjan,-4.05139,5.42438,3.091,2425,Primary care,1,1
+DEMO-08-011,Fictional clinic DEMO-08-011,Cote d'Ivoire,Abidjan,-4.09346,5.3219,0.421,1800,HIV services,1,1
+DEMO-08-012,Fictional clinic DEMO-08-012,Cote d'Ivoire,Abidjan,-4.08167,5.29838,1.161,2650,Referral,1,1
+DEMO-08-013,Fictional clinic DEMO-08-013,Cote d'Ivoire,Abidjan,-4.10067,5.40893,1.329,650,Primary care,0,1
+DEMO-08-014,Fictional clinic DEMO-08-014,Cote d'Ivoire,Abidjan,-4.10513,5.41064,3.828,2700,HIV services,1,1
+DEMO-08-015,Fictional clinic DEMO-08-015,Cote d'Ivoire,Abidjan,-3.97064,5.23803,3.534,1500,Referral,1,1
+DEMO-08-016,Fictional clinic DEMO-08-016,Cote d'Ivoire,Abidjan,-4.01854,5.38558,3.727,2150,Primary care,1,1
+DEMO-08-017,Fictional clinic DEMO-08-017,Cote d'Ivoire,Abidjan,-3.99468,5.26654,2.913,1925,HIV services,0,1
+DEMO-08-018,Fictional clinic DEMO-08-018,Cote d'Ivoire,Abidjan,-3.93237,5.29574,1.391,2425,Referral,1,1
+DEMO-08-019,Fictional clinic DEMO-08-019,Cote d'Ivoire,Abidjan,-4.02863,5.28169,4.663,1375,Primary care,1,1
+DEMO-08-020,Fictional clinic DEMO-08-020,Cote d'Ivoire,Abidjan,-4.11753,5.29217,3.606,400,HIV services,1,1
+DEMO-08-021,Fictional clinic DEMO-08-021,Cote d'Ivoire,Abidjan,-3.97066,5.41253,2.215,225,Referral,0,1
+DEMO-08-022,Fictional clinic DEMO-08-022,Cote d'Ivoire,Abidjan,-4.03733,5.40109,2.056,2850,Primary care,1,1
+DEMO-08-023,Fictional clinic DEMO-08-023,Cote d'Ivoire,Abidjan,-4.00097,5.34877,4.669,1075,HIV services,1,1
+DEMO-08-024,Fictional clinic DEMO-08-024,Cote d'Ivoire,Abidjan,-3.98381,5.26682,4.223,2100,Referral,1,1

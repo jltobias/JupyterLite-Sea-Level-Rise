@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Coastal Futures | PEPFAR learning dashboard</title><link rel="stylesheet" href="style.css">
+<script defer src="../assets/plotly.min.js"></script><script defer src="app.js"></script></head>
+<body><a class="skip" href="#visual">Skip to visualization</a>
+<header><div><a class="brand" href="../index.html">COASTAL FUTURES <span>/ LEARNING LAB</span></a><h1>Keep care within reach.</h1><p>Explore the AIDS 2024 poster, then investigate how coastal exposure changes over time.</p></div><a class="book-link" href="../book/intro.html">Read the book ↗</a></header>
+<main><div class="notice" id="notice" role="status">Loading public poster data…</div>
+<div class="toolbar"><label>Evidence layer<select id="dataset"><option value="poster">Published poster aggregates</option><option value="synthetic">Fictional facility lab</option></select></label><div class="scenarios" role="group" aria-label="RCP scenario"><button data-scenario="RCP 2.6" aria-pressed="true">RCP 2.6</button><button data-scenario="RCP 4.5" aria-pressed="false">RCP 4.5</button><button data-scenario="RCP 8.5" aria-pressed="false">RCP 8.5</button></div><button id="reset">Reset filters</button></div>
+<div class="workspace"><aside aria-label="Dashboard slicers"><h2>Explore a question</h2>
+<label id="scopeLabel">Geographic reporting unit<select id="scope"><option value="portfolio">All PEPFAR portfolio</option><option value="city">Published cities</option><option value="district">Published districts</option></select></label>
+<label>Country<select id="country"></select></label><label>City<select id="city"></select></label>
+<label id="serviceLabel" hidden>Fictional service type<select id="service"><option>All</option><option>Primary care</option><option>HIV services</option><option>Referral</option></select></label>
+<label id="supportLabel" class="check" hidden><input id="supported" type="checkbox"> Hypothetical PEPFAR support only</label>
+<label>Year <output id="yearOut" for="year">2030</output><input id="year" type="range" min="2030" max="2100" step="10" value="2030"></label>
+<button id="play" aria-label="Play decade animation">▶ Play decades</button>
+<label id="thresholdLabel" hidden>Annual probability threshold <output id="thresholdOut">10%</output><input id="threshold" type="range" min="1" max="99" step="1" value="10"></label>
+<p class="hint" id="filterHint"></p><button id="download">Download selected rows ↓</button><p class="hint">CSV exports include the active scenario, year and evidence layer. No real facility records are distributed.</p>
+</aside><section class="results" aria-label="Results"><div class="cards" aria-live="polite"><article><span id="label1">Facilities in portfolio</span><strong id="card1">—</strong></article><article><span id="label2">Potentially flooded</span><strong id="card2">—</strong></article><article><span id="label3">Share of denominator</span><strong id="card3">—</strong></article><article><span id="label4">Reporting year</span><strong id="card4">—</strong></article></div>
+<div class="views" role="group" aria-label="Visualization"><button data-view="map" aria-pressed="true">2D map</button><button data-view="bars" aria-pressed="false">3D geography</button><button data-view="cube" aria-pressed="false">Space–time cube</button><button data-view="terrain" aria-pressed="false">Fictional 3D coast</button></div>
+<figure><div id="visual" tabindex="0" role="img" aria-label="Interactive geographic visualization"></div><figcaption id="mapCaption"></figcaption></figure>
+<div class="chart-grid"><figure><div id="series" role="img" aria-label="Exposure time series for all three scenarios"></div><figcaption>Scenario comparison uses the same geographic and service filters across all years. The vertical rule marks the selected year.</figcaption></figure><figure><div id="composition" role="img" aria-label="Exposure comparison by city"></div><figcaption id="barCaption"></figcaption></figure></div>
+<section class="table-panel"><div class="table-head"><h2 id="tableTitle">Published line listing</h2><label>Find a row<input id="search" type="search" placeholder="City or fictional ID"></label></div><p class="hint">Search narrows the listing only; cards and charts retain the cohort above.</p><div class="table-scroll"><table id="listing"><thead></thead><tbody></tbody></table></div><p id="tableCount" class="hint"></p></section>
+</section></div>
+<footer>Source: <a href="https://plus.iasociety.org/sites/default/files/2024-09/e-poster_755.pdf">Tobias et al., AIDS 2024, THPEF698</a> · <a href="../book/references.html">Sources and rights</a> · Made with Natural Earth · Teaching software, not a validated flood forecast.</footer></main></body></html>

@@ -1,0 +1,8 @@
+{
+  "asset": "continuity-comic.png",
+  "created": "2026-10-04",
+  "mode": "built-in image_gen tool",
+  "prompt": "Use case: illustration-story. Create a polished three-panel educational comic for a Jupyter Book about coastal health-service resilience. Wide landscape, crisp editorial illustration, accessible teal/ocean blue/warm coral palette, calm respectful tone. A fictional coastal community clinic and diverse health workers, no real locations, no institutional logos. Panel 1: elevated ocean and storm water approach a clinic, caption exactly '1. Hazard'. Panel 2: clinic itself remains dry but the access road is flooded; a health worker and community member consider access, caption exactly '2. Exposure'. Panel 3: health workers use an elevated safe route, backup power and medicine supplies at a second clinic, caption exactly '3. Continuity'. Overall small title exactly 'A dry clinic can still be cut off'. Make causal progression clear without depicting suffering, patients' records or identifying details. This is a conceptual illustration, not a flood map or scientific projection. Save image as project-bound teaching art.",
+  "description": "Conceptual AI-generated teaching comic. No real locations, people or measured hazard extents.",
+  "license": "CC0-1.0 to the extent applicable rights are held by contributors"
+}

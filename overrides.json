@@ -1,0 +1,4 @@
+{
+  "@jupyterlab/apputils-extension:themes": {"theme": "JupyterLab Light"},
+  "@jupyterlab/notebook-extension:tracker": {"codeCellConfig": {"lineNumbers": true}, "windowingMode": "none"}
+}
