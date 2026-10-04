@@ -28,6 +28,7 @@ jobs:
         run: |
           python -m http.server 8769 --directory _site --bind 127.0.0.1 > /tmp/coastal-server.log 2>&1 &
           python scripts/browser_smoke.py --url http://127.0.0.1:8769
+          python scripts/lite_smoke.py --url http://127.0.0.1:8769
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

@@ -24,7 +24,7 @@ The book includes **13 notebooks**, **264 public poster aggregate rows**, and a 
 
 ## Reading and running
 
-This Jupyter Book provides saved outputs and interactive browser dashboards. Each notebook also has a **Run in JupyterLite** link. In JupyterLite choose **Run → Run All Cells**. Python runs in your browser through Pyodide; the first launch downloads the runtime and packages. Modern Chrome, Edge or Firefox is recommended. The 3D views need WebGL; the tables and 2D charts provide alternatives.
+This Jupyter Book provides saved outputs and interactive browser dashboards. Each notebook also has a **Run in JupyterLite** link. In JupyterLite choose **Run → Run All Cells**. If a kernel chooser appears, select **Python (Pyodide)** and press **Select**. Python runs in your browser through Pyodide; the first launch downloads the runtime and packages. Modern Chrome, Edge or Firefox is recommended. The 3D views need WebGL; the tables and 2D charts provide alternatives.
 
 Edits live in browser storage. Download notebooks and CSVs to preserve work; clearing browser storage can erase edits. The read-only dashboard bundles its chart library and basemap locally. JupyterLite's initial runtime/package downloads require network access; this is not a fully offline kernel distribution.
 

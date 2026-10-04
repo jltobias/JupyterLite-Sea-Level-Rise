@@ -37,8 +37,13 @@ def main():
             for c in n.cells:
                 if c.cell_type=='code':c.outputs=[];c.execution_count=None
             n.metadata.pop('widgets',None)
+            # Desktop execution uses python3; Lite's installed kernel is named python.
+            n.metadata.kernelspec={'name':'python','display_name':'Python (Pyodide)','language':'python'}
             nbformat.write(n,path)
         run(sys.executable,'-c','from jupyterlite_core.app import main; main()','build','--contents',lite,'--output-dir',site/'lite')
+        # Markdown can render before Lite's virtual-file service worker is ready.
+        # Its ../assets URLs resolve from /lite/lab/, so provide that static route too.
+        shutil.copytree(ROOT/'content/assets',site/'lite/assets',dirs_exist_ok=True)
         run(sys.executable,'-c','from jupyterlite_core.app import main; main()','check','--output-dir',site/'lite')
     print('Static site ready:',site,flush=True)
 

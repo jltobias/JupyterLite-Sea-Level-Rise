@@ -14,6 +14,7 @@ def main():
     required=['index.html','dashboard/index.html','dashboard/app.js','book/intro.html',
               'book/glossary.html','book/data-dictionary.html','book/references.html',
               'lite/lab/index.html','lite/jupyter-lite.json','assets/plotly.min.js',
+              'lite/assets/continuity-comic.png',
               'assets/scenario-walkthrough.mp4','assets/scenario-walkthrough.vtt',
               'data/poster_aggregates.csv','data/synthetic_facilities.csv']
     errors=[f'Missing {p}' for p in required if not (SITE/p).exists()]
@@ -30,6 +31,8 @@ def main():
     assert len(notebooks)==13
     for path in notebooks:
         n=nbformat.read(path,as_version=4);nbformat.validate(n)
+        lite=nbformat.read(SITE/'lite/files/notebooks'/path.name,as_version=4)
+        assert lite.metadata.kernelspec.name=='python',f'Wrong browser kernel: {path.name}'
         for c in n.cells:
             if c.cell_type=='code':
                 assert c.execution_count is not None, f'Unexecuted cell: {path.name}'
