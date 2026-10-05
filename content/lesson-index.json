@@ -63,5 +63,10 @@
     "slug": "12_reproduce_and_extend",
     "title": "Reproduce, audit and extend the study responsibly",
     "minutes": 40
+  },
+  {
+    "slug": "13_powerbi_in_browser",
+    "title": "Open the original Power BI report in the browser",
+    "minutes": 30
   }
 ]

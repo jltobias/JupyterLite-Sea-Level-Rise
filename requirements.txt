@@ -16,3 +16,4 @@ pytest>=8,<10
 imageio>=2.35,<3
 imageio-ffmpeg==0.6.0
 Pillow>=11,<13
+python-power-bi==0.1.2

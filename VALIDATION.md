@@ -1,5 +1,19 @@
 # Validation record
 
+## Power BI chapter added 2026-10-05
+
+The repository now contains 14 notebooks. Chapter 13 executed successfully in desktop Python and in a real JupyterLite/Pyodide browser kernel with `python-power-bi==0.1.2`. All 19 unit tests passed (the original six plus 13 Power BI metadata/URL cases). The book built with warnings treated as errors, and 25 authored/book HTML pages passed internal-link and asset checks.
+
+The browser check verified the actual package's metadata exercise, the unconnected default, URL rejection, the original RCP 8.5 page selection, and the iframe/new-tab integration. Power BI requests were intercepted with an explicitly labeled mock frame. **This does not verify a real tenant login or original-report rendering.** Those checks require a published report URL and an authorized Power BI account, neither supplied for this addition. Default runs never request credentials, upload the PBIX or contact Power BI. The historical chapter checks below were recorded on 2026-10-04; CI reruns them with the new chapter.
+
+To test only the new browser notebook:
+
+```bash
+python scripts/lite_smoke.py --url http://127.0.0.1:8769 --notebooks 13_powerbi_in_browser
+```
+
+## Original learning-site validation
+
 Validated locally on **2026-10-04**, Python 3.13, Chromium through Playwright, Jupyter Book 1.0.4.post1, JupyterLite 0.8.5 and Pyodide kernel extension 0.8.6. The GitHub workflow repeats the build/data/browser checks before publishing. See the Actions badge in the README for the current deployment result.
 
 | Check | Result |

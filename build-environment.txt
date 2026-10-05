@@ -1,4 +1,4 @@
-# Local development and validation inventory, 2026-10-04; not a cross-platform lockfile.
+# Local development and validation inventory, 2026-10-05; not a cross-platform lockfile.
 accessible-pygments==0.0.5
 alabaster==0.7.16
 anyio==4.15.1
@@ -17,6 +17,7 @@ click==8.5.0
 colorama==0.4.6
 comm==0.2.3
 contourpy==1.4.0
+cryptography==50.0.2
 cycler==0.12.1
 debugpy==1.8.22
 defusedxml==0.7.1
@@ -67,6 +68,7 @@ matplotlib-inline==0.2.2
 mdit-py-plugins==0.6.1
 mdurl==0.1.2
 mistune==3.3.4
+msal==1.39.0
 myst-nb==1.4.0
 myst-parser==3.0.1
 narwhals==2.26.0
@@ -96,6 +98,7 @@ pycparser==3.0
 pydata-sphinx-theme==0.17.1
 pyee==13.0.1
 Pygments==2.21.0
+PyJWT==2.15.1
 pymupdf==1.28.2
 pyparsing==3.3.3
 pypdf==6.19.0
@@ -103,6 +106,7 @@ pyshp==3.1.6
 pytest==9.1.1
 python-dateutil==2.9.0.post0
 python-json-logger==4.2.0
+python-power-bi==0.1.2
 python-pptx==1.0.2
 pywinpty==3.0.5
 PyYAML==6.0.3

@@ -9,6 +9,10 @@ book/notebooks/
 book/data/
 book/assets/
 book/coastlab.py
+book/powerbi_bridge.py
+logs/
+.env
+power_bi_state.jsonc
 tmp/
 *.pbix
 *.pbip

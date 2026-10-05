@@ -12,6 +12,8 @@
 | IPCC numeric reference facts | Source attribution documented; IPCC report rights retained | Cite AR5 WGI SPM Table SPM.2; follow IPCC policy for report/figure reuse |
 | Natural Earth v5.1.2 land | Public domain | No mandatory credit; repository voluntarily credits Natural Earth |
 | Bundled Plotly.js | MIT with retained upstream notices | Preserve license and third-party notices |
+| python-power-bi 0.1.2 | MIT, Alex Reed (2020) | Preserve [upstream notice](licenses/python-power-bi-MIT.txt); this license does not cover Power BI service or report data |
+| PBIX page catalog | Original report rights retained | Page identifiers/captions/order only, included for the requested integration; no underlying report data distributed |
 | Original PEPFAR site data, PBIX/PBIP, workbooks, CoastalDEM/PAT products | Not distributed, not licensed by this repository | Obtain provider/data-owner authorization and governing terms |
 
 New licenses do not override rights in source materials. See [full references and source rights](book/references.md). No agency, conference, author institution or data provider endorsement is implied by this educational adaptation.

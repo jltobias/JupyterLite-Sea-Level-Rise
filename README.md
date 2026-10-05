@@ -21,9 +21,9 @@ An interactive **Jupyter Book + JupyterLite** learning environment based on our 
 | Fictional 3D terrain scene | [Move the water plane through time](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/dashboard/?view=terrain&dataset=synthetic) |
 | Reference desk | [Glossary](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/book/glossary.html) · [Data dictionary](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/book/data-dictionary.html) · [Source audit](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/book/source-audit.html) |
 
-No account, API key or local Python installation is required for learners. In JupyterLite wait for **Python (Pyodide) | Idle** in the status bar, then select **Run → Run All Cells**. If a kernel chooser appears, select **Python (Pyodide)** and press **Select**. The first launch downloads Pyodide and packages; allow a minute on a good connection. Notebook edits stay in browser storage until downloaded. The dashboard runs without Python. WebGL enables 3D views; 2D plots and tables provide alternatives. This deployment is not a fully offline Python distribution.
+The public teaching lessons and dashboard need no account, API key or local Python installation. Viewing the original Power BI report in chapter 13 requires its hosted URL and authorized Microsoft sign-in. In JupyterLite wait for **Python (Pyodide) | Idle** in the status bar, then select **Run → Run All Cells**. If a kernel chooser appears, select **Python (Pyodide)** and press **Select**. The first launch downloads Pyodide and packages; allow a minute on a good connection. Notebook edits stay in browser storage until downloaded. The dashboard runs without Python. WebGL enables 3D views; 2D plots and tables provide alternatives. This deployment is not a fully offline Python distribution.
 
-## Thirteen executable chapters
+## Fourteen executable chapters
 
 | # | Notebook / learning goal | Read | Run |
 |---|---|---|---|
@@ -40,12 +40,19 @@ No account, API key or local Python installation is required for learners. In Ju
 | 10 | Service networks, adaptation and equity | [Book](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/book/notebooks/10_continuity_and_equity.html) | [JupyterLite](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/lite/lab/index.html?path=notebooks/10_continuity_and_equity.ipynb) |
 | 11 | Capstone briefing with worked checks and rubric | [Book](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/book/notebooks/11_capstone.html) | [JupyterLite](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/lite/lab/index.html?path=notebooks/11_capstone.ipynb) |
 | 12 | Reproduction boundaries and approved-data extension | [Book](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/book/notebooks/12_reproduce_and_extend.html) | [JupyterLite](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/lite/lab/index.html?path=notebooks/12_reproduce_and_extend.ipynb) |
+| 13 | Original Power BI report: API metadata and browser viewer | [Book](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/book/notebooks/13_powerbi_in_browser.html) | [JupyterLite](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/lite/lab/index.html?path=notebooks/13_powerbi_in_browser.ipynb) |
 
 Every chapter includes objectives, executable examples, interpretation, a lab and a worked answer/check. The [teaching guide](book/teaching-guide.md) provides workshop routes and accessibility guidance. The visual collection includes 2D maps, 3D geographic stems, a fictional terrain scene, animated decade maps, space–time cubes, heatmaps, uncertainty plots, a service-network graph, a captioned MP4 and a sense-making comic.
 
 ![Conceptual comic showing why a dry clinic can still be isolated by a flooded road and how service continuity can be supported.](content/assets/continuity-comic.png)
 
 *AI-generated conceptual illustration, created with the built-in image-generation tool. [Exact prompt and provenance](content/assets/visual-provenance.json). Fictional people and places, not evidence of an event.*
+
+## Connect the original Power BI report
+
+[Chapter 13](https://jltobias.github.io/JupyterLite-Sea-Level-Rise/book/notebooks/13_powerbi_in_browser.html) uses [`python-power-bi==0.1.2`](https://pypi.org/project/python-power-bi/) for metadata and a [secure Microsoft viewer](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-embed-secure) for the original report. The package cannot render a local PBIX in JupyterLite. Paste the published report's **Website or portal** URL into the notebook and choose an RCP page. The default run exercises the actual package against labeled offline fixtures; no report is currently connected. Optional authenticated API discovery runs in local/server Python.
+
+The notebook also compares Microsoft's [`powerbiclient`](https://learn.microsoft.com/en-us/javascript/api/overview/powerbi/powerbi-jupyter), which embeds hosted reports, and [`PBIXRay`](https://pypi.org/project/pbixray/), which reads model data but does not render visuals. No PBIX, tokens or facility records are added to the public site. [Page catalog](content/data/powerbi-report.json) · [Integration helper](content/powerbi_bridge.py).
 
 ## Published evidence and fictional labs
 
@@ -70,6 +77,8 @@ The table below covers the inputs used or discussed. Full bibliographic details,
 |---|---|---|
 | AIDS 2024 poster | Tobias et al. (2024), THPEF698. [Official PDF](https://plus.iasociety.org/sites/default/files/2024-09/e-poster_755.pdf); [public transcription](content/data/poster_aggregates.csv) | No open license verified for composite poster. Original rights retained; cite authors/conference/table/link. Poster artwork and embedded figures excluded from repository licenses. Preview included at presenting author's request. |
 | Original PEPFAR facility portfolio / Power BI / PPTX | User-supplied source files inspected locally for schema and aggregate validation | Sensitive/provider-governed source data, not distributed or relicensed. Anonymized IDs do not make precise coordinates open data. Obtain data-owner authorization for additional releases. |
+| Power BI page catalog | 18 page names/captions/order from the supplied PBIX's `Report/Layout`, inspected 2026-10-05 | Descriptive metadata only; original report/data rights retained. No facility values, credentials or report binary included. |
+| python-power-bi 0.1.2 | Alex Reed; [PyPI](https://pypi.org/project/python-power-bi/), [upstream](https://github.com/areed1192/power-bi-python-api) | MIT; retain the [2020 Alex Reed notice](licenses/python-power-bi-MIT.txt). MSAL and requests retain their own licenses. Power BI service and report access have separate terms. |
 | Kopp et al. (2014) | *Probabilistic 21st and 22nd century sea-level projections at a global network of tide-gauge sites*, Earth's Future 2, 383–406. [DOI](https://doi.org/10.1002/2014EF000239) | Cite paper/DOI. No raw projection grids distributed; publisher and dataset terms apply. |
 | Muis et al. (2016) / GTSR | *A global reanalysis of storm surges and extreme sea levels*, Nature Communications 7, 11969. [DOI](https://doi.org/10.1038/ncomms11969), [4TU record](https://data.4tu.nl/articles/_/12712469/1) | Reference only. Cite paper and data version if used. Exact repository license/access must be verified before redistribution; record could not be independently opened during this build. |
 | CoastalDEM v2.1 | Kulp & Strauss (2021), Climate Central. [Version page](https://www.climatecentral.org/coastaldem-v2.1) | Product terms apply; not bundled. Cite authors/product/version and satisfy provider license. |
@@ -95,13 +104,13 @@ python -m venv .venv
 # Activate the environment; Windows: .venv\Scripts\Activate.ps1
 # macOS/Linux: source .venv/bin/activate
 python -m pip install -r requirements.txt
-python -m pytest tests/test_science.py -q
+python -m pytest tests -q
 python scripts/build.py
 python scripts/check_site.py
 python -m http.server 8000 --directory _site
 ```
 
-Open `http://localhost:8000`. The build executes all 13 notebooks, builds a Jupyter Book v1 site, assembles the dashboard and builds/checks JupyterLite. The **GitHub Actions** workflow publishes `_site/` to GitHub Pages after checks pass. Pages source must be **GitHub Actions**. [Deployment runs](https://github.com/jltobias/JupyterLite-Sea-Level-Rise/actions/workflows/publish.yml).
+Open `http://localhost:8000`. The build executes all 14 notebooks, builds a Jupyter Book v1 site, assembles the dashboard and builds/checks JupyterLite. The **GitHub Actions** workflow publishes `_site/` to GitHub Pages after checks pass. Pages source must be **GitHub Actions**. [Deployment runs](https://github.com/jltobias/JupyterLite-Sea-Level-Rise/actions/workflows/publish.yml).
 
 Rebuild authored lesson sources with `python scripts/make_notebooks.py`; regenerate fictional data with `python scripts/generate_data.py`; regenerate the public transcription with `python scripts/transcribe_poster.py`. None reads private study inputs. `scripts/generate_media.py` regenerates the original MP4/still/captions. After changing data or media, run `python scripts/update_provenance.py` to refresh integrity hashes. The optional authorized local workbook audit is documented in [source-audit.md](book/source-audit.md) and requires `openpyxl`.
 
@@ -110,10 +119,11 @@ For browser regression checks: install `playwright`, run `python -m playwright i
 ## Repository layout
 
 ```text
-content/notebooks/   13 executable chapters with saved outputs
+content/notebooks/   14 executable chapters with saved outputs
 content/data/        public aggregates, fictional fixtures, reference data, provenance
 content/assets/      poster preview, comic, local chart bundle, video and captions
 content/coastlab.py  shared transparent teaching calculations
+content/powerbi_bridge.py  report metadata and browser viewer helpers
 book/                Jupyter Book configuration, glossary, dictionary, sources
 dashboard/           standalone browser dashboard
 scripts/             generators, local audit, build and validation

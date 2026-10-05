@@ -20,7 +20,8 @@ def main():
             nbformat.write(notebook,path)
     for part in ['notebooks','data','assets']:
         shutil.copytree(ROOT/'content'/part,ROOT/'book'/part,dirs_exist_ok=True,ignore=shutil.ignore_patterns('__pycache__','my_public_briefing.csv'))
-    shutil.copy2(ROOT/'content/coastlab.py',ROOT/'book/coastlab.py')
+    for module in (ROOT/'content').glob('*.py'):
+        shutil.copy2(module,ROOT/'book'/module.name)
     run(sys.executable,'-c','from jupyter_book.cli.main import main; main()','build','book','--warningiserror','--keep-going')
     shutil.copytree(ROOT/'book/_build/html',site/'book',dirs_exist_ok=True)
     shutil.copytree(ROOT/'dashboard',site/'dashboard',dirs_exist_ok=True)

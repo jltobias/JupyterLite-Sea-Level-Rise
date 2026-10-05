@@ -53,3 +53,13 @@
 | 95–95–95 | Conditional testing, treatment and viral-suppression cascade targets, set for 2025 in the historical UNAIDS framework. The wider ending-AIDS agenda targets 2030. |
 
 Definitions are teaching summaries; source-specific metadata takes precedence when interpreting a dataset. See the [references](references.md) for IPCC, UNAIDS, Climate Central and SaTScan documentation.
+
+
+## Power BI integration terms
+
+- **PBIX:** Power BI Desktop report/model file; not executable browser code.
+- **Power BI Service:** Microsoft's hosted report and semantic-model platform.
+- **Secure embed:** An authenticated report viewer placed in another page; existing access rules still apply.
+- **Report page name:** Internal page identifier used in API calls and `pageName` links; distinct from a visible tab caption.
+- **python-power-bi:** Unofficial Python REST API wrapper used for metadata in chapter 13; not a report rendering engine.
+- **powerbiclient:** Microsoft's notebook widget package for embedding hosted Power BI reports; not a local PBIX renderer.

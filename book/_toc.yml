@@ -20,6 +20,7 @@ parts:
       - file: notebooks/10_continuity_and_equity
       - file: notebooks/11_capstone
       - file: notebooks/12_reproduce_and_extend
+      - file: notebooks/13_powerbi_in_browser
   - caption: Reference desk
     chapters:
       - file: glossary

@@ -19,7 +19,7 @@ jobs:
           python-version: '3.13'
           cache: pip
       - run: pip install -r requirements.txt
-      - run: python -m pytest tests/test_science.py -q
+      - run: python -m pytest tests -q
       - run: python scripts/build.py
       - run: python scripts/check_site.py
       - run: pip install playwright==1.63.0

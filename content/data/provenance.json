@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "inspected_date": "2026-10-04",
+  "version": "1.1.0",
+  "inspected_date": "2026-10-05",
   "sources": [
     {
       "id": "poster",
@@ -22,6 +22,13 @@
       "citation": "Natural Earth contributors, v5.1.2, 1:110m land",
       "transformation": "Unmodified GeoJSON; geometry only used in charts; not used for exposure classification.",
       "rights": "Public domain; voluntary attribution: Made with Natural Earth."
+    },
+    {
+      "id": "powerbi-page-metadata",
+      "url": "https://github.com/jltobias/JupyterLite-Sea-Level-Rise/blob/main/content/data/powerbi-report.json",
+      "citation": "User-supplied Prototype-July-8-2024.pbix, Report/Layout, inspected 2026-10-05",
+      "transformation": "Only 18 page names, captions and order extracted. No report data, coordinates or credentials; service URL remains unconfigured.",
+      "rights": "Original report rights retained; descriptive metadata for the requested integration; no report-data redistribution grant."
     },
     {
       "id": "synthetic",
@@ -55,6 +62,10 @@
     "content/data/poster_findings.csv": {
       "sha256": "2f67b02a56b319057741492290ec326e4aad272ce7c2dc990f58dba86bedbf4e",
       "bytes": 324
+    },
+    "content/data/powerbi-report.json": {
+      "sha256": "49f020af93f37a34c2a2135a23b72f704be2beaf28b1ca33b2c5e1dab25000eb",
+      "bytes": 2773
     },
     "content/data/synthetic_exposure.csv": {
       "sha256": "45ddab80b6cdc15aa78186e9b0b78518a64358fe3e4f6eb45d92865dd8abaaa3",

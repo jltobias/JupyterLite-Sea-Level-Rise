@@ -1,0 +1,101 @@
+{
+  "report_url": "",
+  "status": "Hosted report URL required; no connection configured",
+  "source_file": "Prototype-July-8-2024.pbix",
+  "source_member": "Report/Layout",
+  "inspected_date": "2026-10-05",
+  "description": "Page identifiers, captions and order only. No facility records, visual data or credentials. Verify against service metadata if the report pages change.",
+  "rights": "Source report rights retained; descriptive metadata included for the requested report integration. No license grant over report data.",
+  "pages": [
+    {
+      "name": "ReportSection5a2236feecdbc3ef5b29",
+      "displayName": "AIDS2024",
+      "ordinal": 0
+    },
+    {
+      "name": "ReportSection1481d945df66964ce7a8",
+      "displayName": "ABSTRACT TEXT",
+      "ordinal": 1
+    },
+    {
+      "name": "ReportSectiona6aed2b4b5e8d1fa5317",
+      "displayName": "ABSTRACT FIGURES",
+      "ordinal": 2
+    },
+    {
+      "name": "ReportSection80493d4f87e6c618353e",
+      "displayName": "ABSTRACT TABLES",
+      "ordinal": 3
+    },
+    {
+      "name": "ReportSection7751588e7c39975c68e2",
+      "displayName": "SUMMARY FINDINGS",
+      "ordinal": 4
+    },
+    {
+      "name": "ReportSectionf41e7f171c8e4bb8a90f",
+      "displayName": "HOW-TO-READ-RESULTS",
+      "ordinal": 5
+    },
+    {
+      "name": "ReportSection7f6c5ffb280e6f7c9c48",
+      "displayName": "BACKGROUND",
+      "ordinal": 6
+    },
+    {
+      "name": "ReportSection8eef8059935549f64ab4",
+      "displayName": "RESULTS RCP 2.6 (A)",
+      "ordinal": 7
+    },
+    {
+      "name": "ReportSection935447aae5c22d70ebd8",
+      "displayName": "RESULTS RCP 4.5 (B)",
+      "ordinal": 8
+    },
+    {
+      "name": "ReportSection053da660fb1b33e00c07",
+      "displayName": "RESULTS RCP 8.5 (C)",
+      "ordinal": 9
+    },
+    {
+      "name": "ReportSection9469b4419cdae7ed9906",
+      "displayName": "RESULTS SATSCAN ALL MODELS (A,B,C)",
+      "ordinal": 10
+    },
+    {
+      "name": "ReportSectionf155aa0ecec00080d212",
+      "displayName": "PIVOT TABLES",
+      "ordinal": 11
+    },
+    {
+      "name": "ReportSection47f7bb27ffde4974baa7",
+      "displayName": "DATA SOURCES",
+      "ordinal": 12
+    },
+    {
+      "name": "ReportSection2f16be540d843f533114",
+      "displayName": "POSTER PRESENTATION",
+      "ordinal": 13
+    },
+    {
+      "name": "ReportSection79129f9c4fefafdff765",
+      "displayName": "REFERENCES",
+      "ordinal": 14
+    },
+    {
+      "name": "ReportSectiond390dfb57dfb8d274a28",
+      "displayName": "CITATION",
+      "ordinal": 15
+    },
+    {
+      "name": "ReportSection573cb0961250a6f6edf6",
+      "displayName": "5X3 MATRIX",
+      "ordinal": 16
+    },
+    {
+      "name": "ReportSection0e284d7c595f86deb74b",
+      "displayName": "AYETORO, NIGERIA",
+      "ordinal": 17
+    }
+  ]
+}

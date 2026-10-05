@@ -14,7 +14,7 @@ An executable learning book based on **Tobias et al., “PEPFAR Adapts to Sea Le
 
 What could rising coastal water levels mean for continuity of HIV services? Work from the published evidence to progressively more demanding maps, interactive dashboards and modeling experiments. Every chapter has learning objectives, executable examples, a lab and a worked interpretation.
 
-The book includes **13 notebooks**, **264 public poster aggregate rows**, and a separate reproducible dataset of **192 fictional facilities × 3 scenarios × 9 decades**. The original sensitive site records and proprietary elevation/flood layers are not distributed.
+The book includes **14 notebooks**, **264 public poster aggregate rows**, and a separate reproducible dataset of **192 fictional facilities × 3 scenarios × 9 decades**. The original sensitive site records and proprietary elevation/flood layers are not distributed. Chapter 13 adds a connection notebook for the original hosted Power BI report; live viewing requires its service URL and authorized sign-in.
 
 ## Choose your route
 

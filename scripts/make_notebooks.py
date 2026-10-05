@@ -633,5 +633,7 @@ Describe how you would validate unique identifiers, coordinate ranges, vertical 
 **Deliverable:** A reproducibility manifest with input hashes, source versions, license/access conditions, settings, software versions and output checks. The bundled `provenance.json`, source audit and data dictionary provide a starting point.
 ''')])
 
+from powerbi_lesson import write_notebook as write_powerbi_notebook
+LESSONS.append(write_powerbi_notebook())
 (ROOT/'content/lesson-index.json').write_text(__import__('json').dumps([{'slug':s,'title':t,'minutes':m} for s,t,m in LESSONS],indent=2),encoding='utf-8')
 print(f'Authored {len(LESSONS)} notebooks.')

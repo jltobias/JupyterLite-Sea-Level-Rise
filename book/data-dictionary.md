@@ -83,3 +83,8 @@ With `t=(year-2020)/80`, `toy_slr_m=0.2t+(H-0.2)t²`, where H is 0.45/0.65/1.00 
 ## Aggregation rules
 
 Public cards sum one reporting scope at one scenario/year. Percentages use the ratio of sums, never an unweighted average of group percentages. Fictional cards count distinct facilities once. Service loads are summed only for sites above the chosen probability threshold and represent a hypothetical workload at those sites, not expected lost visits. Listing search does not alter the cohort; the UI says so. Blank/missing source values are not interpreted as zero risk.
+
+
+## Power BI integration metadata: `powerbi-report.json`
+
+This file stores the original report's page catalog, not facility data. `report_url` is empty until a hosted report is configured; an empty value means **not connected**. `source_file`, `source_member` and `inspected_date` identify the local source of the metadata. Each `pages` entry contains `name` (internal service page identifier), `displayName` (visible report-tab caption), and `ordinal` (zero-based source order). There are 18 pages, including three RCP results pages. Check this catalog against current service metadata if pages are recreated.
