@@ -1,6 +1,6 @@
 {
-  "report_url": "",
-  "status": "Hosted report URL required; no connection configured",
+  "report_url": "https://app.powerbigov.us/groups/312b8cb9-d32c-4790-a3d9-7e7cd2265369/reports/db370a53-0908-4850-ae54-ae90d5f57eab/ReportSection5a2236feecdbc3ef5b29",
+  "status": "Configured for Power BI US Government (GCC); Microsoft sign-in and report access required",
   "source_file": "Prototype-July-8-2024.pbix",
   "source_member": "Report/Layout",
   "inspected_date": "2026-10-05",
@@ -97,5 +97,6 @@
       "displayName": "AYETORO, NIGERIA",
       "ordinal": 17
     }
-  ]
+  ],
+  "report_url_source": "Provided directly by the user, 2026-10-05"
 }

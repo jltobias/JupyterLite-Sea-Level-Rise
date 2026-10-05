@@ -24,7 +24,7 @@ def main():
        'rights':'Public domain; voluntary attribution: Made with Natural Earth.'},
       {'id':'powerbi-page-metadata','url':'https://github.com/jltobias/JupyterLite-Sea-Level-Rise/blob/main/content/data/powerbi-report.json',
        'citation':'User-supplied Prototype-July-8-2024.pbix, Report/Layout, inspected 2026-10-05',
-       'transformation':'Only 18 page names, captions and order extracted. No report data, coordinates or credentials; service URL remains unconfigured.',
+       'transformation':'Only 18 page names, captions and order extracted. User-supplied GCC report URL configured. No report data, coordinates or credentials; viewing still requires Microsoft authorization.',
        'rights':'Original report rights retained; descriptive metadata for the requested integration; no report-data redistribution grant.'},
       {'id':'synthetic','url':'https://github.com/jltobias/JupyterLite-Sea-Level-Rise/blob/main/scripts/generate_data.py',
        'citation':'Coastal Futures teaching fixtures, seed 20240722, version 1.0.0',
@@ -35,7 +35,7 @@ def main():
     for directory in ['content/data','content/assets']:
         for p in sorted((ROOT/directory).iterdir()):
             if p.is_file() and p.name!='provenance.json':files[p.relative_to(ROOT).as_posix()]={'sha256':sha(p),'bytes':p.stat().st_size}
-    result={'version':'1.1.0','inspected_date':'2026-10-05','sources':sources,'files':files,
+    result={'version':'1.1.1','inspected_date':'2026-10-05','sources':sources,'files':files,
        'evidence_boundary':'Published poster aggregates, explicit reference facts, and separate fictional labs. No private facility data or proprietary hazard grids distributed.',
        'known_discrepancies':['RCP 2.6 narrative 2.8× versus table 321/108=2.9722…','Percentages recalculated from source counts','Original source field-name/typing anomalies documented without silent correction'],
        'runtime_note':'Desktop build dependencies recorded in build-environment.txt; browser Pyodide packages may differ and require network access on first launch.'}

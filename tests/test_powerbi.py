@@ -7,7 +7,7 @@ import pytest
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'content'))
 from powerbi_bridge import (report_config,MetadataFixture,DEMO_WORKSPACE,DEMO_REPORT,
-                            report_identity,secure_embed_url,embed_markup,ReadOnlyMetadataSession)
+                            report_identity,secure_embed_url,embed_markup,ReadOnlyMetadataSession,CLOUDS)
 from powerbi.reports import Reports
 
 REPORT_URL=f'https://app.powerbi.com/groups/{DEMO_WORKSPACE}/reports/{DEMO_REPORT}'
@@ -15,7 +15,8 @@ REPORT_URL=f'https://app.powerbi.com/groups/{DEMO_WORKSPACE}/reports/{DEMO_REPOR
 
 def test_real_package_metadata_methods_and_pbix_page_catalog():
     config=report_config()
-    assert not config['report_url']  # Public build must not pretend to be connected.
+    assert report_identity(config['report_url'])['host']=='app.powerbigov.us'
+    assert report_identity(config['report_url'])['report_id']=='db370a53-0908-4850-ae54-ae90d5f57eab'
     assert len(config['pages'])==18
     assert len({p['name'] for p in config['pages']})==18
     expected={'RESULTS RCP 2.6 (A)':'ReportSection8eef8059935549f64ab4',
@@ -54,7 +55,8 @@ def test_reject_unsupported_or_sensitive_links(url):
     with pytest.raises(ValueError):secure_embed_url(url)
 
 
-def test_live_transport_only_two_get_routes_and_no_redirects(monkeypatch):
+@pytest.mark.parametrize('host,api',[('app.powerbi.com','api.powerbi.com'),('app.powerbigov.us','api.powerbigov.us')])
+def test_live_transport_only_two_get_routes_and_no_redirects(monkeypatch,host,api):
     calls=[]
     class Reply:
         status_code=200
@@ -62,12 +64,22 @@ def test_live_transport_only_two_get_routes_and_no_redirects(monkeypatch):
     def get(url,**kwargs):
         calls.append((url,kwargs));return Reply()
     monkeypatch.setattr('requests.get',get)
-    session=ReadOnlyMetadataSession('test-token-not-a-credential',REPORT_URL)
+    session=ReadOnlyMetadataSession('test-token-not-a-credential',REPORT_URL.replace('app.powerbi.com',host))
     reports=Reports(session=session)
     reports.get_group_pages(group_id=DEMO_WORKSPACE,report_id=DEMO_REPORT)
-    assert calls[0][0]==f'https://api.powerbi.com/v1.0/myorg/groups/{DEMO_WORKSPACE}/reports/{DEMO_REPORT}/pages'
+    assert calls[0][0]==f'https://{api}/v1.0/myorg/groups/{DEMO_WORKSPACE}/reports/{DEMO_REPORT}/pages'
     assert calls[0][1]['allow_redirects'] is False
     assert calls[0][1]['timeout']==30
     with pytest.raises(ValueError):reports.delete_group_report(group_id=DEMO_WORKSPACE,report_id=DEMO_REPORT)
     with pytest.raises(ValueError):session.make_request('get','https://evil.test/')
     assert len(calls)==1
+
+
+def test_government_report_preserves_cloud_and_default_page():
+    configured=report_config()['report_url']
+    embedded=secure_embed_url(configured)
+    assert urlsplit(embedded).netloc=='app.powerbigov.us'
+    assert parse_qs(urlsplit(embedded).query)['pageName']==['ReportSection5a2236feecdbc3ef5b29']
+    assert CLOUDS['app.powerbigov.us']['authority']=='https://login.microsoftonline.com/'
+    assert CLOUDS['app.powerbigov.us']['scope']=='https://analysis.usgovcloudapi.net/powerbi/api/.default'
+    with pytest.raises(ValueError):secure_embed_url(configured.replace('app.powerbigov.us','app.powerbigov.us.evil.test'))

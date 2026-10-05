@@ -11,6 +11,16 @@ import sys
 CONFIG_PATH = Path(__file__).resolve().parent / 'data/powerbi-report.json'
 DEMO_WORKSPACE = '00000000-0000-0000-0000-000000000001'
 DEMO_REPORT = '00000000-0000-0000-0000-000000000002'
+CLOUDS = {
+    'app.powerbi.com': {
+        'name': 'Commercial', 'api': 'https://api.powerbi.com/v1.0/',
+        'authority': 'https://login.microsoftonline.com/',
+        'scope': 'https://analysis.windows.net/powerbi/api/.default'},
+    'app.powerbigov.us': {
+        'name': 'US Government (GCC)', 'api': 'https://api.powerbigov.us/v1.0/',
+        'authority': 'https://login.microsoftonline.com/',
+        'scope': 'https://analysis.usgovcloudapi.net/powerbi/api/.default'},
+}
 
 
 def report_config():
@@ -25,11 +35,11 @@ def _guid(value, label):
 
 
 def report_identity(report_url):
-    """Accept a commercial-cloud report link, never an anonymous publish-to-web link."""
+    """Accept a commercial/GCC report link, never an anonymous publish-to-web link."""
     parsed = urlsplit(report_url.strip())
-    if (parsed.scheme != 'https' or parsed.netloc.lower() != 'app.powerbi.com'
+    if (parsed.scheme != 'https' or parsed.netloc.lower() not in CLOUDS
             or parsed.username or parsed.password or parsed.fragment):
-        raise ValueError('Use an HTTPS report link on app.powerbi.com without credentials or fragments.')
+        raise ValueError('Use an HTTPS report link on app.powerbi.com or app.powerbigov.us without credentials or fragments.')
     query = parse_qs(parsed.query, keep_blank_values=True)
     if any(k.lower() in {'access_token', 'token', 'client_secret', 'code', 'id_token'} for k in query):
         raise ValueError('Paste a report URL, not a sign-in response or a token.')
@@ -45,7 +55,7 @@ def report_identity(report_url):
             raise ValueError('Use a /groups/.../reports/... link or the Website or portal /reportEmbed URL. Anonymous /view links are not used here.')
         group_id, report_id, path_page = match.groups()
         page_name = query.get('pageName', [path_page or ''])[0]
-    result = {'report_id': _guid(report_id, 'Report ID'),
+    result = {'host': parsed.netloc.lower(), 'report_id': _guid(report_id, 'Report ID'),
               'group_id': group_id if group_id in {'', 'me'} else _guid(group_id, 'Workspace ID'),
               'tenant_id': _guid(query['ctid'][0], 'Tenant ID') if query.get('ctid') else '',
               'page_name': page_name}
@@ -64,7 +74,7 @@ def secure_embed_url(report_url, page_name=None):
         query['ctid'] = info['tenant_id']
     if page:
         query['pageName'] = page
-    return 'https://app.powerbi.com/reportEmbed?' + urlencode(query)
+    return 'https://' + info['host'] + '/reportEmbed?' + urlencode(query)
 
 
 def embed_markup(report_url='', page_name=None):
@@ -89,7 +99,9 @@ def report_viewer(report_url='', pages=None):
     choices = [('Page from report URL / default page', None)] + [(p['displayName'], p['name']) for p in pages]
     page = widgets.Dropdown(options=choices, description='Report page:', layout=widgets.Layout(width='100%'))
     button = widgets.Button(description='View report', button_style='primary', icon='external-link')
-    status = widgets.HTML('<p><strong>Not connected.</strong> A published report URL is required. This is the original Power BI viewer, not the teaching dashboard.</p>')
+    initial_status = ('<strong>Report URL configured.</strong> Select View report; Microsoft sign-in and report permission are required.'
+                      if report_url.strip() else '<strong>Not connected.</strong> A published report URL is required.')
+    status = widgets.HTML('<p>' + initial_status + ' This opens the original Power BI viewer.</p>')
     output = widgets.Output(layout=widgets.Layout(width='100%'))
 
     def view(_):
@@ -138,13 +150,14 @@ class ReadOnlyMetadataSession:
         group = '' if info['group_id'] == 'me' else f'groups/{info["group_id"]}/'
         prefix = f'myorg/{group}reports/{info["report_id"]}'
         self._allowed = {prefix, prefix + '/pages'}
+        self._api_base = CLOUDS[info['host']]['api']
         self._token = access_token
 
     def make_request(self, method, endpoint, **kwargs):
         if method.lower() != 'get' or endpoint not in self._allowed or kwargs:
             raise ValueError('Only report and page metadata GET requests are allowed.')
         import requests
-        response = requests.get('https://api.powerbi.com/v1.0/' + endpoint,
+        response = requests.get(self._api_base + endpoint,
                                 headers={'Authorization': 'Bearer ' + self._token},
                                 timeout=30, allow_redirects=False)
         if response.status_code != 200:
@@ -161,9 +174,10 @@ def lookup_live_metadata(report_url, client_id, tenant_id):
     info = report_identity(report_url)
     if not info['group_id']:
         raise ValueError('Use a report workspace URL so the API can identify its workspace.')
+    cloud = CLOUDS[info['host']]
     app = msal.PublicClientApplication(_guid(client_id, 'Client ID'),
-                                      authority='https://login.microsoftonline.com/' + _guid(tenant_id, 'Tenant ID'))
-    flow = app.initiate_device_flow(scopes=['https://analysis.windows.net/powerbi/api/Report.Read.All'])
+                                      authority=cloud['authority'] + _guid(tenant_id, 'Tenant ID'))
+    flow = app.initiate_device_flow(scopes=[cloud['scope']])
     if 'user_code' not in flow:
         raise RuntimeError('Microsoft did not start device sign-in. Check app registration and tenant policy.')
     print(flow['message'], flush=True)

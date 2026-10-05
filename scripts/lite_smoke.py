@@ -22,6 +22,7 @@ def main():
                     powerbi_requests.append(route.request.url)
                     route.fulfill(status=200,content_type='text/html',body='<p>Mock Power BI frame for interface test</p>')
                 page.route('https://app.powerbi.com/**',mock_powerbi)
+                page.route('https://app.powerbigov.us/**',mock_powerbi)
             page.on('pageerror',lambda e:errors.append(str(e)))
             page.goto(args.url+f'/lite/lab/index.html?path=notebooks/{slug}.ipynb',wait_until='networkidle')
             page.get_by_role('tab',name=slug+'.ipynb',exact=True).click(timeout=60000)
@@ -54,17 +55,20 @@ def main():
                 expect(page.locator('.jp-Notebook:visible .jp-OutputArea-output').filter(has_text='Live API lookup disabled.')).to_be_attached(timeout=60000)
                 assert not powerbi_requests,'Default run must not contact Power BI'
                 address=page.get_by_placeholder('https://app.powerbi.com/groups/.../reports/...')
+                configured=json.loads((ROOT/'content/data/powerbi-report.json').read_text(encoding='utf-8'))['report_url']
+                expect(address).to_have_value(configured)
                 view_button=page.locator('.jp-Notebook:visible .widget-button').filter(has_text='View report')
                 address.fill('https://example.org/report')
                 view_button.click()
                 expect(page.get_by_role('alert')).to_contain_text('app.powerbi.com')
                 assert not powerbi_requests
-                address.fill('https://app.powerbi.com/groups/00000000-0000-0000-0000-000000000001/reports/00000000-0000-0000-0000-000000000002')
+                address.fill(configured)
                 page.locator('.jp-Notebook:visible .widget-dropdown select').select_option(label='RESULTS RCP 8.5 (C)')
                 view_button.click()
                 frame=page.frame_locator('iframe[title="Original AIDS 2024 Power BI report"]')
                 expect(frame.get_by_text('Mock Power BI frame for interface test')).to_be_visible(timeout=30000)
                 assert parse_qs(urlsplit(powerbi_requests[-1]).query)['pageName']==['ReportSection053da660fb1b33e00c07']
+                assert urlsplit(powerbi_requests[-1]).netloc=='app.powerbigov.us'
             assert not page.locator('.jp-OutputArea-error').count(),page.locator('.jp-OutputArea-error').all_text_contents()
             assert not errors,errors
             page.screenshot(path=str(out/(slug+'-lite.png')),full_page=True)

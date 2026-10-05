@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "inspected_date": "2026-10-05",
   "sources": [
     {
@@ -27,7 +27,7 @@
       "id": "powerbi-page-metadata",
       "url": "https://github.com/jltobias/JupyterLite-Sea-Level-Rise/blob/main/content/data/powerbi-report.json",
       "citation": "User-supplied Prototype-July-8-2024.pbix, Report/Layout, inspected 2026-10-05",
-      "transformation": "Only 18 page names, captions and order extracted. No report data, coordinates or credentials; service URL remains unconfigured.",
+      "transformation": "Only 18 page names, captions and order extracted. User-supplied GCC report URL configured. No report data, coordinates or credentials; viewing still requires Microsoft authorization.",
       "rights": "Original report rights retained; descriptive metadata for the requested integration; no report-data redistribution grant."
     },
     {
@@ -64,8 +64,8 @@
       "bytes": 324
     },
     "content/data/powerbi-report.json": {
-      "sha256": "49f020af93f37a34c2a2135a23b72f704be2beaf28b1ca33b2c5e1dab25000eb",
-      "bytes": 2773
+      "sha256": "d8882eb20baa60a4750841f7659a64329d5a9505340bb423197094044324f83d",
+      "bytes": 3026
     },
     "content/data/synthetic_exposure.csv": {
       "sha256": "45ddab80b6cdc15aa78186e9b0b78518a64358fe3e4f6eb45d92865dd8abaaa3",

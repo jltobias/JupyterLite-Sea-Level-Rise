@@ -21,7 +21,7 @@ def make_notebook():
 
     Learn what `python-power-bi` does, inspect the supplied report's page structure, and open the original interactive report with its RCP tabs, slicers, maps and cards.
 
-    **Connection status:** No Power BI Service URL was supplied with the PBIX. This notebook is ready to accept one; it does not claim the original report is already hosted or connected.
+    **Report configured:** [Open the original report in Power BI US Government](https://app.powerbigov.us/groups/312b8cb9-d32c-4790-a3d9-7e7cd2265369/reports/db370a53-0908-4850-ae54-ae90d5f57eab/ReportSection5a2236feecdbc3ef5b29). The notebook is prefilled with this supplied GCC report URL. Select **View report** after running the cells. Microsoft sign-in and permission on the report are still required; a configured link is not proof of an authenticated connection.
 
     Wait for **Python (Pyodide) | Idle**, then use **Run → Run All Cells**. First use downloads packages. The default run performs an offline metadata exercise and displays connection controls. It does not upload the PBIX or sign in automatically.
     '''), md('''
@@ -80,13 +80,15 @@ def make_notebook():
     '''), md('''
     ## 3. Publish once, then use the browser viewer
 
-    If the report is already in Power BI Service, copy **File → Embed report → Website or portal** (the URL, not the entire iframe), or its `/groups/.../reports/...` address. If it is not hosted yet, open the PBIX in Power BI Desktop, choose **Publish**, and select your approved workspace. See Microsoft's [publishing instructions](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-upload-desktop-files).
+    Your report is already linked below. To use a different hosted report, copy **File → Embed report → Website or portal** (the URL, not the entire iframe), or its `/groups/.../reports/...` address. To publish a new copy, open the PBIX in Power BI Desktop, choose **Publish**, and select your approved workspace. See Microsoft's [publishing instructions](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-upload-desktop-files).
 
     This study's facility data have provider access conditions. Use the authenticated **Website or portal** route; **Publish to web** makes content publicly accessible and is not the route used here. The PBIX is not uploaded by this notebook. [Publish-to-web behavior](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-publish-to-web).
 
     Paste the report URL below, select an RCP or another page, and click **View report**. Sign in inside Microsoft's viewer. The report's own slicers, maps, card aggregations and line listings then operate normally. The page selector uses internal PBIX page names; refresh the metadata if those pages were recreated after publication.
 
     Secure embedding preserves report permissions and RLS. It does not grant access. Viewers need the applicable Power BI license or qualifying hosting capacity. If sign-in is blocked by pop-up/cookie rules or the notebook frame, use **Open this report in a new tab**. See [Microsoft's secure embedding guide](https://learn.microsoft.com/en-us/power-bi/collaborate-share/service-embed-secure).
+
+    **Government cloud routing:** Your `app.powerbigov.us` link identifies **GCC**, not GCC High. The helper preserves that host for embedding and uses `api.powerbigov.us` for metadata. GCC authentication uses `login.microsoftonline.com` with the `analysis.usgovcloudapi.net/powerbi/api` resource. Commercial report links remain supported separately. [Microsoft's government-cloud endpoints](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embed-sample-for-customers-national-clouds).
     '''), code('''
     # A report URL is not an access token. Never paste credentials here.
     REPORT_URL = config.get('report_url', '')
@@ -144,7 +146,7 @@ def make_notebook():
     | Blank iframe after sign-in | Open the generated new-tab link; allow the organization's required sign-in pop-ups |
     | Wrong page | Use the internal name from the current service report's page metadata |
     | API 401 / 403 | Sign-in/token lifetime, delegated API consent and permission on this report |
-    | Unsupported URL | Use the commercial-cloud Website or portal URL; app short links and sovereign-cloud hosts are not implemented here |
+    | Unsupported URL | Use a Website or portal URL on `app.powerbigov.us` (GCC) or `app.powerbi.com` (commercial); app short links, GCC High and DoD hosts are not implemented here |
 
     `python-power-bi` 0.1.2: Alex Reed, MIT (2020 notice retained in repository licenses). `msal` is Microsoft's MIT-licensed authentication library. Power BI is a Microsoft service governed by its own terms; the wrapper's MIT license grants no rights to report data. The page catalog is metadata from the user-supplied PBIX, inspected 2026-10-05. The original PEPFAR/PAT data rights still apply.
 

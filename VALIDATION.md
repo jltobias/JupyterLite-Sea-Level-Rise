@@ -2,9 +2,9 @@
 
 ## Power BI chapter added 2026-10-05
 
-The repository now contains 14 notebooks. Chapter 13 executed successfully in desktop Python and in a real JupyterLite/Pyodide browser kernel with `python-power-bi==0.1.2`. All 19 unit tests passed (the original six plus 13 Power BI metadata/URL cases). The book built with warnings treated as errors, and 25 authored/book HTML pages passed internal-link and asset checks.
+The repository now contains 14 notebooks. Chapter 13 executed successfully in desktop Python and in a real JupyterLite/Pyodide browser kernel with `python-power-bi==0.1.2`. All 21 unit tests passed (the original six plus 15 Power BI metadata/URL cases), including separate commercial and GCC routing. The book built with warnings treated as errors, and 25 authored/book HTML pages passed internal-link and asset checks.
 
-The browser check verified the actual package's metadata exercise, the unconnected default, URL rejection, the original RCP 8.5 page selection, and the iframe/new-tab integration. Power BI requests were intercepted with an explicitly labeled mock frame. **This does not verify a real tenant login or original-report rendering.** Those checks require a published report URL and an authorized Power BI account, neither supplied for this addition. Default runs never request credentials, upload the PBIX or contact Power BI. The historical chapter checks below were recorded on 2026-10-04; CI reruns them with the new chapter.
+The browser check verifies the actual package's metadata exercise, the prefilled user-supplied GCC URL, URL rejection, the original RCP 8.5 page selection, and the iframe/new-tab integration. Power BI requests are intercepted with an explicitly labeled mock frame. **This does not verify a real tenant login or original-report rendering.** The user supplied the hosted report URL; an authenticated browser session is unavailable in this environment, and the web reader cannot access that report. Running cells alone never requests credentials, uploads the PBIX or contacts Power BI; selecting **View report** opens Microsoft's sign-in/viewer. The historical chapter checks below were recorded on 2026-10-04; CI reruns them with the new chapter.
 
 To test only the new browser notebook:
 
