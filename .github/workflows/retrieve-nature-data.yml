@@ -1,0 +1,43 @@
+name: Retrieve public Nature elevation data
+on:
+  push:
+    branches: [nature-2026-public-data]
+permissions:
+  contents: read
+jobs:
+  retrieve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install rasterio
+      - name: Download public GLL raster and its attribution
+        shell: bash
+        run: |
+          mkdir -p public-data
+          base='https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/GLL-DTM_v2%5B1768908191%5D'
+          curl --fail --location --connect-timeout 20 --max-time 60 --retry 1 -H 'X-Requested-With: XMLHttpRequest' "$base/original/README.txt" -o public-data/README-source.txt
+          curl --fail --location --connect-timeout 20 --max-time 60 -H 'X-Requested-With: XMLHttpRequest' "$base/License.txt" -o public-data/License-source.txt
+          curl --fail --location --connect-timeout 20 --max-time 1200 --retry 1 -H 'X-Requested-With: XMLHttpRequest' "$base/original/GLL-DTM_v2_220608_GOCO06s_MDT/GLL_DTM_v2_220608_GOCO06s_MDT.tif" -o original.tif
+          echo 'a88947a5646bd12f8151b97eb3853313dd8839218da5bd11242f5e6d76faeb42  original.tif' | sha256sum --check
+      - name: Compress the public raster without changing base pixels
+        run: |
+          python - <<'PY'
+          import rasterio, rasterio.shutil, json, hashlib
+          from pathlib import Path
+          with rasterio.open('original.tif') as src:
+              metadata = dict(source_doi='10.17887/WUR01-XGN3PK', source_sha256='a88947a5646bd12f8151b97eb3853313dd8839218da5bd11242f5e6d76faeb42', shape=src.shape, crs=str(src.crs), transform=list(src.transform), nodata=src.nodata, license='CC-BY-NC-SA-4.0', authors='Katharina Seeger and Philip S. J. Minderhoud', change='Lossless DEFLATE compression into COG; base-resolution pixel values preserved')
+              print(metadata)
+          rasterio.shutil.copy('original.tif','public-data/gll_msl.tif',driver='COG',COMPRESS='DEFLATE',BIGTIFF='IF_SAFER',OVERVIEWS='NONE',NUM_THREADS='ALL_CPUS')
+          p=Path('public-data/gll_msl.tif')
+          metadata['compressed_sha256']=hashlib.file_digest(p.open('rb'),'sha256').hexdigest()
+          Path('public-data/provenance.json').write_text(json.dumps(metadata,indent=2))
+          print('compressed_bytes',p.stat().st_size)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nature-gll-public-source
+          path: public-data
+          retention-days: 1
