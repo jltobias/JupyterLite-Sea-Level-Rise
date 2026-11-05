@@ -68,5 +68,25 @@
     "slug": "13_powerbi_in_browser",
     "title": "Open the original Power BI report in the browser",
     "minutes": 30
+  },
+  {
+    "slug": "14_vertical_datums",
+    "title": "Vertical datums: what does zero metres mean?",
+    "minutes": 40
+  },
+  {
+    "slug": "15_nature_data_and_sampling",
+    "title": "Nature 2026: sources, sampling and coverage",
+    "minutes": 45
+  },
+  {
+    "slug": "16_facility_comparison",
+    "title": "Compare facility screening with the AIDS 2024 baseline",
+    "minutes": 45
+  },
+  {
+    "slug": "17_datum_sensitivity",
+    "title": "Datum sensitivity and a defensible interpretation",
+    "minutes": 40
   }
 ]

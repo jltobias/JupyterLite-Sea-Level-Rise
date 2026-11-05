@@ -88,3 +88,29 @@ Public cards sum one reporting scope at one scenario/year. Percentages use the r
 ## Power BI integration metadata: `powerbi-report.json`
 
 This file stores the original report's page catalog, not facility data. `report_url` contains the user-provided Power BI US Government (GCC) report link; `report_url_source` records its provenance. An empty URL would mean **not configured**. A configured URL is not an authenticated session or an access grant. `source_file`, `source_member` and `inspected_date` identify the local source of the metadata. Each `pages` entry contains `name` (internal service page identifier), `displayName` (visible report-tab caption), and `ordinal` (zero-based source order). There are 18 pages, including three RCP results pages. Check this catalog against current service metadata if pages are recreated.
+
+## Nature public aggregates: `nature-aggregates.json` / `nature-summary.csv`
+
+The JSON has schema version 1; CSV rows have key **model + threshold_m**. All counts refer to the supported portfolio, never individual facilities or clinical measures. Different models may have different covered cohorts. A status of `partial` means at least one valid sample and at least one unavailable row; `source-unavailable` means no valid sample. Null counts mean unavailable, not zero exposure.
+
+| Field | Unit / meaning |
+|---|---|
+| generated_at, software, workbook_sha256 | UTC run time, local package versions and source integrity hash; no private path |
+| baseline_audit | Supported denominator and all 24 original category totals against published counts; discrepancies explicit |
+| original_elevation_audit | Raw original finite/missing/zero/≤−7 counts; numeric availability does not establish valid elevation. Original zeros may encode unassessed/fill values |
+| models[].id / dataset / version / datum / source_url | Model identity and exact corrected-product citation; only already-MSL inputs sampled |
+| raster_sha256 / source_sha256 | Hashes of local sampled files and optional original download before lossless compression |
+| coverage | Counts by available, invalid_coordinate, missing_raster, outside_coverage, nodata, invalid_transform, excluded_le_minus7 |
+| screening[].threshold_m | 0, 1 or 10 metres above MSL; static inclusive threshold |
+| total, available, unavailable | Complete supported cohort, valid MSL samples >−7 m, and remaining rows; conservation required |
+| missing, excluded_le_minus7 | Nonfinite heights and finite heights ≤−7 m; both are unavailable |
+| at_or_below / above | Counts among available cells; null if no available cells |
+| percent_of_available | 100 × at_or_below / available; not a flood probability or full-cohort estimate |
+| paired_original[].matched / unmatched / cells | Optional raw/unverified original-MHHW/new-MSL numeric audit; four cells conserve matched rows, but original fill semantics are unresolved |
+| paired_original[].original_zero_matched / original_le_minus7_matched | Counts flagging suspicious original numeric values in the matched audit; not silently removed or treated as verified zero terrain |
+| rcp_overlap[] | Scenario/year/threshold and four overlaps of original flags versus static MSL heights; no accuracy claim |
+| common_cohort[] | Per-threshold counts by model on the intersection of supported rows with valid heights in every listed model; `matched + unmatched = total`. These share a denominator; individual model coverage totals do not |
+
+`nature-sources.json` pins the paper/addendum, catalog version, file checksums, corrected products, underlying DEMs, MDT and geoid sources. `products[].use_status` distinguishes planned rasters from those actually opened during the most recent run. Metadata examination alone is not sampling. Optional `nature-city-surfaces.json` contains public city-context terrain display grids: `city`, `longitude` (x vector), `latitude` (y vector), `z_msl` (y-by-x metres; null=NoData), `model`, `source_doi`, and `grid_note`. No facility overlays or identifiers occur in it.
+
+The private `samples.csv` interface has `uid,model,msl_m` and optional `original_mhhw_m`. The sampler also retains `sample_status`, latitude and longitude privately. Uploaded CSVs are read into the browser kernel without network transmission; only approved columns are retained by the lesson helper. Never distribute that private file. Fixture IDs beginning `FICTIONAL-` are invented independently and are not masked study records.

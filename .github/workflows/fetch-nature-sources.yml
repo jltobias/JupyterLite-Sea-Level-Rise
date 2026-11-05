@@ -1,0 +1,22 @@
+name: Download pinned public Nature rasters
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install rasterio==1.5.2
+      - name: Retrieve public rasters and licenses (no facility inputs)
+        run: python scripts/fetch_nature_rasters.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nature-public-rasters
+          path: private-data/nature-download
+          retention-days: 1

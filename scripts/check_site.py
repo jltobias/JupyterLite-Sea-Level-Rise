@@ -19,6 +19,11 @@ def main():
               'book/notebooks/13_powerbi_in_browser.html',
               'assets/scenario-walkthrough.mp4','assets/scenario-walkthrough.vtt',
               'data/poster_aggregates.csv','data/synthetic_facilities.csv']
+    required += ['lite/files/naturelab.py', 'data/nature-aggregates.json',
+                 'data/nature-summary.csv', 'data/nature-sources.json']
+    required += ['data/' + path.name for path in (ROOT/'content/data').glob('nature-*.json')]
+    required += [f'book/notebooks/{slug}.html' for slug in [
+        '14_vertical_datums', '15_nature_data_and_sampling', '16_facility_comparison', '17_datum_sensitivity']]
     errors=[f'Missing {p}' for p in required if not (SITE/p).exists()]
     # JupyterLite webpack assets resolve dynamically; validate authored/book HTML links.
     pages=[SITE/'index.html',SITE/'dashboard/index.html',* [p for p in (SITE/'book').rglob('*.html') if not any(part.startswith('_') for part in p.relative_to(SITE/'book').parts)]]
@@ -40,6 +45,10 @@ def main():
             if c.cell_type=='code':
                 assert c.execution_count is not None, f'Unexecuted cell: {path.name}'
                 assert not any(o.output_type=='error' for o in c.outputs),path.name
+        if path.stem.startswith(('14_', '15_', '16_', '17_')):
+            marker = 'Nature lesson complete: ' + path.stem
+            assert any(marker in o.get('text', '') for c in n.cells if c.cell_type == 'code'
+                       for o in c.outputs), f'Missing completed output: {path.name}'
     if errors:raise SystemExit('\n'.join(errors))
     print(f'PASS: {len(pages)} authored/book pages, {len(notebooks)} executed notebooks and required assets.')
 if __name__=='__main__':main()

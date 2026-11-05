@@ -21,6 +21,12 @@ parts:
       - file: notebooks/11_capstone
       - file: notebooks/12_reproduce_and_extend
       - file: notebooks/13_powerbi_in_browser
+  - caption: Nature 2026 elevation extension
+    chapters:
+      - file: notebooks/14_vertical_datums
+      - file: notebooks/15_nature_data_and_sampling
+      - file: notebooks/16_facility_comparison
+      - file: notebooks/17_datum_sensitivity
   - caption: Reference desk
     chapters:
       - file: glossary

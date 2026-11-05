@@ -1,6 +1,6 @@
 {
-  "version": "1.1.1",
-  "inspected_date": "2026-10-05",
+  "version": "1.2.0",
+  "inspected_date": "2026-11-05",
   "sources": [
     {
       "id": "poster",
@@ -36,6 +36,13 @@
       "citation": "Coastal Futures teaching fixtures, seed 20240722, version 1.0.0",
       "transformation": "Independent deterministic generation; no original facility rows or coordinates read.",
       "rights": "CC0-1.0 to extent applicable rights held."
+    },
+    {
+      "id": "nature-2026",
+      "url": "https://doi.org/10.1038/s41586-026-10196-1",
+      "citation": "Seeger, K. & Minderhoud, P. S. J. (2026). Sea level much higher than assumed in most coastal hazard assessments. Nature 652, 667–674.",
+      "transformation": "Independent point sampling of already-MSL products; supported-portfolio aggregates only. See nature-aggregates.json for current coverage and source hashes, and nature-sources.json for exact versions and use status.",
+      "rights": "Derived corrected-raster aggregates and public terrain extracts are CC-BY-NC-SA-4.0. GLL and DeltaDTM guides explicitly allow media, NGOs and government use with attribution; retain other license conditions. FABDEM guide states CC-BY-NC-SA-4.0 without that additional wording. Original code MIT; original prose CC-BY-4.0."
     }
   ],
   "files": {
@@ -50,6 +57,26 @@
     "content/data/natural-earth-land.geojson": {
       "sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9",
       "bytes": 138160
+    },
+    "content/data/nature-aggregates.json": {
+      "sha256": "eb01f9db385134c908c10776f43a620e9a61a89d1234389015b74d0f9fb7425e",
+      "bytes": 109340
+    },
+    "content/data/nature-city-surfaces.json": {
+      "sha256": "257aee413a0cd213bf981b29a62a2142b39f127adf9c31762fc543d140287cac",
+      "bytes": 1264340
+    },
+    "content/data/nature-raster-catalog.json": {
+      "sha256": "2cb5d732fd946345820b6e785fa0d90e66baf36f9be53c76e0a0e65354075db6",
+      "bytes": 18541
+    },
+    "content/data/nature-sources.json": {
+      "sha256": "367faa65adb289ff49e825f8ebfe2da2a581468ac854e4ade550a15c98063b52",
+      "bytes": 6277
+    },
+    "content/data/nature-summary.csv": {
+      "sha256": "01af28d141ef4d0178b7ae3903331f0fa5fe5bc2816e737fb09119d1741e7857",
+      "bytes": 915
     },
     "content/data/poster-aggregates.json": {
       "sha256": "ea47555b210153c1991f3cdb222d211f91149c358002422eb661958db0bf2c72",
@@ -112,7 +139,7 @@
       "bytes": 1338
     }
   },
-  "evidence_boundary": "Published poster aggregates, explicit reference facts, and separate fictional labs. No private facility data or proprietary hazard grids distributed.",
+  "evidence_boundary": "Published poster aggregates, explicit reference facts, Nature portfolio aggregates with coverage/common-cohort comparisons, licensed public terrain display extracts without facility overlays, and separate fictional labs. No private facility records or modeled inundation grids distributed.",
   "known_discrepancies": [
     "RCP 2.6 narrative 2.8× versus table 321/108=2.9722…",
     "Percentages recalculated from source counts",

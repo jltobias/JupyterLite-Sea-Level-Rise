@@ -1,0 +1,3645 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-05T16:12:40.292759+00:00",
+  "status": "partial",
+  "software": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "openpyxl": "3.1.5",
+    "rasterio": "1.5.2"
+  },
+  "scope": "supported portfolio only",
+  "cohort": "PEPFARSUP = 1; unique uid rows",
+  "workbook_sha256": "107c4e7f476da2593bf093060a8d24e81cb89a574b434c663a047d45db1fa6ce",
+  "baseline_audit": {
+    "supported_denominator": 25873,
+    "poster_denominator": 25873,
+    "denominator_matches": true,
+    "all_24_match": true,
+    "counts": [
+      {
+        "scenario": "RCP 2.6",
+        "year": 2030,
+        "source_field": "A30",
+        "observed": 108,
+        "poster": 108,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 2.6",
+        "year": 2040,
+        "source_field": "A40",
+        "observed": 116,
+        "poster": 116,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 2.6",
+        "year": 2050,
+        "source_field": "A50",
+        "observed": 130,
+        "poster": 130,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 2.6",
+        "year": 2060,
+        "source_field": "A60",
+        "observed": 139,
+        "poster": 139,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 2.6",
+        "year": 2070,
+        "source_field": "A70",
+        "observed": 182,
+        "poster": 182,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 2.6",
+        "year": 2080,
+        "source_field": "A80",
+        "observed": 206,
+        "poster": 206,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 2.6",
+        "year": 2090,
+        "source_field": "A90",
+        "observed": 253,
+        "poster": 253,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 2.6",
+        "year": 2100,
+        "source_field": "A00",
+        "observed": 321,
+        "poster": 321,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 4.5",
+        "year": 2030,
+        "source_field": "B30",
+        "observed": 107,
+        "poster": 107,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 4.5",
+        "year": 2040,
+        "source_field": "B40",
+        "observed": 116,
+        "poster": 116,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 4.5",
+        "year": 2050,
+        "source_field": "B50",
+        "observed": 130,
+        "poster": 130,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 4.5",
+        "year": 2060,
+        "source_field": "B60",
+        "observed": 140,
+        "poster": 140,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 4.5",
+        "year": 2070,
+        "source_field": "B70",
+        "observed": 183,
+        "poster": 183,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 4.5",
+        "year": 2080,
+        "source_field": "B80",
+        "observed": 211,
+        "poster": 211,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 4.5",
+        "year": 2090,
+        "source_field": "B90",
+        "observed": 258,
+        "poster": 258,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 4.5",
+        "year": 2100,
+        "source_field": "B00",
+        "observed": 331,
+        "poster": 331,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 8.5",
+        "year": 2030,
+        "source_field": "C30",
+        "observed": 108,
+        "poster": 108,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 8.5",
+        "year": 2040,
+        "source_field": "C40",
+        "observed": 118,
+        "poster": 118,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 8.5",
+        "year": 2050,
+        "source_field": "C50",
+        "observed": 132,
+        "poster": 132,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 8.5",
+        "year": 2060,
+        "source_field": "C60",
+        "observed": 148,
+        "poster": 148,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 8.5",
+        "year": 2070,
+        "source_field": "C70",
+        "observed": 198,
+        "poster": 198,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 8.5",
+        "year": 2080,
+        "source_field": "C80",
+        "observed": 237,
+        "poster": 237,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 8.5",
+        "year": 2090,
+        "source_field": "C90",
+        "observed": 309,
+        "poster": 309,
+        "matches": true
+      },
+      {
+        "scenario": "RCP 8.5",
+        "year": 2100,
+        "source_field": "C00",
+        "observed": 412,
+        "poster": 412,
+        "matches": true
+      }
+    ]
+  },
+  "coordinate_audit": {
+    "valid": 25873,
+    "invalid": 0
+  },
+  "license": "CC-BY-NC-SA-4.0 for derived corrected-raster aggregates",
+  "limitations": [
+    "Static <=0, <=1 and <=10 m MSL thresholds are not RCP/year forecasts, flood probabilities, inundation extents or clinical impacts.",
+    "Original ACTUALE is modeled as ACTUAL_MHHW_ELEV_M; do not apply a geoid/MDT correction to it blindly.",
+    "New DEM versus original differences combine terrain, datum, epoch and resolution, not datum alone.",
+    "MSL raster cells <=-7 m are excluded; missing/out-of-coverage cells remain unavailable.",
+    "GLL-DTMv2 approximately 1 km cells support portfolio screening, not site design.",
+    "RCP colour categories are flags; overlap tables are not validation against ground truth.",
+    "Original numeric heights are unverified; the source contains many zeros whose assessed/fill semantics are unresolved. Raw MHHW/MSL numeric overlap is an optional audit, not validated elevation evidence."
+  ],
+  "sampling": {
+    "method": "containing pixel / nearest grid cell; no interpolation",
+    "input_crs": "EPSG:4326; longitude then latitude",
+    "overlap": "first finite unmasked cell in manifest path order",
+    "nodata": "mask/nonfinite -> unavailable; try later overlapping tiles",
+    "datum": "already MSL; no second correction",
+    "scale_offset": "raster band scale and offset applied"
+  },
+  "models": [
+    {
+      "id": "gll-dtm-v2-msl",
+      "label": "GLL-DTM v2 (global coastal lowlands)",
+      "dataset": "GLL-DTM v2 referenced to mean sea level (MDT HYBRID-CNES-CLS2022)",
+      "version": "v2, WUR publication 2026-01-20",
+      "datum": "MSL",
+      "license": "CC-BY-NC-SA-4.0",
+      "source_url": "https://doi.org/10.17887/WUR01-XGN3PK",
+      "source_sha256": "a88947a5646bd12f8151b97eb3853313dd8839218da5bd11242f5e6d76faeb42",
+      "processing_note": "Author MSL product; no recorrection. Lossless COG compression; original publisher SHA256 verified before compression.",
+      "coverage_note": "Global coastal lowlands where the GLL-DTM v2 raster has valid cells; approximately 1 km grid, with source NoData retained.",
+      "status": "partial",
+      "missing_raster_files": 0,
+      "raster_sha256": [
+        "fba43f671612e3859e5ba8730b8829e33648f02e57d8abf3a867822217cad0b6"
+      ],
+      "coverage": {
+        "nodata": 25075,
+        "available": 798
+      },
+      "screening": [
+        {
+          "total": 25873,
+          "available": 798,
+          "unavailable": 25075,
+          "missing": 25075,
+          "excluded_le_minus7": 0,
+          "threshold_m": 0.0,
+          "offset_m": 0.0,
+          "at_or_below": 13,
+          "above": 785,
+          "percent_of_available": 1.6290726817042607
+        },
+        {
+          "total": 25873,
+          "available": 798,
+          "unavailable": 25075,
+          "missing": 25075,
+          "excluded_le_minus7": 0,
+          "threshold_m": 1.0,
+          "offset_m": 0.0,
+          "at_or_below": 86,
+          "above": 712,
+          "percent_of_available": 10.776942355889725
+        },
+        {
+          "total": 25873,
+          "available": 798,
+          "unavailable": 25075,
+          "missing": 25075,
+          "excluded_le_minus7": 0,
+          "threshold_m": 10.0,
+          "offset_m": 0.0,
+          "at_or_below": 790,
+          "above": 8,
+          "percent_of_available": 98.99749373433583
+        }
+      ],
+      "paired_original": [
+        {
+          "matched": 798,
+          "unmatched": 25075,
+          "threshold_m": 0.0,
+          "original_zero_matched": 0,
+          "original_le_minus7_matched": 0,
+          "cells": {
+            "both_at_or_below": 2,
+            "original_only": 29,
+            "nature_only": 11,
+            "neither": 756
+          },
+          "interpretation": "Raw, unverified original numeric audit: MHHW-labeled versus Nature MSL. Original zeros may be unassessed fill; no validated elevation, accuracy or pure datum-effect claim."
+        },
+        {
+          "matched": 798,
+          "unmatched": 25075,
+          "threshold_m": 1.0,
+          "original_zero_matched": 0,
+          "original_le_minus7_matched": 0,
+          "cells": {
+            "both_at_or_below": 19,
+            "original_only": 44,
+            "nature_only": 67,
+            "neither": 668
+          },
+          "interpretation": "Raw, unverified original numeric audit: MHHW-labeled versus Nature MSL. Original zeros may be unassessed fill; no validated elevation, accuracy or pure datum-effect claim."
+        },
+        {
+          "matched": 798,
+          "unmatched": 25075,
+          "threshold_m": 10.0,
+          "original_zero_matched": 0,
+          "original_le_minus7_matched": 0,
+          "cells": {
+            "both_at_or_below": 700,
+            "original_only": 5,
+            "nature_only": 90,
+            "neither": 3
+          },
+          "interpretation": "Raw, unverified original numeric audit: MHHW-labeled versus Nature MSL. Original zeros may be unassessed fill; no validated elevation, accuracy or pure datum-effect claim."
+        }
+      ],
+      "rcp_overlap": [
+        {
+          "scenario": "RCP 2.6",
+          "year": 2030,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 75,
+            "low_only": 11,
+            "neither": 710
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2030,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 26,
+            "flag_only": 51,
+            "low_only": 60,
+            "neither": 661
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2030,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 77,
+            "flag_only": 0,
+            "low_only": 713,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2040,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 80,
+            "low_only": 11,
+            "neither": 705
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2040,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 26,
+            "flag_only": 56,
+            "low_only": 60,
+            "neither": 656
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2040,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 82,
+            "flag_only": 0,
+            "low_only": 708,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2050,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 92,
+            "low_only": 11,
+            "neither": 693
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2050,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 28,
+            "flag_only": 66,
+            "low_only": 58,
+            "neither": 646
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2050,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 94,
+            "flag_only": 0,
+            "low_only": 696,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2060,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 97,
+            "low_only": 11,
+            "neither": 688
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2060,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 29,
+            "flag_only": 70,
+            "low_only": 57,
+            "neither": 642
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2060,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 99,
+            "flag_only": 0,
+            "low_only": 691,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2070,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 109,
+            "low_only": 11,
+            "neither": 676
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2070,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 29,
+            "flag_only": 82,
+            "low_only": 57,
+            "neither": 630
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2070,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 111,
+            "flag_only": 0,
+            "low_only": 679,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2080,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 129,
+            "low_only": 11,
+            "neither": 656
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2080,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 34,
+            "flag_only": 97,
+            "low_only": 52,
+            "neither": 615
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2080,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 131,
+            "flag_only": 0,
+            "low_only": 659,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2090,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 172,
+            "low_only": 11,
+            "neither": 613
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2090,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 38,
+            "flag_only": 136,
+            "low_only": 48,
+            "neither": 576
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2090,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 174,
+            "flag_only": 0,
+            "low_only": 616,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2100,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 229,
+            "low_only": 10,
+            "neither": 556
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2100,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 48,
+            "flag_only": 184,
+            "low_only": 38,
+            "neither": 528
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2100,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 231,
+            "flag_only": 1,
+            "low_only": 559,
+            "neither": 7
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2030,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 74,
+            "low_only": 11,
+            "neither": 711
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2030,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 26,
+            "flag_only": 50,
+            "low_only": 60,
+            "neither": 662
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2030,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 76,
+            "flag_only": 0,
+            "low_only": 714,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2040,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 80,
+            "low_only": 11,
+            "neither": 705
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2040,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 26,
+            "flag_only": 56,
+            "low_only": 60,
+            "neither": 656
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2040,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 82,
+            "flag_only": 0,
+            "low_only": 708,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2050,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 92,
+            "low_only": 11,
+            "neither": 693
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2050,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 28,
+            "flag_only": 66,
+            "low_only": 58,
+            "neither": 646
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2050,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 94,
+            "flag_only": 0,
+            "low_only": 696,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2060,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 98,
+            "low_only": 11,
+            "neither": 687
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2060,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 29,
+            "flag_only": 71,
+            "low_only": 57,
+            "neither": 641
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2060,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 100,
+            "flag_only": 0,
+            "low_only": 690,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2070,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 110,
+            "low_only": 11,
+            "neither": 675
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2070,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 29,
+            "flag_only": 83,
+            "low_only": 57,
+            "neither": 629
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2070,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 112,
+            "flag_only": 0,
+            "low_only": 678,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2080,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 134,
+            "low_only": 11,
+            "neither": 651
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2080,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 34,
+            "flag_only": 102,
+            "low_only": 52,
+            "neither": 610
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2080,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 136,
+            "flag_only": 0,
+            "low_only": 654,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2090,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 177,
+            "low_only": 10,
+            "neither": 608
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2090,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 39,
+            "flag_only": 141,
+            "low_only": 47,
+            "neither": 571
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2090,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 180,
+            "flag_only": 0,
+            "low_only": 610,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2100,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 237,
+            "low_only": 10,
+            "neither": 548
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2100,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 49,
+            "flag_only": 191,
+            "low_only": 37,
+            "neither": 521
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2100,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 239,
+            "flag_only": 1,
+            "low_only": 551,
+            "neither": 7
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2030,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 75,
+            "low_only": 11,
+            "neither": 710
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2030,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 26,
+            "flag_only": 51,
+            "low_only": 60,
+            "neither": 661
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2030,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 77,
+            "flag_only": 0,
+            "low_only": 713,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2040,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 81,
+            "low_only": 11,
+            "neither": 704
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2040,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 27,
+            "flag_only": 56,
+            "low_only": 59,
+            "neither": 656
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2040,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 83,
+            "flag_only": 0,
+            "low_only": 707,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2050,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 93,
+            "low_only": 11,
+            "neither": 692
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2050,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 28,
+            "flag_only": 67,
+            "low_only": 58,
+            "neither": 645
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2050,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 95,
+            "flag_only": 0,
+            "low_only": 695,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2060,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 104,
+            "low_only": 11,
+            "neither": 681
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2060,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 29,
+            "flag_only": 77,
+            "low_only": 57,
+            "neither": 635
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2060,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 106,
+            "flag_only": 0,
+            "low_only": 684,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2070,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 124,
+            "low_only": 11,
+            "neither": 661
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2070,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 33,
+            "flag_only": 93,
+            "low_only": 53,
+            "neither": 619
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2070,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 126,
+            "flag_only": 0,
+            "low_only": 664,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2080,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 2,
+            "flag_only": 157,
+            "low_only": 11,
+            "neither": 628
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2080,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 38,
+            "flag_only": 121,
+            "low_only": 48,
+            "neither": 591
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2080,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 159,
+            "flag_only": 0,
+            "low_only": 631,
+            "neither": 8
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2090,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 219,
+            "low_only": 10,
+            "neither": 566
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2090,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 47,
+            "flag_only": 175,
+            "low_only": 39,
+            "neither": 537
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2090,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 221,
+            "flag_only": 1,
+            "low_only": 569,
+            "neither": 7
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2100,
+          "threshold_m": 0.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 311,
+            "low_only": 10,
+            "neither": 474
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2100,
+          "threshold_m": 1.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 52,
+            "flag_only": 262,
+            "low_only": 34,
+            "neither": 450
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2100,
+          "threshold_m": 10.0,
+          "matched": 798,
+          "unmatched": 25075,
+          "cells": {
+            "flag_and_low": 313,
+            "flag_only": 1,
+            "low_only": 477,
+            "neither": 7
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        }
+      ]
+    },
+    {
+      "id": "fabdem-msl-city-regions",
+      "label": "FABDEM v1.0 (five poster-city regions)",
+      "dataset": "FABDEM v1.0 referenced to mean sea level (MDT HYBRID-CNES-CLS2022)",
+      "version": "v1.0, WUR publication 2026-01-29",
+      "datum": "MSL",
+      "license": "CC-BY-NC-SA-4.0",
+      "source_url": "https://doi.org/10.17887/WUR01-6L9D2X",
+      "processing_note": "Author-corrected MSL, native 1/3600 degree (~30m); lossless DEFLATE compression. Original tile SHA256 calculated at download, publisher hashes not supplied for selected tiles in the public manifest. No additional datum correction.",
+      "coverage_note": "Selected 13 one-degree tiles intersecting +/-0.5 degree rectangles around public poster city centroids: Abidjan, Bangkok, Ho Chi Minh City, Lagos, Mombasa. Sampling uses entire selected tiles. Purposive regional subset, not global or representative; compare only matched coverage.",
+      "status": "partial",
+      "missing_raster_files": 0,
+      "raster_sha256": [
+        "3279234e756835c58e15636d52513a164908f8454fa395639f028ff7071ab08b",
+        "2791b44b75dc201ec17dbb3396f68c14577189b9da45d45ebb4e955471bedb19",
+        "f00762744db8e3277b3aac30ebc0838fcdd741322dbcec13d4bde7495654eda1",
+        "79b0b9dae369c48ae3098134ed85b02bbe22a76ba39f7365261d46402ee56147",
+        "0dfd5fa46542f88b829875841c7da540ddb157e613cb839ba984494b97b2974c",
+        "5c79ae1607b6aa50eea088bd5ea61dc9edf88061c4877ee1db48c2a9ec58714b",
+        "d449d01db498a594f999f88c84541590c3f031f73b399ec5900fb3a3f66fd61c",
+        "6767f82f6ae37614dc1c35f5763ad0a5267f13fe8a70be00287d7167097ffc1e",
+        "4843f50506d0aaa6d1ae368af606f2534365403c8f59b9cdab4ed58ef939fcac",
+        "22245b49d1e7871e65f4b23a686720d386e71637521808a1a70fa725c98b324c",
+        "9cb9757d39828e26101f0e246c2cbdc1422c0e9e0fff1a761a436120c50d4f59",
+        "bc97fa1f89314676ed63240a21b25976c89b23664f49b8bf59d8b3631cf3c603",
+        "340c1a867d7aa11a1df81cf0439ea8d2c75ec1af0696a6e212670f7de83c7cf9"
+      ],
+      "coverage": {
+        "outside_coverage": 25179,
+        "available": 694
+      },
+      "screening": [
+        {
+          "total": 25873,
+          "available": 694,
+          "unavailable": 25179,
+          "missing": 25179,
+          "excluded_le_minus7": 0,
+          "threshold_m": 0.0,
+          "offset_m": 0.0,
+          "at_or_below": 1,
+          "above": 693,
+          "percent_of_available": 0.1440922190201729
+        },
+        {
+          "total": 25873,
+          "available": 694,
+          "unavailable": 25179,
+          "missing": 25179,
+          "excluded_le_minus7": 0,
+          "threshold_m": 1.0,
+          "offset_m": 0.0,
+          "at_or_below": 10,
+          "above": 684,
+          "percent_of_available": 1.440922190201729
+        },
+        {
+          "total": 25873,
+          "available": 694,
+          "unavailable": 25179,
+          "missing": 25179,
+          "excluded_le_minus7": 0,
+          "threshold_m": 10.0,
+          "offset_m": 0.0,
+          "at_or_below": 252,
+          "above": 442,
+          "percent_of_available": 36.31123919308357
+        }
+      ],
+      "paired_original": [
+        {
+          "matched": 694,
+          "unmatched": 25179,
+          "threshold_m": 0.0,
+          "original_zero_matched": 0,
+          "original_le_minus7_matched": 0,
+          "cells": {
+            "both_at_or_below": 0,
+            "original_only": 7,
+            "nature_only": 1,
+            "neither": 686
+          },
+          "interpretation": "Raw, unverified original numeric audit: MHHW-labeled versus Nature MSL. Original zeros may be unassessed fill; no validated elevation, accuracy or pure datum-effect claim."
+        },
+        {
+          "matched": 694,
+          "unmatched": 25179,
+          "threshold_m": 1.0,
+          "original_zero_matched": 0,
+          "original_le_minus7_matched": 0,
+          "cells": {
+            "both_at_or_below": 4,
+            "original_only": 21,
+            "nature_only": 6,
+            "neither": 663
+          },
+          "interpretation": "Raw, unverified original numeric audit: MHHW-labeled versus Nature MSL. Original zeros may be unassessed fill; no validated elevation, accuracy or pure datum-effect claim."
+        },
+        {
+          "matched": 694,
+          "unmatched": 25179,
+          "threshold_m": 10.0,
+          "original_zero_matched": 0,
+          "original_le_minus7_matched": 0,
+          "cells": {
+            "both_at_or_below": 246,
+            "original_only": 26,
+            "nature_only": 6,
+            "neither": 416
+          },
+          "interpretation": "Raw, unverified original numeric audit: MHHW-labeled versus Nature MSL. Original zeros may be unassessed fill; no validated elevation, accuracy or pure datum-effect claim."
+        }
+      ],
+      "rcp_overlap": [
+        {
+          "scenario": "RCP 2.6",
+          "year": 2030,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 37,
+            "low_only": 1,
+            "neither": 656
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2030,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 33,
+            "low_only": 6,
+            "neither": 651
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2030,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 36,
+            "flag_only": 1,
+            "low_only": 216,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2040,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 40,
+            "low_only": 1,
+            "neither": 653
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2040,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 36,
+            "low_only": 6,
+            "neither": 648
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2040,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 39,
+            "flag_only": 1,
+            "low_only": 213,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2050,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 43,
+            "low_only": 1,
+            "neither": 650
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2050,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 39,
+            "low_only": 6,
+            "neither": 645
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2050,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 42,
+            "flag_only": 1,
+            "low_only": 210,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2060,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 45,
+            "low_only": 1,
+            "neither": 648
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2060,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 41,
+            "low_only": 6,
+            "neither": 643
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2060,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 44,
+            "flag_only": 1,
+            "low_only": 208,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2070,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 74,
+            "low_only": 1,
+            "neither": 619
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2070,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 70,
+            "low_only": 6,
+            "neither": 614
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2070,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 73,
+            "flag_only": 1,
+            "low_only": 179,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2080,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 83,
+            "low_only": 1,
+            "neither": 610
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2080,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 5,
+            "flag_only": 78,
+            "low_only": 5,
+            "neither": 606
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2080,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 82,
+            "flag_only": 1,
+            "low_only": 170,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2090,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 1,
+            "flag_only": 104,
+            "low_only": 0,
+            "neither": 589
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2090,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 10,
+            "flag_only": 95,
+            "low_only": 0,
+            "neither": 589
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2090,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 104,
+            "flag_only": 1,
+            "low_only": 148,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2100,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 1,
+            "flag_only": 121,
+            "low_only": 0,
+            "neither": 572
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2100,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 10,
+            "flag_only": 112,
+            "low_only": 0,
+            "neither": 572
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2100,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 121,
+            "flag_only": 1,
+            "low_only": 131,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2030,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 37,
+            "low_only": 1,
+            "neither": 656
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2030,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 33,
+            "low_only": 6,
+            "neither": 651
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2030,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 36,
+            "flag_only": 1,
+            "low_only": 216,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2040,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 40,
+            "low_only": 1,
+            "neither": 653
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2040,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 36,
+            "low_only": 6,
+            "neither": 648
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2040,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 39,
+            "flag_only": 1,
+            "low_only": 213,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2050,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 43,
+            "low_only": 1,
+            "neither": 650
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2050,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 39,
+            "low_only": 6,
+            "neither": 645
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2050,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 42,
+            "flag_only": 1,
+            "low_only": 210,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2060,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 45,
+            "low_only": 1,
+            "neither": 648
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2060,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 41,
+            "low_only": 6,
+            "neither": 643
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2060,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 44,
+            "flag_only": 1,
+            "low_only": 208,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2070,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 75,
+            "low_only": 1,
+            "neither": 618
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2070,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 71,
+            "low_only": 6,
+            "neither": 613
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2070,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 74,
+            "flag_only": 1,
+            "low_only": 178,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2080,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 83,
+            "low_only": 1,
+            "neither": 610
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2080,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 5,
+            "flag_only": 78,
+            "low_only": 5,
+            "neither": 606
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2080,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 82,
+            "flag_only": 1,
+            "low_only": 170,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2090,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 1,
+            "flag_only": 108,
+            "low_only": 0,
+            "neither": 585
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2090,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 10,
+            "flag_only": 99,
+            "low_only": 0,
+            "neither": 585
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2090,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 108,
+            "flag_only": 1,
+            "low_only": 144,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2100,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 1,
+            "flag_only": 123,
+            "low_only": 0,
+            "neither": 570
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2100,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 10,
+            "flag_only": 114,
+            "low_only": 0,
+            "neither": 570
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2100,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 123,
+            "flag_only": 1,
+            "low_only": 129,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2030,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 37,
+            "low_only": 1,
+            "neither": 656
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2030,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 33,
+            "low_only": 6,
+            "neither": 651
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2030,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 36,
+            "flag_only": 1,
+            "low_only": 216,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2040,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 41,
+            "low_only": 1,
+            "neither": 652
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2040,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 37,
+            "low_only": 6,
+            "neither": 647
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2040,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 40,
+            "flag_only": 1,
+            "low_only": 212,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2050,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 43,
+            "low_only": 1,
+            "neither": 650
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2050,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 39,
+            "low_only": 6,
+            "neither": 645
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2050,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 42,
+            "flag_only": 1,
+            "low_only": 210,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2060,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 47,
+            "low_only": 1,
+            "neither": 646
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2060,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 43,
+            "low_only": 6,
+            "neither": 641
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2060,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 46,
+            "flag_only": 1,
+            "low_only": 206,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2070,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 0,
+            "flag_only": 79,
+            "low_only": 1,
+            "neither": 614
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2070,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 75,
+            "low_only": 6,
+            "neither": 609
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2070,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 78,
+            "flag_only": 1,
+            "low_only": 174,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2080,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 1,
+            "flag_only": 96,
+            "low_only": 0,
+            "neither": 597
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2080,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 9,
+            "flag_only": 88,
+            "low_only": 1,
+            "neither": 596
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2080,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 96,
+            "flag_only": 1,
+            "low_only": 156,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2090,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 1,
+            "flag_only": 117,
+            "low_only": 0,
+            "neither": 576
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2090,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 10,
+            "flag_only": 108,
+            "low_only": 0,
+            "neither": 576
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2090,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 117,
+            "flag_only": 1,
+            "low_only": 135,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2100,
+          "threshold_m": 0.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 1,
+            "flag_only": 146,
+            "low_only": 0,
+            "neither": 547
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2100,
+          "threshold_m": 1.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 10,
+            "flag_only": 137,
+            "low_only": 0,
+            "neither": 547
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2100,
+          "threshold_m": 10.0,
+          "matched": 694,
+          "unmatched": 25179,
+          "cells": {
+            "flag_and_low": 146,
+            "flag_only": 1,
+            "low_only": 106,
+            "neither": 441
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        }
+      ]
+    },
+    {
+      "id": "deltadtm-msl-city-regions",
+      "label": "DeltaDTM v1.1 (five poster-city regions)",
+      "dataset": "DeltaDTM v1.1 referenced to mean sea level (MDT HYBRID-CNES-CLS2022)",
+      "version": "v1.1, WUR publication 2026-01-29",
+      "datum": "MSL",
+      "license": "CC-BY-NC-SA-4.0",
+      "source_url": "https://doi.org/10.17887/WUR01-GX7S1B",
+      "processing_note": "Author-corrected MSL, native 1/3600 degree (~30m); lossless DEFLATE compression. Original tile SHA256 calculated at download, publisher hashes not supplied for selected tiles in the public manifest. No additional datum correction.",
+      "coverage_note": "Selected 12 one-degree tiles intersecting +/-0.5 degree rectangles around public poster city centroids: Abidjan, Bangkok, Ho Chi Minh City, Lagos, Mombasa. Sampling uses entire selected tiles. Purposive regional subset, not global or representative; compare only matched coverage.",
+      "status": "partial",
+      "missing_raster_files": 0,
+      "raster_sha256": [
+        "481c42df0424bbc54bd17a80104b16797a47b160177c0e5fc3ec4be440ecf747",
+        "b740a52821d33ddaeadad8c5751ed41d4308c0058204c9a7a757cc045ada5a3e",
+        "3d7aae0fe0b632bcfc3292cb3e73f1fc9081e9802ac3a987c89fb83461f3a458",
+        "c956a9ac84d0ffd7b385de71f77ea2c1d46880242db5dd2ddbb270c085868625",
+        "b1e551d7770a43efb87208eafb7c62e846520d50c4fba06c869a21fcbc5dc7d3",
+        "29644756893979e8209ebf9e3a2ca46a26083dd1663bebdf58e6e3cc6253ee2b",
+        "3c83b1ce740689341a490bf34b29dc21dec766d89f5d4875e459333c7058df66",
+        "372461524aebdbee9fa6e21c7d3ff1ed40d8bf3cb4be735ddeb56fdfce8d295c",
+        "0c077c56c5e8ba4cd58535818b9a55b9dbec0348c2204f202901ba73dfd341f5",
+        "fc4e881e6d8206f9033407f28e57ef0e154de0571f9d8aabd8f0da4230a106ad",
+        "460936be2e7a07ca0693e695339aa7127378266f18f1c0c0cbe6322e07a19b8c",
+        "0326ac735a20f3c6dde2f5101e52c5e74b6fb85c90e49f6b126bdce2ddedf847"
+      ],
+      "coverage": {
+        "outside_coverage": 25179,
+        "available": 692,
+        "nodata": 2
+      },
+      "screening": [
+        {
+          "total": 25873,
+          "available": 692,
+          "unavailable": 25181,
+          "missing": 25181,
+          "excluded_le_minus7": 0,
+          "threshold_m": 0.0,
+          "offset_m": 0.0,
+          "at_or_below": 4,
+          "above": 688,
+          "percent_of_available": 0.5780346820809249
+        },
+        {
+          "total": 25873,
+          "available": 692,
+          "unavailable": 25181,
+          "missing": 25181,
+          "excluded_le_minus7": 0,
+          "threshold_m": 1.0,
+          "offset_m": 0.0,
+          "at_or_below": 35,
+          "above": 657,
+          "percent_of_available": 5.057803468208093
+        },
+        {
+          "total": 25873,
+          "available": 692,
+          "unavailable": 25181,
+          "missing": 25181,
+          "excluded_le_minus7": 0,
+          "threshold_m": 10.0,
+          "offset_m": 0.0,
+          "at_or_below": 262,
+          "above": 430,
+          "percent_of_available": 37.861271676300575
+        }
+      ],
+      "paired_original": [
+        {
+          "matched": 692,
+          "unmatched": 25181,
+          "threshold_m": 0.0,
+          "original_zero_matched": 0,
+          "original_le_minus7_matched": 0,
+          "cells": {
+            "both_at_or_below": 1,
+            "original_only": 6,
+            "nature_only": 3,
+            "neither": 682
+          },
+          "interpretation": "Raw, unverified original numeric audit: MHHW-labeled versus Nature MSL. Original zeros may be unassessed fill; no validated elevation, accuracy or pure datum-effect claim."
+        },
+        {
+          "matched": 692,
+          "unmatched": 25181,
+          "threshold_m": 1.0,
+          "original_zero_matched": 0,
+          "original_le_minus7_matched": 0,
+          "cells": {
+            "both_at_or_below": 7,
+            "original_only": 18,
+            "nature_only": 28,
+            "neither": 639
+          },
+          "interpretation": "Raw, unverified original numeric audit: MHHW-labeled versus Nature MSL. Original zeros may be unassessed fill; no validated elevation, accuracy or pure datum-effect claim."
+        },
+        {
+          "matched": 692,
+          "unmatched": 25181,
+          "threshold_m": 10.0,
+          "original_zero_matched": 0,
+          "original_le_minus7_matched": 0,
+          "cells": {
+            "both_at_or_below": 252,
+            "original_only": 18,
+            "nature_only": 10,
+            "neither": 412
+          },
+          "interpretation": "Raw, unverified original numeric audit: MHHW-labeled versus Nature MSL. Original zeros may be unassessed fill; no validated elevation, accuracy or pure datum-effect claim."
+        }
+      ],
+      "rcp_overlap": [
+        {
+          "scenario": "RCP 2.6",
+          "year": 2030,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 34,
+            "low_only": 1,
+            "neither": 654
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2030,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 21,
+            "flag_only": 16,
+            "low_only": 14,
+            "neither": 641
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2030,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 37,
+            "flag_only": 0,
+            "low_only": 225,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2040,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 37,
+            "low_only": 1,
+            "neither": 651
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2040,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 21,
+            "flag_only": 19,
+            "low_only": 14,
+            "neither": 638
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2040,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 40,
+            "flag_only": 0,
+            "low_only": 222,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2050,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 40,
+            "low_only": 1,
+            "neither": 648
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2050,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 21,
+            "flag_only": 22,
+            "low_only": 14,
+            "neither": 635
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2050,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 43,
+            "flag_only": 0,
+            "low_only": 219,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2060,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 42,
+            "low_only": 1,
+            "neither": 646
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2060,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 23,
+            "flag_only": 22,
+            "low_only": 12,
+            "neither": 635
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2060,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 45,
+            "flag_only": 0,
+            "low_only": 217,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2070,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 71,
+            "low_only": 1,
+            "neither": 617
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2070,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 23,
+            "flag_only": 51,
+            "low_only": 12,
+            "neither": 606
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2070,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 74,
+            "flag_only": 0,
+            "low_only": 188,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2080,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 80,
+            "low_only": 1,
+            "neither": 608
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2080,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 24,
+            "flag_only": 59,
+            "low_only": 11,
+            "neither": 598
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2080,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 83,
+            "flag_only": 0,
+            "low_only": 179,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2090,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 101,
+            "low_only": 1,
+            "neither": 587
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2090,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 28,
+            "flag_only": 76,
+            "low_only": 7,
+            "neither": 581
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2090,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 104,
+            "flag_only": 0,
+            "low_only": 158,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2100,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 117,
+            "low_only": 0,
+            "neither": 571
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2100,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 29,
+            "flag_only": 92,
+            "low_only": 6,
+            "neither": 565
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 2.6",
+          "year": 2100,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 121,
+            "flag_only": 0,
+            "low_only": 141,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2030,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 34,
+            "low_only": 1,
+            "neither": 654
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2030,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 21,
+            "flag_only": 16,
+            "low_only": 14,
+            "neither": 641
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2030,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 37,
+            "flag_only": 0,
+            "low_only": 225,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2040,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 37,
+            "low_only": 1,
+            "neither": 651
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2040,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 21,
+            "flag_only": 19,
+            "low_only": 14,
+            "neither": 638
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2040,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 40,
+            "flag_only": 0,
+            "low_only": 222,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2050,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 40,
+            "low_only": 1,
+            "neither": 648
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2050,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 21,
+            "flag_only": 22,
+            "low_only": 14,
+            "neither": 635
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2050,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 43,
+            "flag_only": 0,
+            "low_only": 219,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2060,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 42,
+            "low_only": 1,
+            "neither": 646
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2060,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 23,
+            "flag_only": 22,
+            "low_only": 12,
+            "neither": 635
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2060,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 45,
+            "flag_only": 0,
+            "low_only": 217,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2070,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 72,
+            "low_only": 1,
+            "neither": 616
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2070,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 23,
+            "flag_only": 52,
+            "low_only": 12,
+            "neither": 605
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2070,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 75,
+            "flag_only": 0,
+            "low_only": 187,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2080,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 80,
+            "low_only": 1,
+            "neither": 608
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2080,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 24,
+            "flag_only": 59,
+            "low_only": 11,
+            "neither": 598
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2080,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 83,
+            "flag_only": 0,
+            "low_only": 179,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2090,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 105,
+            "low_only": 1,
+            "neither": 583
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2090,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 28,
+            "flag_only": 80,
+            "low_only": 7,
+            "neither": 577
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2090,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 108,
+            "flag_only": 0,
+            "low_only": 154,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2100,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 119,
+            "low_only": 0,
+            "neither": 569
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2100,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 29,
+            "flag_only": 94,
+            "low_only": 6,
+            "neither": 563
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 4.5",
+          "year": 2100,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 123,
+            "flag_only": 0,
+            "low_only": 139,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2030,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 34,
+            "low_only": 1,
+            "neither": 654
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2030,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 21,
+            "flag_only": 16,
+            "low_only": 14,
+            "neither": 641
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2030,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 37,
+            "flag_only": 0,
+            "low_only": 225,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2040,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 38,
+            "low_only": 1,
+            "neither": 650
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2040,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 21,
+            "flag_only": 20,
+            "low_only": 14,
+            "neither": 637
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2040,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 41,
+            "flag_only": 0,
+            "low_only": 221,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2050,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 40,
+            "low_only": 1,
+            "neither": 648
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2050,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 21,
+            "flag_only": 22,
+            "low_only": 14,
+            "neither": 635
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2050,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 43,
+            "flag_only": 0,
+            "low_only": 219,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2060,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 44,
+            "low_only": 1,
+            "neither": 644
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2060,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 23,
+            "flag_only": 24,
+            "low_only": 12,
+            "neither": 633
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2060,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 47,
+            "flag_only": 0,
+            "low_only": 215,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2070,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 76,
+            "low_only": 1,
+            "neither": 612
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2070,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 23,
+            "flag_only": 56,
+            "low_only": 12,
+            "neither": 601
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2070,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 79,
+            "flag_only": 0,
+            "low_only": 183,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2080,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 3,
+            "flag_only": 93,
+            "low_only": 1,
+            "neither": 595
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2080,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 26,
+            "flag_only": 70,
+            "low_only": 9,
+            "neither": 587
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2080,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 96,
+            "flag_only": 0,
+            "low_only": 166,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2090,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 113,
+            "low_only": 0,
+            "neither": 575
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2090,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 29,
+            "flag_only": 88,
+            "low_only": 6,
+            "neither": 569
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2090,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 117,
+            "flag_only": 0,
+            "low_only": 145,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2100,
+          "threshold_m": 0.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 4,
+            "flag_only": 142,
+            "low_only": 0,
+            "neither": 546
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2100,
+          "threshold_m": 1.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 31,
+            "flag_only": 115,
+            "low_only": 4,
+            "neither": 542
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        },
+        {
+          "scenario": "RCP 8.5",
+          "year": 2100,
+          "threshold_m": 10.0,
+          "matched": 692,
+          "unmatched": 25181,
+          "cells": {
+            "flag_and_low": 146,
+            "flag_only": 0,
+            "low_only": 116,
+            "neither": 430
+          },
+          "interpretation": "RCP flag overlap with a static MSL threshold; no accuracy score."
+        }
+      ]
+    }
+  ],
+  "original_elevation_audit": {
+    "total": 25873,
+    "finite": 25873,
+    "missing_or_invalid": 0,
+    "zero": 20476,
+    "le_minus7": 1,
+    "interpretation": "Raw original ACTUALE, modeled as ACTUAL_MHHW_ELEV_M. Numeric availability is not verified elevation validity. Zeros may encode unassessed/fill values; retain them for audit, do not assume valid zero elevation."
+  },
+  "common_cohort": [
+    {
+      "total": 25873,
+      "matched": 207,
+      "unmatched": 25666,
+      "threshold_m": 0.0,
+      "counts": {
+        "gll-dtm-v2-msl": 1,
+        "fabdem-msl-city-regions": 0,
+        "deltadtm-msl-city-regions": 4
+      },
+      "interpretation": "Same supported rows valid in every listed model; static MSL screening, not accuracy or a full-portfolio estimate."
+    },
+    {
+      "total": 25873,
+      "matched": 207,
+      "unmatched": 25666,
+      "threshold_m": 1.0,
+      "counts": {
+        "gll-dtm-v2-msl": 25,
+        "fabdem-msl-city-regions": 9,
+        "deltadtm-msl-city-regions": 35
+      },
+      "interpretation": "Same supported rows valid in every listed model; static MSL screening, not accuracy or a full-portfolio estimate."
+    },
+    {
+      "total": 25873,
+      "matched": 207,
+      "unmatched": 25666,
+      "threshold_m": 10.0,
+      "counts": {
+        "gll-dtm-v2-msl": 206,
+        "fabdem-msl-city-regions": 192,
+        "deltadtm-msl-city-regions": 198
+      },
+      "interpretation": "Same supported rows valid in every listed model; static MSL screening, not accuracy or a full-portfolio estimate."
+    }
+  ]
+}

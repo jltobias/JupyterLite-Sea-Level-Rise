@@ -1,5 +1,39 @@
 # Validation record
 
+## Nature extension added 2026-11-05
+
+The repository contains **18 notebooks**, including four Nature chapters (14–17). All 18 executed in fresh desktop kernels during the build; the four Nature notebooks were executed again after review fixes. **41 tests passed**, covering existing behavior and the new datum equation, asymmetric comparison matrices, cohort conservation, NoData/exclusion thresholds, raster CRS/band/scale/offset, failed coordinate transformations, manifest validation, terrain provenance and CSV upload-state cleanup.
+
+The local source workbook contains 58,731 rows, of which **25,873** have `PEPFARSUP = 1`. Their unique identifiers and coordinates were validated, and all **24** original RCP category totals match the poster. The real sampling run used one global GLL coastal-lowland grid and **13 FABDEM / 12 DeltaDTM tiles** selected around five public poster-city anchors. Publisher SHA-256 verified the original GLL download; original SHA-256 values for the selected regional tiles were calculated and pinned after download. All 26 retained compressed raster hashes were checked against the acquisition inventory. The catalog distinguishes publisher checksums from locally computed hashes.
+
+Valid facility samples: **798 GLL, 694 FABDEM, 692 DeltaDTM**. The common valid cohort has **207** facilities; at ≤1 m MSL the counts are **25, 9, 35**, respectively. An independent pandas recount from the private sampled rows verified all nine screening totals, three common-cohort comparisons and **216 RCP overlap matrices**. Missing and outside-coverage rows remain unavailable. The original elevation quality audit records **20,476 zero values**, whose fill/unassessed semantics remain unresolved; the primary historical comparisons use the audited RCP flags. Private sample rows and workbook audits remain in ignored `private-data/`; a scan of 45 public content/reference files found none of the source facility identifiers.
+
+Three independent review lenses produced 20 findings, including duplicates. All were addressed; no review finding was deferred. Public city terrain excerpts retain the same 15 numeric grids after the band-decoding/provenance fixes, and encoded-band fixtures verify the additional supported inputs. Static book terrain heatmap and 3D surface rendering were visually inspected in Chromium.
+
+The final book built with warnings treated as errors; JupyterLite validation passed, and all required assets/internal links passed across **29 authored/book pages**. Chromium checks passed for all four new Pyodide notebooks and the six representative existing chapters (00, 01, 05, 07, 09, 13). New interactions checked actual values: city/model changes replaced the complete heatmap and 3D surface arrays; model/threshold changes updated count, coverage and bars; the sensitivity slider updated its selected point; a synthetic CSV replaced the demo; an invalid replacement retained the prior valid data; restore returned to the default fictional counts. The existing dashboard's filters, CSV export, 3D views and responsive layouts also passed. Power BI rendering remains mocked as described below.
+
+The initial browser harness was corrected to wait for explicit notebook readiness rather than background network inactivity, and to use the widget's real file chooser. These were test-harness fixes; all affected browser checks passed afterward. Git-staged bytes matched all 23 public-artifact hashes and the terrain-generator hash, including Windows/Linux newline normalization.
+
+This is a **facility point-sampling adaptation with partial coverage**, not a reproduction of the paper's global population analysis or hydrodynamic flood modeling. High-resolution tiles are a purposive five-region sample, not a representative global facility sample. GLL is about 1 km; high-resolution sampling uses native approximately 30 m cells. The separate city display grids are sparsely sampled and rounded for teaching and never used for facility classification. Absolute counts across unmatched model footprints must not be ranked. No new RCP/year flood probabilities or inundation footprints are estimated.
+
+Reproduce the new checks and local analysis with:
+
+```bash
+python -m pip install -r requirements.txt -r requirements-geospatial.txt
+python -m pytest tests -q
+python scripts/nature_lessons.py
+python scripts/build.py
+python scripts/check_site.py
+# Optional public-only acquisition; about 4 GB transferred, no facility inputs:
+python scripts/fetch_nature_rasters.py
+# Authorized local workbook, never committed:
+python scripts/analyze_nature.py private-data/sites.xlsx --manifest private-data/nature-download/manifest.json
+python scripts/prepare_nature_surfaces.py --manifest private-data/nature-download/manifest.json
+python scripts/update_provenance.py
+```
+
+Actual acquisition used two public-only GitHub Actions runs recorded in `content/data/nature-raster-catalog.json`, because the source's port 9443 was unavailable locally. The consolidated optional download script packages the same URL/checksum/compression procedure; ordinary builds and browser notebooks do not launch raster downloads.
+
 ## Power BI chapter added 2026-10-05
 
 The repository now contains 14 notebooks. Chapter 13 executed successfully in desktop Python and in a real JupyterLite/Pyodide browser kernel with `python-power-bi==0.1.2`. All 21 unit tests passed (the original six plus 15 Power BI metadata/URL cases), including separate commercial and GCC routing. The book built with warnings treated as errors, and 25 authored/book HTML pages passed internal-link and asset checks.

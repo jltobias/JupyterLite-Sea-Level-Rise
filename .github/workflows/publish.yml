@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: '3.13'
           cache: pip
-      - run: pip install -r requirements.txt
+      - run: pip install -r requirements.txt -r requirements-geospatial.txt
       - run: python -m pytest tests -q
       - run: python scripts/build.py
       - run: python scripts/check_site.py

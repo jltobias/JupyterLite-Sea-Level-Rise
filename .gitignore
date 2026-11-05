@@ -10,6 +10,10 @@ book/data/
 book/assets/
 book/coastlab.py
 book/powerbi_bridge.py
+book/naturelab.py
+_bmad/
+_bmad.setup-*/
+_bmad-output/
 logs/
 .env
 power_bi_state.jsonc

@@ -31,12 +31,19 @@ def main():
        'transformation':'Independent deterministic generation; no original facility rows or coordinates read.',
        'rights':'CC0-1.0 to extent applicable rights held.'}
     ]
+    nature_sources=ROOT/'content/data/nature-sources.json'
+    if nature_sources.exists():
+        nature=json.loads(nature_sources.read_text(encoding='utf-8'))
+        sources.append({'id':'nature-2026','url':nature['paper']['url'],
+          'citation':nature['paper']['citation'],
+          'transformation':'Independent point sampling of already-MSL products; supported-portfolio aggregates only. See nature-aggregates.json for current coverage and source hashes, and nature-sources.json for exact versions and use status.',
+          'rights':nature['rights_note']})
     files={}
     for directory in ['content/data','content/assets']:
         for p in sorted((ROOT/directory).iterdir()):
             if p.is_file() and p.name!='provenance.json':files[p.relative_to(ROOT).as_posix()]={'sha256':sha(p),'bytes':p.stat().st_size}
-    result={'version':'1.1.1','inspected_date':'2026-10-05','sources':sources,'files':files,
-       'evidence_boundary':'Published poster aggregates, explicit reference facts, and separate fictional labs. No private facility data or proprietary hazard grids distributed.',
+    result={'version':'1.2.0','inspected_date':'2026-11-05','sources':sources,'files':files,
+       'evidence_boundary':'Published poster aggregates, explicit reference facts, Nature portfolio aggregates with coverage/common-cohort comparisons, licensed public terrain display extracts without facility overlays, and separate fictional labs. No private facility records or modeled inundation grids distributed.',
        'known_discrepancies':['RCP 2.6 narrative 2.8× versus table 321/108=2.9722…','Percentages recalculated from source counts','Original source field-name/typing anomalies documented without silent correction'],
        'runtime_note':'Desktop build dependencies recorded in build-environment.txt; browser Pyodide packages may differ and require network access on first launch.'}
     original=ROOT/'tmp/poster-source.pdf'

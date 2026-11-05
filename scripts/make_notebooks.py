@@ -635,5 +635,7 @@ Describe how you would validate unique identifiers, coordinate ranges, vertical 
 
 from powerbi_lesson import write_notebook as write_powerbi_notebook
 LESSONS.append(write_powerbi_notebook())
+from nature_lessons import write_notebooks as write_nature_notebooks
+LESSONS.extend(write_nature_notebooks())
 (ROOT/'content/lesson-index.json').write_text(__import__('json').dumps([{'slug':s,'title':t,'minutes':m} for s,t,m in LESSONS],indent=2),encoding='utf-8')
 print(f'Authored {len(LESSONS)} notebooks.')

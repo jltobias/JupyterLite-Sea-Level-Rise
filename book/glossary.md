@@ -63,3 +63,28 @@ Definitions are teaching summaries; source-specific metadata takes precedence wh
 - **Report page name:** Internal page identifier used in API calls and `pageName` links; distinct from a visible tab caption.
 - **python-power-bi:** Unofficial Python REST API wrapper used for metadata in chapter 13; not a report rendering engine.
 - **powerbiclient:** Microsoft's notebook widget package for embedding hosted Power BI reports; not a local PBIX renderer.
+## Nature 2026 terms
+
+**Vertical datum:** The reference surface for numeric heights; name the convention and reference period.
+
+**Ellipsoidal height:** Height relative to a mathematical ellipsoid. It differs from a gravity-based terrain height.
+
+**Geoid:** A gravity-based reference surface approximating mean sea level; it need not equal the actual mean ocean surface everywhere.
+
+**Mean sea level (MSL):** Time-averaged sea-surface height for a stated period and region. The corrected Nature products use the HYBRID-CNES-CLS2022 reference.
+
+**Mean higher high water (MHHW):** Mean of the daily higher high waters over a specified tidal reference period. Original `ACTUALE` is modeled as an MHHW height; MHHW and MSL must not be silently interchanged.
+
+**Mean dynamic topography (MDT):** Mean sea-surface height above a specified geoid. HYBRID-CNES-CLS2022 references GOCO06s and 1993–2021.
+
+**Static elevation screening:** Counting valid heights at or below a fixed threshold. This does not supply a flood probability, projection year, hydrodynamic extent or service impact.
+
+**Matched cohort:** The same supported facility rows with every required value available for a particular comparison. An unmatched row never becomes a negative classification.
+
+**Coverage denominator:** The number of rows with valid source data, reported alongside the complete cohort and missingness reasons.
+
+**NoData:** A raster cell with no valid measurement. It is unavailable, not zero metres or zero risk.
+
+**Containing-pixel sampling:** Assigning the raster cell containing a point, without interpolating adjacent cells. Effective spatial precision remains constrained by the cell and source quality.
+
+**Tide-free geoid / zero-degree term:** Geodetic conventions specified in the Nature addendum. The teaching formula assumes compatible inputs; it does not reproduce spherical-harmonic geoid synthesis.

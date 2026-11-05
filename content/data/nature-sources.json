@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "inspected_date": "2026-11-05",
+  "paper": {
+    "citation": "Seeger, K. & Minderhoud, P. S. J. (2026). Sea level much higher than assumed in most coastal hazard assessments. Nature 652, 667–674.",
+    "url": "https://doi.org/10.1038/s41586-026-10196-1",
+    "license": "CC-BY-4.0",
+    "role": "examined; methodology"
+  },
+  "addendum": {
+    "date": "2026-08-25",
+    "url": "https://doi.org/10.1038/s41586-026-11017-1",
+    "role": "examined; geoid specification",
+    "tide_system": "tide-free",
+    "zero_degree": "included",
+    "degrees": {
+      "EGM96": 360,
+      "EGM2008": 2190,
+      "GOCO06s": 300
+    }
+  },
+  "catalog": {
+    "concept_doi": "10.5281/zenodo.17722669",
+    "version_doi": "10.5281/zenodo.23341921",
+    "publication_date": "2026-10-13",
+    "url": "https://zenodo.org/records/23341921",
+    "metadata_url": "https://zenodo.org/api/records/23341921",
+    "role": "examined; pinned source catalog",
+    "metadata_sha256": "c0044f4b1b93933550bda41276f4552920da6e6b54c0cfb98983958dcb4fd3f5",
+    "files": [
+      {
+        "name": "GLL-DTM_v2_guide.pdf",
+        "url": "https://zenodo.org/api/records/23341921/files/GLL-DTM_v2_guide.pdf/content",
+        "checksum": "md5:00523581186433ef22bd6ea6ee4e6352",
+        "bytes": 142565
+      },
+      {
+        "name": "FABDEM_v1.0.csv",
+        "url": "https://zenodo.org/api/records/23341921/files/FABDEM_v1.0.csv/content",
+        "checksum": "md5:ebdb09b3272ccf29608d597a0e8291ac",
+        "bytes": 2831254
+      },
+      {
+        "name": "DeltaDTM_v1.1.csv",
+        "url": "https://zenodo.org/api/records/23341921/files/DeltaDTM_v1.1.csv/content",
+        "checksum": "md5:53b059d938d940e8e694e9e95d7c526d",
+        "bytes": 1506149
+      },
+      {
+        "name": "DeltaDTM_v1.1_guide.pdf",
+        "url": "https://zenodo.org/api/records/23341921/files/DeltaDTM_v1.1_guide.pdf/content",
+        "checksum": "md5:87b408970ecbf4fe324e0243d4413eac",
+        "bytes": 2266667
+      },
+      {
+        "name": "Guide to datasets with Sea level much higher than assumed in most coastal hazard assessments.pdf",
+        "url": "https://zenodo.org/api/records/23341921/files/Guide%20to%20datasets%20with%20Sea%20level%20much%20higher%20than%20assumed%20in%20most%20coastal%20hazard%20assessments.pdf/content",
+        "checksum": "md5:d939cd33491d73a84acc74877e5222d0",
+        "bytes": 140487
+      },
+      {
+        "name": "FABDEM_v1.0_guide.pdf",
+        "url": "https://zenodo.org/api/records/23341921/files/FABDEM_v1.0_guide.pdf/content",
+        "checksum": "md5:2b72812b30460adbc819e7e75c0bd4f6",
+        "bytes": 3901514
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": "fabdem",
+      "label": "FABDEM v1.0",
+      "dataset": "FABDEM",
+      "version": "1.0",
+      "datum": "MSL",
+      "license": "CC-BY-NC-SA-4.0",
+      "source_url": "https://doi.org/10.17887/WUR01-6L9D2X",
+      "use_status": "used",
+      "notes": "Underlying Hawker & Neal FABDEM v1.0; corrected MSL product."
+    },
+    {
+      "id": "deltadtm",
+      "label": "DeltaDTM v1.1",
+      "dataset": "DeltaDTM",
+      "version": "1.1",
+      "datum": "MSL",
+      "license": "CC-BY-NC-SA-4.0",
+      "source_url": "https://doi.org/10.17887/WUR01-GX7S1B",
+      "use_status": "used",
+      "notes": "October catalog v1.1; Nature paper describes v1. Do not conflate versions."
+    },
+    {
+      "id": "gll",
+      "label": "GLL-DTM v2",
+      "dataset": "GLL-DTM",
+      "version": "2",
+      "datum": "MSL",
+      "license": "CC-BY-NC-SA-4.0",
+      "source_url": "https://doi.org/10.17887/WUR01-XGN3PK",
+      "use_status": "used",
+      "notes": "Corrected WUR product; approximately 1 km screening. Public original v2 is not the authors preconverted EGM96 input."
+    }
+  ],
+  "upstream": [
+    {
+      "id": "fabdem-original",
+      "citation": "Hawker, L. & Neal, J. (2021), FABDEM v1.0, University of Bristol.",
+      "url": "https://doi.org/10.5523/bris.25wfy0f9ukoge2gs7a5mqpq2j7",
+      "role": "underlying DEM; original raster not sampled separately"
+    },
+    {
+      "id": "deltadtm-original",
+      "citation": "Pronk, M. (2024), DeltaDTM: a global coastal digital terrain model, v1, 4TU ResearchData.",
+      "url": "https://doi.org/10.4121/21997565.v4",
+      "role": "paper underlying DEM; corrected catalog v1.1 distinguished"
+    },
+    {
+      "id": "gll-original",
+      "citation": "Vernimmen, R. (2022), GLL-DTM v2; accompanying Vernimmen & Hooijer study 10.1029/2022EF002880.",
+      "url": "https://doi.org/10.5281/zenodo.7228643",
+      "concept_doi": "10.5281/zenodo.6534526",
+      "license": "CC-BY-4.0",
+      "role": "examined metadata; NOT used as raw EGM96 fallback"
+    },
+    {
+      "id": "mdt",
+      "citation": "CLS, Hybrid Mean Dynamic Topography CNES-CLS22-CMEMS2020 (HYBRID-CNES-CLS2022).",
+      "url": "https://doi.org/10.24400/527896/a01-2024.010",
+      "datum": "GOCO06s",
+      "epoch": "1993–2021",
+      "role": "upstream of corrected products; not resampled here"
+    },
+    {
+      "id": "geoid",
+      "citation": "ICGEM/GFZ global gravity models EGM96, EGM2008, GOCO06s; Ince et al. (2019), Earth System Science Data 11, 647–674.",
+      "url": "https://icgem.gfz-potsdam.de/calcgrid",
+      "reference_url": "https://doi.org/10.5194/essd-11-647-2019",
+      "role": "upstream reference; no full geoid synthesis claimed"
+    },
+    {
+      "id": "authors-code",
+      "citation": "Seeger & Minderhoud, Model workflow codes for vertical datum conversion, version 17953235.",
+      "url": "https://doi.org/10.5281/zenodo.17953235",
+      "license": "GPL-3.0-or-later",
+      "role": "examined incomplete ArcPy ModelBuilder exports; not copied or executed in MIT implementation"
+    }
+  ],
+  "rights_note": "Derived corrected-raster aggregates and public terrain extracts are CC-BY-NC-SA-4.0. GLL and DeltaDTM guides explicitly allow media, NGOs and government use with attribution; retain other license conditions. FABDEM guide states CC-BY-NC-SA-4.0 without that additional wording. Original code MIT; original prose CC-BY-4.0.",
+  "use_note": "Product use_status is updated after local analysis; nature-aggregates.json records exact source hashes, available coverage and run time. Catalog availability is not sampled coverage."
+}

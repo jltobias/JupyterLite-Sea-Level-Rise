@@ -1,0 +1,10 @@
+model,status,total,available,unavailable,missing,excluded_le_minus7,threshold_m,offset_m,at_or_below,above,percent_of_available
+gll-dtm-v2-msl,partial,25873,798,25075,25075,0,0.0,0.0,13,785,1.6290726817042607
+gll-dtm-v2-msl,partial,25873,798,25075,25075,0,1.0,0.0,86,712,10.776942355889725
+gll-dtm-v2-msl,partial,25873,798,25075,25075,0,10.0,0.0,790,8,98.99749373433583
+fabdem-msl-city-regions,partial,25873,694,25179,25179,0,0.0,0.0,1,693,0.1440922190201729
+fabdem-msl-city-regions,partial,25873,694,25179,25179,0,1.0,0.0,10,684,1.440922190201729
+fabdem-msl-city-regions,partial,25873,694,25179,25179,0,10.0,0.0,252,442,36.31123919308357
+deltadtm-msl-city-regions,partial,25873,692,25181,25181,0,0.0,0.0,4,688,0.5780346820809249
+deltadtm-msl-city-regions,partial,25873,692,25181,25181,0,1.0,0.0,35,657,5.057803468208093
+deltadtm-msl-city-regions,partial,25873,692,25181,25181,0,10.0,0.0,262,430,37.861271676300575

@@ -13,7 +13,7 @@ html:
   use_repository_button: true
   use_issues_button: true
   home_page_in_navbar: true
-  extra_footer: "Public poster evidence + clearly labeled fictional labs. No real facility-level data are distributed."
+  extra_footer: "Poster evidence, Nature-derived aggregate screens and licensed terrain examples, plus labeled fictional labs. No real facility-level records are distributed."
 parse:
   myst_enable_extensions:
     - colon_fence

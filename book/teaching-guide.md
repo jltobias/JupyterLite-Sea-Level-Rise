@@ -36,3 +36,13 @@ Use the capstone's 20-point rubric. A visually impressive figure with an incorre
 ## Troubleshooting
 
 If a notebook cannot import its helper, open it from the bundled `notebooks/` folder and run the setup cell. If Python cannot fetch packages, check network policies and use the standalone dashboard while resolving access. If a notebook's old browser copy masks a newer server version, download your edits first, then remove/rename the old browser copy or open a clean browser profile. Do not clear browser storage before exporting work.
+
+## Nature 2026 workshop: chapters 14–17
+
+Allow 2–3 hours: chapter 14 for reference surfaces and sign checks; chapter 15 for exact source versions and coverage; chapter 16 for the AIDS 2024 baseline and matched overlap; chapter 17 for fictional 3D surfaces and interactive sensitivity. The default route uses public aggregates and invented examples, with no private upload or GIS installation.
+
+Assess four distinctions: MHHW versus MSL; unavailable versus zero; matched overlap versus accuracy; and static elevation screening versus probabilistic flooding. Ask learners to show that their matrix conserves the matched cohort. A stronger answer names terrain source, epoch and resolution as additional explanations for original/new differences.
+
+The threshold dropdown in chapter 16 reads the published aggregates; a missing model remains unavailable. Chapter 17's two sliders change an explicitly fictional fixture reproducibly. Its optional private CSV upload is for authorized individual sessions only; do not use real records in classroom screen sharing, shared notebooks or published outputs. Tables accompany plots, including the 3D surface example. A disabled WebGL environment can use the tables and 2D views.
+
+Optional advanced work uses the local rasterio workflow documented in the source audit. Keep the detail files under `private-data/`, review the aggregate coverage and source hashes, and then rebuild. High-resolution regional coverage cannot be compared directly with GLL's broader cohort; chapter 16's across-model chart first intersects valid supported rows in all models and reports that smaller shared denominator. Discuss whether this subset is representative. Missing rasters are an opportunity to write a coverage-aware interpretation, not a reason to substitute fictional counts for results.

@@ -1,0 +1,426 @@
+{
+  "license": "CC-BY-NC-SA-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "authors": "Katharina Seeger and Philip S. J. Minderhoud",
+  "paper": "https://doi.org/10.1038/s41586-026-10196-1",
+  "catalog_record": "23341921",
+  "selection": "Tiles intersecting +/-0.5 degree rectangles around the five public AIDS2024 poster city centroids; NOT a representative global sample",
+  "cities": [
+    [
+      "Abidjan",
+      5.33,
+      -4.03
+    ],
+    [
+      "Bangkok",
+      13.75,
+      100.5
+    ],
+    [
+      "Ho Chi Minh City",
+      10.78,
+      106.7
+    ],
+    [
+      "Lagos",
+      6.45,
+      3.39
+    ],
+    [
+      "Mombasa",
+      -4.05,
+      39.67
+    ]
+  ],
+  "files": [
+    {
+      "model": "gll",
+      "doi": "10.17887/WUR01-XGN3PK",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/GLL-DTM_v2%5B1768908191%5D/original/GLL-DTM_v2_220608_GOCO06s_MDT/GLL_DTM_v2_220608_GOCO06s_MDT.tif",
+      "filename": "gll/gll_msl.tif",
+      "source_sha256": "a88947a5646bd12f8151b97eb3853313dd8839218da5bd11242f5e6d76faeb42",
+      "publisher_sha256": "a88947a5646bd12f8151b97eb3853313dd8839218da5bd11242f5e6d76faeb42",
+      "sha256": "fba43f671612e3859e5ba8730b8829e33648f02e57d8abf3a867822217cad0b6"
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_S00_S20_500kmBuffer/S05E039_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/S05E039_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "8fc815cf947ad7fcf703b70c8de0d48dc26ff6a546526e202e2ade4c69510d0c",
+      "publisher_sha256": null,
+      "sha256": "3279234e756835c58e15636d52513a164908f8454fa395639f028ff7071ab08b",
+      "bounds": {
+        "lat_min": "-5",
+        "lat_max": "-4",
+        "lon_min": "39",
+        "lon_max": "40"
+      }
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_S00_S20_500kmBuffer/S04E039_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/S04E039_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "73bc561fe3ecd0f2dd312aa3c5bf7062b037fcebcffb29acc84abcd17e1f007b",
+      "publisher_sha256": null,
+      "sha256": "2791b44b75dc201ec17dbb3396f68c14577189b9da45d45ebb4e955471bedb19",
+      "bounds": {
+        "lat_min": "-4",
+        "lat_max": "-3",
+        "lon_min": "39",
+        "lon_max": "40"
+      }
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_S00_S20_500kmBuffer/S04E040_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/S04E040_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "c439b06c0254677df7098a56b3ecbe439fdc6b71b06730b3512e9e1c5f16123e",
+      "publisher_sha256": null,
+      "sha256": "f00762744db8e3277b3aac30ebc0838fcdd741322dbcec13d4bde7495654eda1",
+      "bounds": {
+        "lat_min": "-4",
+        "lat_max": "-3",
+        "lon_min": "40",
+        "lon_max": "41"
+      }
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_N00_N20_500kmBuffer/N05W005_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/N05W005_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "9918a16ecb7923bea655960aac364c9b72b0d2752a5483de7c91d725d04069e4",
+      "publisher_sha256": null,
+      "sha256": "79b0b9dae369c48ae3098134ed85b02bbe22a76ba39f7365261d46402ee56147",
+      "bounds": {
+        "lat_min": "5",
+        "lat_max": "6",
+        "lon_min": "-5",
+        "lon_max": "-4"
+      }
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_N00_N20_500kmBuffer/N05W004_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/N05W004_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "a6f0fbb1da9b56d872530c590907151c8da414d71c6fa35af9aa5a4fe46d4396",
+      "publisher_sha256": null,
+      "sha256": "0dfd5fa46542f88b829875841c7da540ddb157e613cb839ba984494b97b2974c",
+      "bounds": {
+        "lat_min": "5",
+        "lat_max": "6",
+        "lon_min": "-4",
+        "lon_max": "-3"
+      }
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_N00_N20_500kmBuffer/N06E002_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/N06E002_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "5b03e8f75e1cb8fa09bfb06a257ab5db35a1bea39bd3d5eead3f9a1b50aa72a8",
+      "publisher_sha256": null,
+      "sha256": "5c79ae1607b6aa50eea088bd5ea61dc9edf88061c4877ee1db48c2a9ec58714b",
+      "bounds": {
+        "lat_min": "6",
+        "lat_max": "7",
+        "lon_min": "2",
+        "lon_max": "3"
+      }
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_N00_N20_500kmBuffer/N06E003_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/N06E003_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "8ae875d1c13b8f1a570ba46f4a314ca90249d0613e1ac0cbf2ca82d4482c4a00",
+      "publisher_sha256": null,
+      "sha256": "d449d01db498a594f999f88c84541590c3f031f73b399ec5900fb3a3f66fd61c",
+      "bounds": {
+        "lat_min": "6",
+        "lat_max": "7",
+        "lon_min": "3",
+        "lon_max": "4"
+      }
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_N00_N20_500kmBuffer/N10E106_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/N10E106_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "4e6c2b93c0b1fb18595d80be3e11af298666b572d9c6d84174fb98e6038a963f",
+      "publisher_sha256": null,
+      "sha256": "6767f82f6ae37614dc1c35f5763ad0a5267f13fe8a70be00287d7167097ffc1e",
+      "bounds": {
+        "lat_min": "10",
+        "lat_max": "11",
+        "lon_min": "106",
+        "lon_max": "107"
+      }
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_N00_N20_500kmBuffer/N10E107_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/N10E107_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "1d0d099f1b533940a7ebbd3ce6a44d956aae505fd61fc491ed7a026c0cb5227c",
+      "publisher_sha256": null,
+      "sha256": "4843f50506d0aaa6d1ae368af606f2534365403c8f59b9cdab4ed58ef939fcac",
+      "bounds": {
+        "lat_min": "10",
+        "lat_max": "11",
+        "lon_min": "107",
+        "lon_max": "108"
+      }
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_N00_N20_500kmBuffer/N11E106_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/N11E106_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "c4a2ec220d7dff11e37c7b8eacfece18e6dfb8cc153d849fa150509651354b77",
+      "publisher_sha256": null,
+      "sha256": "22245b49d1e7871e65f4b23a686720d386e71637521808a1a70fa725c98b324c",
+      "bounds": {
+        "lat_min": "11",
+        "lat_max": "12",
+        "lon_min": "106",
+        "lon_max": "107"
+      }
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_N00_N20_500kmBuffer/N11E107_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/N11E107_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "f3c367ed1e532f569375515d3e12392af9a12cbed9dcdac1c7436aba53d4b58e",
+      "publisher_sha256": null,
+      "sha256": "9cb9757d39828e26101f0e246c2cbdc1422c0e9e0fff1a761a436120c50d4f59",
+      "bounds": {
+        "lat_min": "11",
+        "lat_max": "12",
+        "lon_min": "107",
+        "lon_max": "108"
+      }
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_N00_N20_500kmBuffer/N13E100_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/N13E100_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "f2e0f44089bc4ceaf6877dcb5595b8a782eba0ccd5dedf3d4962a7cc4d3dfc26",
+      "publisher_sha256": null,
+      "sha256": "bc97fa1f89314676ed63240a21b25976c89b23664f49b8bf59d8b3631cf3c603",
+      "bounds": {
+        "lat_min": "13",
+        "lat_max": "14",
+        "lon_min": "100",
+        "lon_max": "101"
+      }
+    },
+    {
+      "model": "fabdem",
+      "doi": "10.17887/WUR01-6L9D2X",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/FABDEM_v1.0%5B1768908132%5D/original/03_FABDEM_v1.0_MSL_N00_N20_500kmBuffer/N14E100_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "filename": "fabdem/N14E100_FABDEM_V1-0_GOCO06s_MDT.tif",
+      "source_sha256": "89e7289a387d4ec2480717008cf170e78ba3126d302b4589b5211f91c3f38eba",
+      "publisher_sha256": null,
+      "sha256": "340c1a867d7aa11a1df81cf0439ea8d2c75ec1af0696a6e212670f7de83c7cf9",
+      "bounds": {
+        "lat_min": "14",
+        "lat_max": "15",
+        "lon_min": "100",
+        "lon_max": "101"
+      }
+    },
+    {
+      "model": "deltadtm",
+      "doi": "10.17887/WUR01-GX7S1B",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/DeltaDTM_v1.1%5B1768908072%5D/original/DeltaDTM_v1.1_MSL_Africa/DeltaDTM_v1_1_S05E039_GOCO06s_MDT.tif",
+      "filename": "deltadtm/DeltaDTM_v1_1_S05E039_GOCO06s_MDT.tif",
+      "source_sha256": "a8b6eaccb087696e37b47467e19623a19797ccbcaaf894a44baec576c052a553",
+      "publisher_sha256": null,
+      "sha256": "481c42df0424bbc54bd17a80104b16797a47b160177c0e5fc3ec4be440ecf747",
+      "bounds": {
+        "lat_min": "-5",
+        "lat_max": "-4",
+        "lon_min": "39",
+        "lon_max": "40"
+      }
+    },
+    {
+      "model": "deltadtm",
+      "doi": "10.17887/WUR01-GX7S1B",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/DeltaDTM_v1.1%5B1768908072%5D/original/DeltaDTM_v1.1_MSL_Africa/DeltaDTM_v1_1_S04E039_GOCO06s_MDT.tif",
+      "filename": "deltadtm/DeltaDTM_v1_1_S04E039_GOCO06s_MDT.tif",
+      "source_sha256": "a347331c25be300df30fd439e7d14fe4d78e60b2140c3114ffd46e9f37e16ee9",
+      "publisher_sha256": null,
+      "sha256": "b740a52821d33ddaeadad8c5751ed41d4308c0058204c9a7a757cc045ada5a3e",
+      "bounds": {
+        "lat_min": "-4",
+        "lat_max": "-3",
+        "lon_min": "39",
+        "lon_max": "40"
+      }
+    },
+    {
+      "model": "deltadtm",
+      "doi": "10.17887/WUR01-GX7S1B",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/DeltaDTM_v1.1%5B1768908072%5D/original/DeltaDTM_v1.1_MSL_Africa/DeltaDTM_v1_1_S04E040_GOCO06s_MDT.tif",
+      "filename": "deltadtm/DeltaDTM_v1_1_S04E040_GOCO06s_MDT.tif",
+      "source_sha256": "36c85b9adaaa1d6377b55cfe9e5c26e85c3fcb53c02f583cc6dff4976c09e84d",
+      "publisher_sha256": null,
+      "sha256": "3d7aae0fe0b632bcfc3292cb3e73f1fc9081e9802ac3a987c89fb83461f3a458",
+      "bounds": {
+        "lat_min": "-4",
+        "lat_max": "-3",
+        "lon_min": "40",
+        "lon_max": "41"
+      }
+    },
+    {
+      "model": "deltadtm",
+      "doi": "10.17887/WUR01-GX7S1B",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/DeltaDTM_v1.1%5B1768908072%5D/original/DeltaDTM_v1.1_MSL_Africa/DeltaDTM_v1_1_N05W005_GOCO06s_MDT.tif",
+      "filename": "deltadtm/DeltaDTM_v1_1_N05W005_GOCO06s_MDT.tif",
+      "source_sha256": "4a35c1fbdbd4e520c525eb5e0b57ac53dc7fbe31738dc4ce1bf19b918dd4c1de",
+      "publisher_sha256": null,
+      "sha256": "c956a9ac84d0ffd7b385de71f77ea2c1d46880242db5dd2ddbb270c085868625",
+      "bounds": {
+        "lat_min": "5",
+        "lat_max": "6",
+        "lon_min": "-5",
+        "lon_max": "-4"
+      }
+    },
+    {
+      "model": "deltadtm",
+      "doi": "10.17887/WUR01-GX7S1B",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/DeltaDTM_v1.1%5B1768908072%5D/original/DeltaDTM_v1.1_MSL_Africa/DeltaDTM_v1_1_N05W004_GOCO06s_MDT.tif",
+      "filename": "deltadtm/DeltaDTM_v1_1_N05W004_GOCO06s_MDT.tif",
+      "source_sha256": "b836766da61e402b0b095f7392822e861f80012228fe2cad6d216ed8059505fd",
+      "publisher_sha256": null,
+      "sha256": "b1e551d7770a43efb87208eafb7c62e846520d50c4fba06c869a21fcbc5dc7d3",
+      "bounds": {
+        "lat_min": "5",
+        "lat_max": "6",
+        "lon_min": "-4",
+        "lon_max": "-3"
+      }
+    },
+    {
+      "model": "deltadtm",
+      "doi": "10.17887/WUR01-GX7S1B",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/DeltaDTM_v1.1%5B1768908072%5D/original/DeltaDTM_v1.1_MSL_Africa/DeltaDTM_v1_1_N06E002_GOCO06s_MDT.tif",
+      "filename": "deltadtm/DeltaDTM_v1_1_N06E002_GOCO06s_MDT.tif",
+      "source_sha256": "9581cb3c31f078f50a0012f86cd46464e4afd038ef81582bfe2582d620b35b71",
+      "publisher_sha256": null,
+      "sha256": "29644756893979e8209ebf9e3a2ca46a26083dd1663bebdf58e6e3cc6253ee2b",
+      "bounds": {
+        "lat_min": "6",
+        "lat_max": "7",
+        "lon_min": "2",
+        "lon_max": "3"
+      }
+    },
+    {
+      "model": "deltadtm",
+      "doi": "10.17887/WUR01-GX7S1B",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/DeltaDTM_v1.1%5B1768908072%5D/original/DeltaDTM_v1.1_MSL_Africa/DeltaDTM_v1_1_N06E003_GOCO06s_MDT.tif",
+      "filename": "deltadtm/DeltaDTM_v1_1_N06E003_GOCO06s_MDT.tif",
+      "source_sha256": "4b84f8520f935e669a5f972dbad0c372e213c66020e80cac33e9e364e85a8d95",
+      "publisher_sha256": null,
+      "sha256": "3c83b1ce740689341a490bf34b29dc21dec766d89f5d4875e459333c7058df66",
+      "bounds": {
+        "lat_min": "6",
+        "lat_max": "7",
+        "lon_min": "3",
+        "lon_max": "4"
+      }
+    },
+    {
+      "model": "deltadtm",
+      "doi": "10.17887/WUR01-GX7S1B",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/DeltaDTM_v1.1%5B1768908072%5D/original/DeltaDTM_v1.1_MSL_Asia/DeltaDTM_v1_1_N10E106_GOCO06s_MDT.tif",
+      "filename": "deltadtm/DeltaDTM_v1_1_N10E106_GOCO06s_MDT.tif",
+      "source_sha256": "105e9bfd1ff95fcb89fa173b11df71cea796d0f0e954d6f5c41a834d3c684aec",
+      "publisher_sha256": null,
+      "sha256": "372461524aebdbee9fa6e21c7d3ff1ed40d8bf3cb4be735ddeb56fdfce8d295c",
+      "bounds": {
+        "lat_min": "10",
+        "lat_max": "11",
+        "lon_min": "106",
+        "lon_max": "107"
+      }
+    },
+    {
+      "model": "deltadtm",
+      "doi": "10.17887/WUR01-GX7S1B",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/DeltaDTM_v1.1%5B1768908072%5D/original/DeltaDTM_v1.1_MSL_Asia/DeltaDTM_v1_1_N10E107_GOCO06s_MDT.tif",
+      "filename": "deltadtm/DeltaDTM_v1_1_N10E107_GOCO06s_MDT.tif",
+      "source_sha256": "04b0c7b8cfc8453fc8b8bdc0ff3e25f283e462dc9a1ad33ca55917a5defeb666",
+      "publisher_sha256": null,
+      "sha256": "0c077c56c5e8ba4cd58535818b9a55b9dbec0348c2204f202901ba73dfd341f5",
+      "bounds": {
+        "lat_min": "10",
+        "lat_max": "11",
+        "lon_min": "107",
+        "lon_max": "108"
+      }
+    },
+    {
+      "model": "deltadtm",
+      "doi": "10.17887/WUR01-GX7S1B",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/DeltaDTM_v1.1%5B1768908072%5D/original/DeltaDTM_v1.1_MSL_Asia/DeltaDTM_v1_1_N11E106_GOCO06s_MDT.tif",
+      "filename": "deltadtm/DeltaDTM_v1_1_N11E106_GOCO06s_MDT.tif",
+      "source_sha256": "bc8161952017eb00835d46931eebf05640bf6a9ebecef7e5b6779527e8cfe15a",
+      "publisher_sha256": null,
+      "sha256": "fc4e881e6d8206f9033407f28e57ef0e154de0571f9d8aabd8f0da4230a106ad",
+      "bounds": {
+        "lat_min": "11",
+        "lat_max": "12",
+        "lon_min": "106",
+        "lon_max": "107"
+      }
+    },
+    {
+      "model": "deltadtm",
+      "doi": "10.17887/WUR01-GX7S1B",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/DeltaDTM_v1.1%5B1768908072%5D/original/DeltaDTM_v1.1_MSL_Asia/DeltaDTM_v1_1_N13E100_GOCO06s_MDT.tif",
+      "filename": "deltadtm/DeltaDTM_v1_1_N13E100_GOCO06s_MDT.tif",
+      "source_sha256": "6101a982671cabfebfd41c74b042d8f2fdd3bedb9c0199b10ea6a6d25cf7b009",
+      "publisher_sha256": null,
+      "sha256": "460936be2e7a07ca0693e695339aa7127378266f18f1c0c0cbe6322e07a19b8c",
+      "bounds": {
+        "lat_min": "13",
+        "lat_max": "14",
+        "lon_min": "100",
+        "lon_max": "101"
+      }
+    },
+    {
+      "model": "deltadtm",
+      "doi": "10.17887/WUR01-GX7S1B",
+      "url": "https://data.yoda.wur.nl:9443/vault-sea-level-referenced-coastal-elevation/DeltaDTM_v1.1%5B1768908072%5D/original/DeltaDTM_v1.1_MSL_Asia/DeltaDTM_v1_1_N14E100_GOCO06s_MDT.tif",
+      "filename": "deltadtm/DeltaDTM_v1_1_N14E100_GOCO06s_MDT.tif",
+      "source_sha256": "00f65bd465a0ab0fb9bcb07ea4bd8d93d698ee9047ed149f33f8d4d59fc3a0d7",
+      "publisher_sha256": null,
+      "sha256": "0326ac735a20f3c6dde2f5101e52c5e74b6fb85c90e49f6b126bdce2ddedf847",
+      "bounds": {
+        "lat_min": "14",
+        "lat_max": "15",
+        "lon_min": "100",
+        "lon_max": "101"
+      }
+    }
+  ],
+  "processing": "Author-corrected MSL rasters. Lossless COG compression. source_sha256 calculated before compression; publisher_sha256 is null where publisher manifest omits a selected tile. sha256 is compressed file used locally.",
+  "acquisition_runs": [
+    "https://github.com/jltobias/JupyterLite-Sea-Level-Rise/actions/runs/42060676383",
+    "https://github.com/jltobias/JupyterLite-Sea-Level-Rise/actions/runs/42061632181"
+  ]
+}
