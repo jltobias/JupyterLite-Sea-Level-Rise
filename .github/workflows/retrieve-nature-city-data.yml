@@ -1,0 +1,59 @@
+name: Retrieve public Nature city elevation data
+on:
+  push:
+    branches: [nature-2026-city-data]
+permissions:
+  contents: read
+jobs:
+  retrieve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: pip install rasterio
+      - name: Download and verify public elevation tiles
+        run: |
+          python - <<'PY'
+          import json, csv, io, urllib.request, hashlib, concurrent.futures
+          from pathlib import Path
+          import rasterio.shutil
+          cities = [('Abidjan',5.33,-4.03),('Bangkok',13.75,100.50),('Ho Chi Minh City',10.78,106.70),('Lagos',6.45,3.39),('Mombasa',-4.05,39.67)]
+          out=Path('public-city-data'); out.mkdir()
+          catalogs=[('fabdem','FABDEM_v1.0.csv','6L9D2X'),('deltadtm','DeltaDTM_v1.1.csv','GX7S1B')]
+          def get(url):
+              return urllib.request.urlopen(urllib.request.Request(url,headers={'X-Requested-With':'XMLHttpRequest'}),timeout=90)
+          metadata=[]
+          for model,catalog,pid in catalogs:
+              rows=list(csv.DictReader(io.StringIO(get('https://zenodo.org/records/23341921/files/'+catalog+'?download=1').read().decode())))
+              manifest=json.load(get('https://publication.yoda.wur.nl/full/WUR01/'+pid+'-manifest.json'))
+              checks={r['name']:r.get('checksum') for r in manifest}
+              selected=[r for r in rows if any(float(r['lat_min'])<lat+.5 and float(r['lat_max'])>lat-.5 and float(r['lon_min'])<lon+.5 and float(r['lon_max'])>lon-.5 for _,lat,lon in cities)]
+              folder=out/model; folder.mkdir()
+              base=selected[0]['url'].split('/original/')[0]
+              for filename in ['original/README.txt','License.txt']:
+                  (folder/filename.split('/')[-1]).write_bytes(get(base+'/'+filename).read())
+              print(model,'tiles',len(selected),flush=True)
+              def download(row):
+                  url=row['url']; name=url.rsplit('/',1)[-1]; original=folder/(name+'.raw')
+                  with get(url) as response, original.open('wb') as target:
+                      while chunk:=response.read(4*1024*1024): target.write(chunk)
+                  checksum=hashlib.file_digest(original.open('rb'),'sha256').hexdigest()
+                  expected=checks[url.split('/original/')[1].join(['original/',''])]
+                  if checksum!=expected: raise ValueError('Checksum mismatch '+name)
+                  dest=folder/name
+                  rasterio.shutil.copy(original,dest,driver='COG',COMPRESS='DEFLATE',BIGTIFF='IF_SAFER',OVERVIEWS='NONE')
+                  original.unlink()
+                  print('verified',name,'bytes',dest.stat().st_size,flush=True)
+                  return dict(model=model,doi='10.17887/WUR01-'+pid,url=url,filename=model+'/'+name,source_sha256=checksum,sha256=hashlib.file_digest(dest.open('rb'),'sha256').hexdigest(),bounds={k:row[k] for k in ['lat_min','lat_max','lon_min','lon_max']})
+              with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool: metadata.extend(pool.map(download,selected))
+          (out/'provenance.json').write_text(json.dumps(dict(selection='Tiles intersecting +/-0.5 degree rectangles around the five public AIDS2024 poster city centroids; NOT a representative global sample',cities=cities,catalog_record='23341921',license='CC-BY-NC-SA-4.0',authors='Katharina Seeger and Philip S. J. Minderhoud',change='Lossless DEFLATE compression, base pixel values preserved',files=metadata),indent=2))
+          
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nature-city-public-sources
+          path: public-city-data
+          retention-days: 1
+
