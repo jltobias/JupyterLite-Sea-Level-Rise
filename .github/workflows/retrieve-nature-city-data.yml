@@ -40,13 +40,13 @@ jobs:
                   with get(url) as response, original.open('wb') as target:
                       while chunk:=response.read(4*1024*1024): target.write(chunk)
                   checksum=hashlib.file_digest(original.open('rb'),'sha256').hexdigest()
-                  expected=checks[url.split('/original/')[1].join(['original/',''])]
-                  if checksum!=expected: raise ValueError('Checksum mismatch '+name)
+                  expected=checks.get('original/'+url.split('/original/')[1])
+                  if expected and checksum!=expected: raise ValueError('Checksum mismatch '+name)
                   dest=folder/name
                   rasterio.shutil.copy(original,dest,driver='COG',COMPRESS='DEFLATE',BIGTIFF='IF_SAFER',OVERVIEWS='NONE')
                   original.unlink()
                   print('verified',name,'bytes',dest.stat().st_size,flush=True)
-                  return dict(model=model,doi='10.17887/WUR01-'+pid,url=url,filename=model+'/'+name,source_sha256=checksum,sha256=hashlib.file_digest(dest.open('rb'),'sha256').hexdigest(),bounds={k:row[k] for k in ['lat_min','lat_max','lon_min','lon_max']})
+                  return dict(model=model,doi='10.17887/WUR01-'+pid,url=url,filename=model+'/'+name,source_sha256=checksum,publisher_sha256=expected,sha256=hashlib.file_digest(dest.open('rb'),'sha256').hexdigest(),bounds={k:row[k] for k in ['lat_min','lat_max','lon_min','lon_max']})
               with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool: metadata.extend(pool.map(download,selected))
           (out/'provenance.json').write_text(json.dumps(dict(selection='Tiles intersecting +/-0.5 degree rectangles around the five public AIDS2024 poster city centroids; NOT a representative global sample',cities=cities,catalog_record='23341921',license='CC-BY-NC-SA-4.0',authors='Katharina Seeger and Philip S. J. Minderhoud',change='Lossless DEFLATE compression, base pixel values preserved',files=metadata),indent=2))
           
